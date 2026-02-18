@@ -1,0 +1,1314 @@
+[2026-02-11 20:58:14] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 20:58:15] INFO [logger] Telegram: message envoyé
+[2026-02-11 20:58:15] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-11 20:58:17] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-11 20:58:18] INFO [logger] Gamma API: 0 marché(s) température Londres trouvé(s)
+[2026-02-11 20:58:18] INFO [logger] Aucun marché température Londres trouvé
+[2026-02-11 21:02:47] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-11 21:08:28] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:08:29] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:08:29] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-11 21:08:31] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-11 21:08:34] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-11 21:08:34] INFO [logger] --- Analyse du marché 2026-02-11 (Highest temperature in London on February 11?) ---
+[2026-02-11 21:08:35] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:08:37] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:08:37] INFO [logger] Température moyenne prévue: 12.4°C (sources: 1)
+[2026-02-11 21:08:37] INFO [logger] Distribution: {'8-': np.float64(0.0), '9': np.float64(0.0001), '10': np.float64(0.0086), '12': np.float64(0.4194), '13': np.float64(0.3657), '14+': np.float64(0.0846), '11': np.float64(0.1215)}
+[2026-02-11 21:08:38] ERROR [logger] Polymarket: erreur récupération prix token 95046947985709141288800014307893227763227900279035316994871912673549728720810 — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:08:39] ERROR [logger] Polymarket: erreur récupération prix token 105042364052663324165590882939942862736483872208333670136553932645188160719561 — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:08:40] ERROR [logger] Polymarket: erreur récupération prix token 91051722139550824422275459608905007447137112651923362546981627302007024543545 — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:08:41] ERROR [logger] Polymarket: erreur récupération prix token 74341982180862615429088264071727941120409465497288473191907906725876822801816 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:42] ERROR [logger] Polymarket: erreur récupération prix token 109767437413051560577473965786000618250123721768701748481233158071786726223435 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:43] ERROR [logger] Polymarket: erreur récupération prix token 30967803720548036456429948313923192856785477263544691497078454222550012806822 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:44] ERROR [logger] Polymarket: erreur récupération prix token 86780224264335209998100175482013961646968042542012758162258042302213699281273 — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:08:44] INFO [logger] Prix marché: {'8-': 0.5, '9': 0.5, '10': 0.5, '12': 0.5, '13': 0.5, '14+': 0.5, '11': 0.5}
+[2026-02-11 21:08:44] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:08:44] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-11
+[2026-02-11 21:08:45] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:08:45] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-11 21:08:46] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:08:47] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:08:47] INFO [logger] Température moyenne prévue: 10.8°C (sources: 1)
+[2026-02-11 21:08:47] INFO [logger] Distribution: {'6-': np.float64(0.0002), '7': np.float64(0.0028), '8': np.float64(0.0247), '9': np.float64(0.1117), '10': np.float64(0.262), '11': np.float64(0.3189), '12+': np.float64(0.2798)}
+[2026-02-11 21:08:48] ERROR [logger] Polymarket: erreur récupération prix token 35167067392578539991770853160791553903743147615648301013370086551218768600816 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:49] ERROR [logger] Polymarket: erreur récupération prix token 105757975888173756284645993500738952673127166980215736079192107210485615924452 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:50] ERROR [logger] Polymarket: erreur récupération prix token 63636912123704794154378801965862377295189895554137926863364271644858563891833 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:51] ERROR [logger] Polymarket: erreur récupération prix token 30038322016092941035488421956751161865111179433744493512647604821077245792436 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:52] ERROR [logger] Polymarket: erreur récupération prix token 54617351993892377454851136350163103832544335630986659501170179397777936057350 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:53] ERROR [logger] Polymarket: erreur récupération prix token 16084691361358839471989956138046925275263909803988915297356892471005407166915 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:54] ERROR [logger] Polymarket: erreur récupération prix token 45961037903667854302036617918026624656055555262290788783896803532729695432366 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:54] INFO [logger] Prix marché: {'6-': 0.5, '7': 0.5, '8': 0.5, '9': 0.5, '10': 0.5, '11': 0.5, '12+': 0.5}
+[2026-02-11 21:08:54] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:08:54] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-12
+[2026-02-11 21:08:55] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:08:55] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-11 21:08:56] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:08:57] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:08:57] INFO [logger] Température moyenne prévue: 8.0°C (sources: 1)
+[2026-02-11 21:08:57] INFO [logger] Distribution: {'3-': np.float64(0.0062), '4': np.float64(0.0197), '5': np.float64(0.0565), '6': np.float64(0.1199), '7': np.float64(0.1883), '8': np.float64(0.2188), '9+': np.float64(0.3906)}
+[2026-02-11 21:08:58] ERROR [logger] Polymarket: erreur récupération prix token 86616755529824780448012245863607586650882205176336683310073943088463494483298 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:08:59] ERROR [logger] Polymarket: erreur récupération prix token 46207533154957238285266343826673783248295317888581503100346505379226308055760 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:00] ERROR [logger] Polymarket: erreur récupération prix token 32863370152177193332604775838570139752885955084629311959474395649470324969786 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:01] ERROR [logger] Polymarket: erreur récupération prix token 59247279093422809466749092917166228239265483190433922697443487664814532599737 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:02] ERROR [logger] Polymarket: erreur récupération prix token 106950486694572490024227720149165144675055991470689031749832849184539330153763 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:03] ERROR [logger] Polymarket: erreur récupération prix token 13114871058833752234505596386337824056634397747082084575569447260964959065101 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:04] ERROR [logger] Polymarket: erreur récupération prix token 67934398733100577188294173393570709623552479980815620623277058781499564814668 — float() argument must be a string or a real number, not 'dict'
+[2026-02-11 21:09:04] INFO [logger] Prix marché: {'3-': 0.5, '4': 0.5, '5': 0.5, '6': 0.5, '7': 0.5, '8': 0.5, '9+': 0.5}
+[2026-02-11 21:09:04] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:09:04] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-13
+[2026-02-11 21:09:05] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:09:05] INFO [logger] ✅ Scan terminé
+[2026-02-11 21:10:41] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:11:12] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:11:13] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:11:13] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-11 21:11:15] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-11 21:11:18] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-11 21:11:18] INFO [logger] --- Analyse du marché 2026-02-11 (Highest temperature in London on February 11?) ---
+[2026-02-11 21:11:19] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:11:21] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:11:21] INFO [logger] Température moyenne prévue: 12.4°C (sources: 1)
+[2026-02-11 21:11:21] INFO [logger] Distribution: {'8-': np.float64(0.0), '9': np.float64(0.0001), '10': np.float64(0.0086), '12': np.float64(0.4194), '13': np.float64(0.3657), '14+': np.float64(0.0846), '11': np.float64(0.1215)}
+[2026-02-11 21:11:22] WARNING [logger] Polymarket: prix indisponible token 9504694798570914... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:11:22] INFO [logger] Tranche 8-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:11:23] WARNING [logger] Polymarket: prix indisponible token 1050423640526633... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:11:23] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:11:24] WARNING [logger] Polymarket: prix indisponible token 9105172213955082... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:11:24] INFO [logger] Tranche 10: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:11:26] DEBUG [logger] DEBUG get_price token 7434198218086261... — raw_bid={'price': '0.999'} raw_ask={'price': '1'}
+[2026-02-11 21:11:28] DEBUG [logger] DEBUG get_price token 1097674374130515... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:11:30] DEBUG [logger] DEBUG get_price token 3096780372054803... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:11:31] WARNING [logger] Polymarket: prix indisponible token 8678022426433520... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:11:31] INFO [logger] Tranche 11: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:11:31] INFO [logger] Prix marché: {'12': 0.9995, '13': 0.0005, '14+': 0.0005}
+[2026-02-11 21:11:31] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:11:31] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-11
+[2026-02-11 21:11:32] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:11:32] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-11 21:11:33] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:11:34] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:11:34] INFO [logger] Température moyenne prévue: 10.8°C (sources: 1)
+[2026-02-11 21:11:34] INFO [logger] Distribution: {'6-': np.float64(0.0002), '7': np.float64(0.0028), '8': np.float64(0.0247), '9': np.float64(0.1117), '10': np.float64(0.262), '11': np.float64(0.3189), '12+': np.float64(0.2798)}
+[2026-02-11 21:11:36] DEBUG [logger] DEBUG get_price token 3516706739257853... — raw_bid={'price': '0.001'} raw_ask={'price': '0.002'}
+[2026-02-11 21:11:38] DEBUG [logger] DEBUG get_price token 1057579758881737... — raw_bid={'price': '0'} raw_ask={'price': '0.004'}
+[2026-02-11 21:11:40] DEBUG [logger] DEBUG get_price token 6363691212370479... — raw_bid={'price': '0.007'} raw_ask={'price': '0.012'}
+[2026-02-11 21:11:42] DEBUG [logger] DEBUG get_price token 3003832201609294... — raw_bid={'price': '0.22'} raw_ask={'price': '0.25'}
+[2026-02-11 21:11:43] DEBUG [logger] DEBUG get_price token 5461735199389237... — raw_bid={'price': '0.52'} raw_ask={'price': '0.63'}
+[2026-02-11 21:11:45] DEBUG [logger] DEBUG get_price token 1608469136135883... — raw_bid={'price': '0.14'} raw_ask={'price': '0.26'}
+[2026-02-11 21:11:48] DEBUG [logger] DEBUG get_price token 4596103790366785... — raw_bid={'price': '0.9'} raw_ask={'price': '0.91'}
+[2026-02-11 21:11:48] INFO [logger] Prix marché: {'6-': 0.0015, '7': 0.002, '8': 0.0095, '9': 0.235, '10': 0.575, '11': 0.2, '12+': 0.905}
+[2026-02-11 21:11:48] INFO [logger] Meilleur pari: tranche 8 — edge 106%, notre proba 2% vs marché 0.01
+[2026-02-11 21:11:48] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 8°C @ 0.01 (edge: 106%)
+[2026-02-11 21:11:49] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:11:49] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-11 21:11:50] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:11:51] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:11:51] INFO [logger] Température moyenne prévue: 8.0°C (sources: 1)
+[2026-02-11 21:11:51] INFO [logger] Distribution: {'3-': np.float64(0.0062), '4': np.float64(0.0197), '5': np.float64(0.0565), '6': np.float64(0.1199), '7': np.float64(0.1883), '8': np.float64(0.2188), '9+': np.float64(0.3906)}
+[2026-02-11 21:11:53] DEBUG [logger] DEBUG get_price token 8661675552982478... — raw_bid={'price': '0.004'} raw_ask={'price': '0.005'}
+[2026-02-11 21:11:55] DEBUG [logger] DEBUG get_price token 4620753315495723... — raw_bid={'price': '0.016'} raw_ask={'price': '0.02'}
+[2026-02-11 21:11:57] DEBUG [logger] DEBUG get_price token 3286337015217719... — raw_bid={'price': '0.13'} raw_ask={'price': '0.15'}
+[2026-02-11 21:11:58] DEBUG [logger] DEBUG get_price token 5924727909342280... — raw_bid={'price': '0.33'} raw_ask={'price': '0.37'}
+[2026-02-11 21:12:00] DEBUG [logger] DEBUG get_price token 1069504866945724... — raw_bid={'price': '0.34'} raw_ask={'price': '0.38'}
+[2026-02-11 21:12:02] DEBUG [logger] DEBUG get_price token 1311487105883375... — raw_bid={'price': '0.121'} raw_ask={'price': '0.149'}
+[2026-02-11 21:12:04] DEBUG [logger] DEBUG get_price token 6793439873310057... — raw_bid={'price': '0.032'} raw_ask={'price': '0.033'}
+[2026-02-11 21:12:04] INFO [logger] Prix marché: {'3-': 0.0045000000000000005, '4': 0.018000000000000002, '5': 0.14, '6': 0.35, '7': 0.36, '8': 0.135, '9+': 0.0325}
+[2026-02-11 21:12:04] INFO [logger] Meilleur pari: tranche 9+ — edge 1084%, notre proba 39% vs marché 0.03
+[2026-02-11 21:12:04] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 9+°C @ 0.03 (edge: 1084%)
+[2026-02-11 21:12:05] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:12:05] INFO [logger] ✅ Scan terminé
+[2026-02-11 21:14:29] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:14:30] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:14:30] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-11 21:14:32] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-11 21:14:35] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-11 21:14:35] INFO [logger] --- Analyse du marché 2026-02-11 (Highest temperature in London on February 11?) ---
+[2026-02-11 21:14:36] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:14:38] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:14:38] INFO [logger] Température moyenne prévue: 12.4°C (sources: 1)
+[2026-02-11 21:14:38] INFO [logger] Distribution: {'8-': np.float64(0.0), '9': np.float64(0.0), '10': np.float64(0.0001), '12': np.float64(0.5433), '13': np.float64(0.4068), '14+': np.float64(0.0139), '11': np.float64(0.0359)}
+[2026-02-11 21:14:39] WARNING [logger] Polymarket: prix indisponible token 9504694798570914... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:14:39] INFO [logger] Tranche 8-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:14:40] WARNING [logger] Polymarket: prix indisponible token 1050423640526633... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:14:40] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:14:41] WARNING [logger] Polymarket: prix indisponible token 9105172213955082... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:14:41] INFO [logger] Tranche 10: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:14:43] DEBUG [logger] DEBUG get_price token 7434198218086261... — raw_bid={'price': '0.999'} raw_ask={'price': '1'}
+[2026-02-11 21:14:45] DEBUG [logger] DEBUG get_price token 1097674374130515... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:14:47] DEBUG [logger] DEBUG get_price token 3096780372054803... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:14:48] WARNING [logger] Polymarket: prix indisponible token 8678022426433520... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:14:48] INFO [logger] Tranche 11: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:14:48] INFO [logger] Prix marché: {'12': 0.9995, '13': 0.0005, '14+': 0.0005}
+[2026-02-11 21:14:48] DEBUG [logger] Tranche 14+: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:14:48] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:14:48] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-11
+[2026-02-11 21:14:49] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:14:49] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-11 21:14:50] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:14:51] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:14:51] INFO [logger] Température moyenne prévue: 10.8°C (sources: 1)
+[2026-02-11 21:14:51] INFO [logger] Distribution: {'6-': np.float64(0.0), '7': np.float64(0.0005), '8': np.float64(0.0102), '9': np.float64(0.0861), '10': np.float64(0.2853), '11': np.float64(0.3759), '12+': np.float64(0.242)}
+[2026-02-11 21:14:53] DEBUG [logger] DEBUG get_price token 3516706739257853... — raw_bid={'price': '0.001'} raw_ask={'price': '0.002'}
+[2026-02-11 21:14:55] DEBUG [logger] DEBUG get_price token 1057579758881737... — raw_bid={'price': '0'} raw_ask={'price': '0.004'}
+[2026-02-11 21:14:57] DEBUG [logger] DEBUG get_price token 6363691212370479... — raw_bid={'price': '0.007'} raw_ask={'price': '0.012'}
+[2026-02-11 21:14:59] DEBUG [logger] DEBUG get_price token 3003832201609294... — raw_bid={'price': '0.22'} raw_ask={'price': '0.27'}
+[2026-02-11 21:15:01] DEBUG [logger] DEBUG get_price token 5461735199389237... — raw_bid={'price': '0.62'} raw_ask={'price': '0.63'}
+[2026-02-11 21:15:03] DEBUG [logger] DEBUG get_price token 1608469136135883... — raw_bid={'price': '0.13'} raw_ask={'price': '0.19'}
+[2026-02-11 21:15:05] DEBUG [logger] DEBUG get_price token 4596103790366785... — raw_bid={'price': '0.9'} raw_ask={'price': '0.91'}
+[2026-02-11 21:15:05] INFO [logger] Prix marché: {'6-': 0.0015, '7': 0.002, '8': 0.0095, '9': 0.245, '10': 0.625, '11': 0.16, '12+': 0.905}
+[2026-02-11 21:15:05] DEBUG [logger] Tranche 6-: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:15:05] DEBUG [logger] Tranche 7: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:15:05] DEBUG [logger] Tranche 8: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:15:05] DEBUG [logger] Tranche 9: notre proba 9% < seuil 15%, skip
+[2026-02-11 21:15:05] INFO [logger] Meilleur pari: tranche 11 — edge 98%, score 0.368, notre proba 38% vs marché 0.19
+[2026-02-11 21:15:05] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 11°C @ 0.19 (edge: 98%)
+[2026-02-11 21:15:06] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:15:06] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-11 21:15:07] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:15:08] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:15:08] INFO [logger] Température moyenne prévue: 8.0°C (sources: 1)
+[2026-02-11 21:15:08] INFO [logger] Distribution: {'3-': np.float64(0.0013), '4': np.float64(0.0085), '5': np.float64(0.038), '6': np.float64(0.1109), '7': np.float64(0.2108), '8': np.float64(0.2611), '9+': np.float64(0.3694)}
+[2026-02-11 21:15:10] DEBUG [logger] DEBUG get_price token 8661675552982478... — raw_bid={'price': '0.004'} raw_ask={'price': '0.005'}
+[2026-02-11 21:15:12] DEBUG [logger] DEBUG get_price token 4620753315495723... — raw_bid={'price': '0.016'} raw_ask={'price': '0.02'}
+[2026-02-11 21:15:14] DEBUG [logger] DEBUG get_price token 3286337015217719... — raw_bid={'price': '0.13'} raw_ask={'price': '0.15'}
+[2026-02-11 21:15:16] DEBUG [logger] DEBUG get_price token 5924727909342280... — raw_bid={'price': '0.33'} raw_ask={'price': '0.37'}
+[2026-02-11 21:15:18] DEBUG [logger] DEBUG get_price token 1069504866945724... — raw_bid={'price': '0.34'} raw_ask={'price': '0.38'}
+[2026-02-11 21:15:20] DEBUG [logger] DEBUG get_price token 1311487105883375... — raw_bid={'price': '0.121'} raw_ask={'price': '0.149'}
+[2026-02-11 21:15:22] DEBUG [logger] DEBUG get_price token 6793439873310057... — raw_bid={'price': '0.032'} raw_ask={'price': '0.033'}
+[2026-02-11 21:15:22] INFO [logger] Prix marché: {'3-': 0.0045000000000000005, '4': 0.018000000000000002, '5': 0.14, '6': 0.35, '7': 0.36, '8': 0.135, '9+': 0.0325}
+[2026-02-11 21:15:22] DEBUG [logger] Tranche 3-: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:15:22] DEBUG [logger] Tranche 4: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:15:22] DEBUG [logger] Tranche 5: notre proba 4% < seuil 15%, skip
+[2026-02-11 21:15:22] DEBUG [logger] Tranche 6: notre proba 11% < seuil 15%, skip
+[2026-02-11 21:15:22] INFO [logger] Meilleur pari: tranche 9+ — edge 1019%, score 3.766, notre proba 37% vs marché 0.03
+[2026-02-11 21:15:22] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 9+°C @ 0.03 (edge: 1019%)
+[2026-02-11 21:15:23] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:15:23] INFO [logger] ✅ Scan terminé
+[2026-02-11 21:18:51] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:20:19] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-11 21:20:20] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:20:20] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-11 21:20:20] INFO [logger] Results tracker: aucun pari/simulation à vérifier
+[2026-02-11 21:20:22] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-11 21:20:25] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-11 21:20:25] INFO [logger] --- Analyse du marché 2026-02-11 (Highest temperature in London on February 11?) ---
+[2026-02-11 21:20:26] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:20:28] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:20:28] INFO [logger] Température moyenne prévue: 12.4°C (sources: 1)
+[2026-02-11 21:20:28] INFO [logger] Distribution: {'8-': np.float64(0.0), '9': np.float64(0.0), '10': np.float64(0.0001), '12': np.float64(0.5433), '13': np.float64(0.4068), '14+': np.float64(0.0139), '11': np.float64(0.0359)}
+[2026-02-11 21:20:29] WARNING [logger] Polymarket: prix indisponible token 9504694798570914... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:20:29] INFO [logger] Tranche 8-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:20:30] WARNING [logger] Polymarket: prix indisponible token 1050423640526633... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:20:30] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:20:31] WARNING [logger] Polymarket: prix indisponible token 9105172213955082... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:20:31] INFO [logger] Tranche 10: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:20:33] DEBUG [logger] DEBUG get_price token 7434198218086261... — raw_bid={'price': '0.999'} raw_ask={'price': '1'}
+[2026-02-11 21:20:35] DEBUG [logger] DEBUG get_price token 1097674374130515... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:20:37] DEBUG [logger] DEBUG get_price token 3096780372054803... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-11 21:20:38] WARNING [logger] Polymarket: prix indisponible token 8678022426433520... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-11 21:20:38] INFO [logger] Tranche 11: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-11 21:20:38] INFO [logger] Prix marché: {'12': 0.9995, '13': 0.0005, '14+': 0.0005}
+[2026-02-11 21:20:38] DEBUG [logger] Tranche 14+: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:20:38] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-11 21:20:38] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-11
+[2026-02-11 21:20:39] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:20:39] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-11 21:20:40] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:20:41] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:20:41] INFO [logger] Température moyenne prévue: 10.8°C (sources: 1)
+[2026-02-11 21:20:41] INFO [logger] Distribution: {'6-': np.float64(0.0), '7': np.float64(0.0005), '8': np.float64(0.0102), '9': np.float64(0.0861), '10': np.float64(0.2853), '11': np.float64(0.3759), '12+': np.float64(0.242)}
+[2026-02-11 21:20:43] DEBUG [logger] DEBUG get_price token 3516706739257853... — raw_bid={'price': '0.001'} raw_ask={'price': '0.002'}
+[2026-02-11 21:20:45] DEBUG [logger] DEBUG get_price token 1057579758881737... — raw_bid={'price': '0'} raw_ask={'price': '0.004'}
+[2026-02-11 21:20:47] DEBUG [logger] DEBUG get_price token 6363691212370479... — raw_bid={'price': '0.007'} raw_ask={'price': '0.012'}
+[2026-02-11 21:20:49] DEBUG [logger] DEBUG get_price token 3003832201609294... — raw_bid={'price': '0.22'} raw_ask={'price': '0.26'}
+[2026-02-11 21:20:51] DEBUG [logger] DEBUG get_price token 5461735199389237... — raw_bid={'price': '0.52'} raw_ask={'price': '0.62'}
+[2026-02-11 21:20:53] DEBUG [logger] DEBUG get_price token 1608469136135883... — raw_bid={'price': '0.14'} raw_ask={'price': '0.24'}
+[2026-02-11 21:20:55] DEBUG [logger] DEBUG get_price token 4596103790366785... — raw_bid={'price': '0.9'} raw_ask={'price': '0.91'}
+[2026-02-11 21:20:55] INFO [logger] Prix marché: {'6-': 0.0015, '7': 0.002, '8': 0.0095, '9': 0.24, '10': 0.5700000000000001, '11': 0.19, '12+': 0.905}
+[2026-02-11 21:20:55] DEBUG [logger] Tranche 6-: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:20:55] DEBUG [logger] Tranche 7: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:20:55] DEBUG [logger] Tranche 8: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:20:55] DEBUG [logger] Tranche 9: notre proba 9% < seuil 15%, skip
+[2026-02-11 21:20:55] INFO [logger] Meilleur pari: tranche 11 — edge 57%, score 0.213, notre proba 38% vs marché 0.24
+[2026-02-11 21:20:55] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 11°C @ 0.24 (edge: 57%)
+[2026-02-11 21:20:55] INFO [logger] Pari enregistré pour 2026-02-12: tranche 11 (simulated)
+[2026-02-11 21:20:56] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:20:56] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-11 21:20:57] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-11 21:20:58] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-11 21:20:58] INFO [logger] Température moyenne prévue: 8.0°C (sources: 1)
+[2026-02-11 21:20:58] INFO [logger] Distribution: {'3-': np.float64(0.0013), '4': np.float64(0.0085), '5': np.float64(0.038), '6': np.float64(0.1109), '7': np.float64(0.2108), '8': np.float64(0.2611), '9+': np.float64(0.3694)}
+[2026-02-11 21:21:00] DEBUG [logger] DEBUG get_price token 8661675552982478... — raw_bid={'price': '0.004'} raw_ask={'price': '0.005'}
+[2026-02-11 21:21:02] DEBUG [logger] DEBUG get_price token 4620753315495723... — raw_bid={'price': '0.016'} raw_ask={'price': '0.02'}
+[2026-02-11 21:21:04] DEBUG [logger] DEBUG get_price token 3286337015217719... — raw_bid={'price': '0.13'} raw_ask={'price': '0.15'}
+[2026-02-11 21:21:06] DEBUG [logger] DEBUG get_price token 5924727909342280... — raw_bid={'price': '0.33'} raw_ask={'price': '0.35'}
+[2026-02-11 21:21:08] DEBUG [logger] DEBUG get_price token 1069504866945724... — raw_bid={'price': '0.35'} raw_ask={'price': '0.4'}
+[2026-02-11 21:21:10] DEBUG [logger] DEBUG get_price token 1311487105883375... — raw_bid={'price': '0.123'} raw_ask={'price': '0.149'}
+[2026-02-11 21:21:12] DEBUG [logger] DEBUG get_price token 6793439873310057... — raw_bid={'price': '0.032'} raw_ask={'price': '0.033'}
+[2026-02-11 21:21:12] INFO [logger] Prix marché: {'3-': 0.0045000000000000005, '4': 0.018000000000000002, '5': 0.14, '6': 0.33999999999999997, '7': 0.375, '8': 0.136, '9+': 0.0325}
+[2026-02-11 21:21:12] DEBUG [logger] Tranche 3-: notre proba 0% < seuil 15%, skip
+[2026-02-11 21:21:12] DEBUG [logger] Tranche 4: notre proba 1% < seuil 15%, skip
+[2026-02-11 21:21:12] DEBUG [logger] Tranche 5: notre proba 4% < seuil 15%, skip
+[2026-02-11 21:21:12] DEBUG [logger] Tranche 6: notre proba 11% < seuil 15%, skip
+[2026-02-11 21:21:12] INFO [logger] Meilleur pari: tranche 9+ — edge 1019%, score 3.766, notre proba 37% vs marché 0.03
+[2026-02-11 21:21:12] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 9+°C @ 0.03 (edge: 1019%)
+[2026-02-11 21:21:12] INFO [logger] Pari enregistré pour 2026-02-13: tranche 9+ (simulated)
+[2026-02-11 21:21:13] INFO [logger] Telegram: message envoyé
+[2026-02-11 21:21:13] INFO [logger] ✅ Scan terminé
+[2026-02-12 01:15:23] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-12 01:15:25] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-12 01:15:28] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-14 (slug: highest-temperature-in-london-on-february-14-2026)
+[2026-02-12 01:15:28] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-12 01:15:28] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-12 01:15:28] INFO [logger] ⏭️ Déjà parié sur 2026-02-12, skip
+[2026-02-12 01:15:28] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-12 01:15:28] INFO [logger] ⏭️ Déjà parié sur 2026-02-13, skip
+[2026-02-12 01:15:28] INFO [logger] ✅ Scan terminé
+[2026-02-12 01:21:13] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-12 01:21:13] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-12 01:21:16] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-12 01:21:19] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-14 (slug: highest-temperature-in-london-on-february-14-2026)
+[2026-02-12 01:21:19] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-12 01:21:19] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-12 01:21:19] INFO [logger] ⏭️ Déjà parié sur 2026-02-12, skip
+[2026-02-12 01:21:19] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-12 01:21:19] INFO [logger] ⏭️ Déjà parié sur 2026-02-13, skip
+[2026-02-12 01:21:19] INFO [logger] ✅ Scan terminé
+[2026-02-12 19:11:41] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-12 19:11:43] INFO [logger] Telegram: message envoyé
+[2026-02-12 19:11:43] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-12 19:11:43] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-12 19:11:45] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-12 19:11:48] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-12 19:11:48] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-12 19:11:48] INFO [logger] ⏭️ Déjà parié sur 2026-02-12, skip
+[2026-02-12 19:11:48] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-12 19:11:48] INFO [logger] ⏭️ Déjà parié sur 2026-02-13, skip
+[2026-02-12 19:11:48] INFO [logger] --- Analyse du marché 2026-02-14 (Highest temperature in London on February 14?) ---
+[2026-02-12 19:11:49] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-12 19:11:50] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-12 19:11:50] INFO [logger] Température moyenne prévue: 6.1°C (sources: 1)
+[2026-02-12 19:11:50] INFO [logger] Distribution: {'5': np.float64(0.2015), '6': np.float64(0.2606), '10+': np.float64(0.0117), '2-': np.float64(0.0082), '4': np.float64(0.1015), '7': np.float64(0.2195), '8': np.float64(0.1205), '9': np.float64(0.0431), '3': np.float64(0.0333)}
+[2026-02-12 19:11:52] DEBUG [logger] DEBUG get_price token 2680495524108523... — raw_bid={'price': '0.15'} raw_ask={'price': '0.23'}
+[2026-02-12 19:11:54] DEBUG [logger] DEBUG get_price token 8935426282315729... — raw_bid={'price': '0.4'} raw_ask={'price': '0.43'}
+[2026-02-12 19:11:56] DEBUG [logger] DEBUG get_price token 2132383773302414... — raw_bid={'price': '0.011'} raw_ask={'price': '0.038'}
+[2026-02-12 19:11:58] DEBUG [logger] DEBUG get_price token 5330854003171763... — raw_bid={'price': '0.003'} raw_ask={'price': '0.007'}
+[2026-02-12 19:12:00] DEBUG [logger] DEBUG get_price token 1128485969113714... — raw_bid={'price': '0.03'} raw_ask={'price': '0.06'}
+[2026-02-12 19:12:02] DEBUG [logger] DEBUG get_price token 9840622730128419... — raw_bid={'price': '0.21'} raw_ask={'price': '0.28'}
+[2026-02-12 19:12:04] DEBUG [logger] DEBUG get_price token 4650052195861683... — raw_bid={'price': '0.07'} raw_ask={'price': '0.14'}
+[2026-02-12 19:12:05] DEBUG [logger] DEBUG get_price token 7422258981810143... — raw_bid={'price': '0.04'} raw_ask={'price': '0.05'}
+[2026-02-12 19:12:07] DEBUG [logger] DEBUG get_price token 2230596903917169... — raw_bid={'price': '0.005'} raw_ask={'price': '0.016'}
+[2026-02-12 19:12:07] INFO [logger] Prix marché: {'5': 0.19, '6': 0.41500000000000004, '10+': 0.0245, '2-': 0.005, '4': 0.045, '7': 0.245, '8': 0.10500000000000001, '9': 0.045, '3': 0.0105}
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 10+: notre proba 1% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 2-: notre proba 1% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 4: notre proba 10% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 8: notre proba 12% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 9: notre proba 4% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Tranche 3: notre proba 3% < seuil 15%, skip
+[2026-02-12 19:12:07] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-12 19:12:07] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-14
+[2026-02-12 19:12:08] INFO [logger] Telegram: message envoyé
+[2026-02-12 19:12:08] INFO [logger] ✅ Scan terminé
+[2026-02-12 23:12:08] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-12 23:12:08] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-12 23:12:10] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-12 23:12:13] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-12 23:12:13] INFO [logger] --- Analyse du marché 2026-02-12 (Highest temperature in London on February 12?) ---
+[2026-02-12 23:12:13] INFO [logger] ⏭️ Déjà parié sur 2026-02-12, skip
+[2026-02-12 23:12:13] INFO [logger] --- Analyse du marché 2026-02-13 (Highest temperature in London on February 13?) ---
+[2026-02-12 23:12:13] INFO [logger] ⏭️ Déjà parié sur 2026-02-13, skip
+[2026-02-12 23:12:13] INFO [logger] --- Analyse du marché 2026-02-14 (Highest temperature in London on February 14?) ---
+[2026-02-12 23:12:14] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-12 23:12:17] WARNING [logger] Weather Underground: scraping non implémenté (fallback Open-Meteo)
+[2026-02-12 23:12:17] INFO [logger] Température moyenne prévue: 5.9°C (sources: 1)
+[2026-02-12 23:12:17] INFO [logger] Distribution: {'5': np.float64(0.2195), '6': np.float64(0.2606), '10+': np.float64(0.0082), '2-': np.float64(0.0117), '4': np.float64(0.1205), '7': np.float64(0.2015), '8': np.float64(0.1015), '9': np.float64(0.0333), '3': np.float64(0.0431)}
+[2026-02-12 23:12:18] DEBUG [logger] DEBUG get_price token 2680495524108523... — raw_bid={'price': '0.13'} raw_ask={'price': '0.25'}
+[2026-02-12 23:12:20] DEBUG [logger] DEBUG get_price token 8935426282315729... — raw_bid={'price': '0.36'} raw_ask={'price': '0.4'}
+[2026-02-12 23:12:22] DEBUG [logger] DEBUG get_price token 2132383773302414... — raw_bid={'price': '0.014'} raw_ask={'price': '0.04'}
+[2026-02-12 23:12:24] DEBUG [logger] DEBUG get_price token 5330854003171763... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-02-12 23:12:26] DEBUG [logger] DEBUG get_price token 1128485969113714... — raw_bid={'price': '0.013'} raw_ask={'price': '0.057'}
+[2026-02-12 23:12:28] DEBUG [logger] DEBUG get_price token 9840622730128419... — raw_bid={'price': '0.27'} raw_ask={'price': '0.28'}
+[2026-02-12 23:12:29] DEBUG [logger] DEBUG get_price token 4650052195861683... — raw_bid={'price': '0.11'} raw_ask={'price': '0.13'}
+[2026-02-12 23:12:31] DEBUG [logger] DEBUG get_price token 7422258981810143... — raw_bid={'price': '0.03'} raw_ask={'price': '0.04'}
+[2026-02-12 23:12:33] DEBUG [logger] DEBUG get_price token 2230596903917169... — raw_bid={'price': '0.002'} raw_ask={'price': '0.003'}
+[2026-02-12 23:12:33] INFO [logger] Prix marché: {'5': 0.19, '6': 0.38, '10+': 0.027, '2-': 0.004, '4': 0.035, '7': 0.275, '8': 0.12, '9': 0.035, '3': 0.0025}
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 10+: notre proba 1% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 2-: notre proba 1% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 4: notre proba 12% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 8: notre proba 10% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 9: notre proba 3% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Tranche 3: notre proba 4% < seuil 15%, skip
+[2026-02-12 23:12:33] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-12 23:12:33] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-14
+[2026-02-12 23:12:34] INFO [logger] Telegram: message envoyé
+[2026-02-12 23:12:34] INFO [logger] ✅ Scan terminé
+[2026-02-16 18:34:22] INFO [logger] Weather Underground: prévisions récupérées pour 6 jours
+[2026-02-16 18:34:54] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:34:55] INFO [logger] Weather Underground: prévisions récupérées pour 6 jours
+[2026-02-16 18:34:55] INFO [logger] Température pondérée: 6.9°C (WU=7.0°C×60% + OM=6.8°C×40%)
+[2026-02-16 18:34:55] INFO [logger] Température Open-Meteo seule (fallback): 6.8°C
+[2026-02-16 18:37:21] INFO [logger] Weather Underground: prévisions récupérées pour 6 jours
+[2026-02-16 18:37:22] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:37:23] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:37:24] INFO [logger] Weather Underground: prévisions récupérées pour 6 jours
+[2026-02-16 18:37:24] INFO [logger] Température pondérée: 6.9°C (WU=7.0°C×60% + OM=6.8°C×40%)
+[2026-02-16 18:37:24] INFO [logger] Température Open-Meteo seule (fallback): 6.8°C
+[2026-02-16 18:53:20] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-16 18:53:21] INFO [logger] Telegram: message envoyé
+[2026-02-16 18:53:21] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-16 18:53:21] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-16 18:53:21] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-16 18:53:22] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-16 18:53:22] INFO [logger] --- Analyse du marché 2026-02-16 (Highest temperature in London on February 16?) ---
+[2026-02-16 18:53:22] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:53:22] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 18:53:22] INFO [logger] Température Open-Meteo seule (fallback): 9.3°C
+[2026-02-16 18:53:22] INFO [logger] Distribution: {'4-': np.float64(0.0), '5': np.float64(0.0), '6': np.float64(0.0), '7': np.float64(0.0002), '8': np.float64(0.0546), '9': np.float64(0.6006), '10': np.float64(0.3364), '11': np.float64(0.0082), '12+': np.float64(0.0)}
+[2026-02-16 18:53:22] WARNING [logger] Polymarket: prix indisponible token 1679861629717637... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:22] INFO [logger] Tranche 4-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:22] WARNING [logger] Polymarket: prix indisponible token 9397796096818085... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:22] INFO [logger] Tranche 5: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:22] WARNING [logger] Polymarket: prix indisponible token 4048436180653233... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:22] INFO [logger] Tranche 6: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:22] WARNING [logger] Polymarket: prix indisponible token 3668165604167508... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:22] INFO [logger] Tranche 7: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:22] WARNING [logger] Polymarket: prix indisponible token 1011189036967218... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:22] INFO [logger] Tranche 8: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:23] WARNING [logger] Polymarket: prix indisponible token 9975441926736639... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 18:53:23] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 18:53:23] DEBUG [logger] DEBUG get_price token 2723459452271771... — raw_bid={'price': '0.998'} raw_ask={'price': '0.999'}
+[2026-02-16 18:53:23] DEBUG [logger] DEBUG get_price token 2120078471868035... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 18:53:23] DEBUG [logger] DEBUG get_price token 3651985005583711... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 18:53:23] INFO [logger] Prix marché: {'10': 0.9984999999999999, '11': 0.0005, '12+': 0.0005}
+[2026-02-16 18:53:23] DEBUG [logger] Tranche 11: notre proba 1% < seuil 25%, skip
+[2026-02-16 18:53:23] DEBUG [logger] Tranche 12+: notre proba 0% < seuil 25%, skip
+[2026-02-16 18:53:23] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 18:53:23] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-16
+[2026-02-16 18:53:24] INFO [logger] Telegram: message envoyé
+[2026-02-16 18:53:24] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-16 18:53:24] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:53:24] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 18:53:24] INFO [logger] Température Open-Meteo seule (fallback): 6.8°C
+[2026-02-16 18:53:24] INFO [logger] Distribution: {'3-': np.float64(0.0005), '4': np.float64(0.0102), '5': np.float64(0.0861), '6': np.float64(0.2853), '7': np.float64(0.3759), '8': np.float64(0.1974), '9': np.float64(0.0411), '10': np.float64(0.0034), '11+': np.float64(0.0001)}
+[2026-02-16 18:53:24] DEBUG [logger] DEBUG get_price token 3673164111431402... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 18:53:24] DEBUG [logger] DEBUG get_price token 3304292769315809... — raw_bid={'price': '0.001'} raw_ask={'price': '0.005'}
+[2026-02-16 18:53:25] DEBUG [logger] DEBUG get_price token 3827605094477231... — raw_bid={'price': '0.017'} raw_ask={'price': '0.022'}
+[2026-02-16 18:53:25] DEBUG [logger] DEBUG get_price token 8961538869786554... — raw_bid={'price': '0.17'} raw_ask={'price': '0.21'}
+[2026-02-16 18:53:25] DEBUG [logger] DEBUG get_price token 7702329056883578... — raw_bid={'price': '0.5'} raw_ask={'price': '0.51'}
+[2026-02-16 18:53:26] DEBUG [logger] DEBUG get_price token 5086354521067056... — raw_bid={'price': '0.21'} raw_ask={'price': '0.23'}
+[2026-02-16 18:53:26] DEBUG [logger] DEBUG get_price token 6332511351060467... — raw_bid={'price': '0.02'} raw_ask={'price': '0.029'}
+[2026-02-16 18:53:26] DEBUG [logger] DEBUG get_price token 2157510760522661... — raw_bid={'price': '0.016'} raw_ask={'price': '0.017'}
+[2026-02-16 18:53:26] DEBUG [logger] DEBUG get_price token 5271813190642487... — raw_bid={'price': '0.003'} raw_ask={'price': '0.004'}
+[2026-02-16 18:53:26] INFO [logger] Prix marché: {'3-': 0.0005, '4': 0.003, '5': 0.0195, '6': 0.19, '7': 0.505, '8': 0.22, '9': 0.0245, '10': 0.0165, '11+': 0.0035}
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 3-: notre proba 0% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 4: notre proba 1% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 5: notre proba 9% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 10: notre proba 0% < seuil 25%, skip
+[2026-02-16 18:53:26] DEBUG [logger] Tranche 11+: notre proba 0% < seuil 25%, skip
+[2026-02-16 18:53:26] INFO [logger] Meilleur pari: tranche 6 — edge 36%, score 0.029, notre proba 29% vs marché 0.21
+[2026-02-16 18:53:26] INFO [logger] 🧪 DRY RUN — Pari simulé: 10.0$ sur 6°C @ 0.21 (edge: 36%)
+[2026-02-16 18:53:26] INFO [logger] Pari enregistré pour 2026-02-17: tranche 6 (simulated)
+[2026-02-16 18:53:27] INFO [logger] Telegram: message envoyé
+[2026-02-16 18:53:27] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-16 18:53:27] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 18:53:27] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 18:53:27] INFO [logger] Température Open-Meteo seule (fallback): 4.9°C
+[2026-02-16 18:53:27] INFO [logger] Distribution: {'1-': np.float64(0.0117), '2': np.float64(0.0431), '3': np.float64(0.1205), '4': np.float64(0.2195), '5': np.float64(0.2606), '6': np.float64(0.2015), '7': np.float64(0.1015), '8': np.float64(0.0333), '9+': np.float64(0.0082)}
+[2026-02-16 18:53:27] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0.002'} raw_ask={'price': '0.004'}
+[2026-02-16 18:53:27] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.002'} raw_ask={'price': '0.005'}
+[2026-02-16 18:53:28] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.012'} raw_ask={'price': '0.019'}
+[2026-02-16 18:53:28] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.07'} raw_ask={'price': '0.08'}
+[2026-02-16 18:53:28] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.14'} raw_ask={'price': '0.33'}
+[2026-02-16 18:53:28] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.39'} raw_ask={'price': '0.46'}
+[2026-02-16 18:53:29] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.16'} raw_ask={'price': '0.18'}
+[2026-02-16 18:53:29] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.03'} raw_ask={'price': '0.06'}
+[2026-02-16 18:53:29] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.016'} raw_ask={'price': '0.029'}
+[2026-02-16 18:53:29] INFO [logger] Prix marché: {'1-': 0.003, '2': 0.0035, '3': 0.0155, '4': 0.07500000000000001, '5': 0.23500000000000001, '6': 0.42500000000000004, '7': 0.16999999999999998, '8': 0.045, '9+': 0.0225}
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 1-: notre proba 1% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 2: notre proba 4% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 3: notre proba 12% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 4: notre proba 22% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 5: spread trop large (0.19), skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 6: notre proba 20% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 7: notre proba 10% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 8: notre proba 3% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Tranche 9+: notre proba 1% < seuil 25%, skip
+[2026-02-16 18:53:29] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 18:53:29] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-18
+[2026-02-16 18:53:30] INFO [logger] Telegram: message envoyé
+[2026-02-16 18:53:30] INFO [logger] ✅ Scan terminé
+[2026-02-16 19:02:07] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🧪 DRY RUN) — scan toutes les 4h
+[2026-02-16 19:02:07] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:02:07] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-16 19:02:07] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-16 19:02:08] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-16 19:02:08] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-16 19:02:08] INFO [logger] --- Analyse du marché 2026-02-16 (Highest temperature in London on February 16?) ---
+[2026-02-16 19:02:08] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 19:02:08] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 19:02:08] INFO [logger] Température Open-Meteo seule (fallback): 9.3°C
+[2026-02-16 19:02:08] INFO [logger] Distribution: {'4-': np.float64(0.0), '5': np.float64(0.0), '6': np.float64(0.0), '7': np.float64(0.0002), '8': np.float64(0.0546), '9': np.float64(0.6006), '10': np.float64(0.3364), '11': np.float64(0.0082), '12+': np.float64(0.0)}
+[2026-02-16 19:02:08] WARNING [logger] Polymarket: prix indisponible token 1679861629717637... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:08] INFO [logger] Tranche 4-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] WARNING [logger] Polymarket: prix indisponible token 9397796096818085... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:09] INFO [logger] Tranche 5: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] WARNING [logger] Polymarket: prix indisponible token 4048436180653233... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:09] INFO [logger] Tranche 6: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] WARNING [logger] Polymarket: prix indisponible token 3668165604167508... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:09] INFO [logger] Tranche 7: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] WARNING [logger] Polymarket: prix indisponible token 1011189036967218... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:09] INFO [logger] Tranche 8: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] WARNING [logger] Polymarket: prix indisponible token 9975441926736639... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:02:09] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:02:09] DEBUG [logger] DEBUG get_price token 2723459452271771... — raw_bid={'price': '0.998'} raw_ask={'price': '1'}
+[2026-02-16 19:02:10] DEBUG [logger] DEBUG get_price token 2120078471868035... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 19:02:10] DEBUG [logger] DEBUG get_price token 3651985005583711... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 19:02:10] INFO [logger] Prix marché: {'10': 0.999, '11': 0.0005, '12+': 0.0005}
+[2026-02-16 19:02:10] DEBUG [logger] Tranche 11: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:02:10] DEBUG [logger] Tranche 12+: notre proba 0% < seuil 25%, skip
+[2026-02-16 19:02:10] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 19:02:10] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-16
+[2026-02-16 19:02:10] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:02:10] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-16 19:02:10] INFO [logger] ⏭️ Déjà parié sur 2026-02-17, skip
+[2026-02-16 19:02:10] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-16 19:02:10] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 19:02:10] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 19:02:10] INFO [logger] Température Open-Meteo seule (fallback): 4.9°C
+[2026-02-16 19:02:10] INFO [logger] Distribution: {'1-': np.float64(0.0117), '2': np.float64(0.0431), '3': np.float64(0.1205), '4': np.float64(0.2195), '5': np.float64(0.2606), '6': np.float64(0.2015), '7': np.float64(0.1015), '8': np.float64(0.0333), '9+': np.float64(0.0082)}
+[2026-02-16 19:02:11] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0.003'} raw_ask={'price': '0.004'}
+[2026-02-16 19:02:11] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.002'} raw_ask={'price': '0.005'}
+[2026-02-16 19:02:11] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.015'} raw_ask={'price': '0.019'}
+[2026-02-16 19:02:12] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.07'} raw_ask={'price': '0.08'}
+[2026-02-16 19:02:12] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.16'} raw_ask={'price': '0.34'}
+[2026-02-16 19:02:12] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.4'} raw_ask={'price': '0.46'}
+[2026-02-16 19:02:12] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.17'} raw_ask={'price': '0.18'}
+[2026-02-16 19:02:13] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.03'} raw_ask={'price': '0.06'}
+[2026-02-16 19:02:13] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.016'} raw_ask={'price': '0.029'}
+[2026-02-16 19:02:13] INFO [logger] Prix marché: {'1-': 0.0035, '2': 0.0035, '3': 0.017, '4': 0.07500000000000001, '5': 0.25, '6': 0.43000000000000005, '7': 0.175, '8': 0.045, '9+': 0.0225}
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 1-: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 2: notre proba 4% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 3: notre proba 12% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 4: notre proba 22% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 5: spread trop large (0.18), skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 6: notre proba 20% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 7: notre proba 10% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 8: notre proba 3% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Tranche 9+: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:02:13] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 19:02:13] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-18
+[2026-02-16 19:02:13] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:02:13] INFO [logger] ✅ Scan terminé
+[2026-02-16 19:03:54] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🔴 LIVE) — scan toutes les 4h
+[2026-02-16 19:03:55] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:03:55] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-16 19:03:55] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-16 19:03:55] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-16 19:03:55] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-16 19:03:55] INFO [logger] --- Analyse du marché 2026-02-16 (Highest temperature in London on February 16?) ---
+[2026-02-16 19:03:55] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 19:03:55] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 19:03:55] INFO [logger] Température Open-Meteo seule (fallback): 9.3°C
+[2026-02-16 19:03:55] INFO [logger] Distribution: {'4-': np.float64(0.0), '5': np.float64(0.0), '6': np.float64(0.0), '7': np.float64(0.0002), '8': np.float64(0.0546), '9': np.float64(0.6006), '10': np.float64(0.3364), '11': np.float64(0.0082), '12+': np.float64(0.0)}
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 1679861629717637... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 4-: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 9397796096818085... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 5: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 4048436180653233... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 6: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 3668165604167508... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 7: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 1011189036967218... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 8: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:56] WARNING [logger] Polymarket: prix indisponible token 9975441926736639... — PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]
+[2026-02-16 19:03:56] INFO [logger] Tranche 9: prix indisponible (token résolu?), exclue de l'analyse
+[2026-02-16 19:03:57] DEBUG [logger] DEBUG get_price token 2723459452271771... — raw_bid={'price': '0.998'} raw_ask={'price': '1'}
+[2026-02-16 19:03:57] DEBUG [logger] DEBUG get_price token 2120078471868035... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 19:03:57] DEBUG [logger] DEBUG get_price token 3651985005583711... — raw_bid={'price': '0'} raw_ask={'price': '0.001'}
+[2026-02-16 19:03:57] INFO [logger] Prix marché: {'10': 0.999, '11': 0.0005, '12+': 0.0005}
+[2026-02-16 19:03:57] DEBUG [logger] Tranche 11: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:03:57] DEBUG [logger] Tranche 12+: notre proba 0% < seuil 25%, skip
+[2026-02-16 19:03:57] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 19:03:57] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-16
+[2026-02-16 19:03:57] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:03:57] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-16 19:03:57] INFO [logger] ⏭️ Déjà parié sur 2026-02-17, skip
+[2026-02-16 19:03:57] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-16 19:03:58] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-16 19:03:58] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-16 19:03:58] INFO [logger] Température Open-Meteo seule (fallback): 4.9°C
+[2026-02-16 19:03:58] INFO [logger] Distribution: {'1-': np.float64(0.0117), '2': np.float64(0.0431), '3': np.float64(0.1205), '4': np.float64(0.2195), '5': np.float64(0.2606), '6': np.float64(0.2015), '7': np.float64(0.1015), '8': np.float64(0.0333), '9+': np.float64(0.0082)}
+[2026-02-16 19:03:58] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0.003'} raw_ask={'price': '0.004'}
+[2026-02-16 19:03:58] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.003'} raw_ask={'price': '0.005'}
+[2026-02-16 19:03:58] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.016'} raw_ask={'price': '0.019'}
+[2026-02-16 19:03:59] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.07'} raw_ask={'price': '0.08'}
+[2026-02-16 19:03:59] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.18'} raw_ask={'price': '0.34'}
+[2026-02-16 19:03:59] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.4'} raw_ask={'price': '0.46'}
+[2026-02-16 19:04:00] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.16'} raw_ask={'price': '0.18'}
+[2026-02-16 19:04:00] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.031'} raw_ask={'price': '0.06'}
+[2026-02-16 19:04:00] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.017'} raw_ask={'price': '0.029'}
+[2026-02-16 19:04:00] INFO [logger] Prix marché: {'1-': 0.0035, '2': 0.004, '3': 0.0175, '4': 0.07500000000000001, '5': 0.26, '6': 0.43000000000000005, '7': 0.16999999999999998, '8': 0.0455, '9+': 0.023}
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 1-: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 2: notre proba 4% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 3: notre proba 12% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 4: notre proba 22% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 5: spread trop large (0.16), skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 6: notre proba 20% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 7: notre proba 10% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 8: notre proba 3% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Tranche 9+: notre proba 1% < seuil 25%, skip
+[2026-02-16 19:04:00] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-16 19:04:00] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-18
+[2026-02-16 19:04:01] INFO [logger] Telegram: message envoyé
+[2026-02-16 19:04:01] INFO [logger] ✅ Scan terminé
+[2026-02-16 19:21:35] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-16 20:49:10] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-16 20:49:11] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-16 20:49:11] INFO [logger] Ensemble: 50 membres, moyenne=6.4°C, spread=1.9°C
+[2026-02-16 21:15:56] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🔴 LIVE) — scan toutes les 2h
+[2026-02-16 21:15:56] INFO [logger] Telegram: message envoyé
+[2026-02-16 21:15:56] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-16 21:15:56] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-16 21:15:57] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-16 21:15:57] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-16 21:15:57] INFO [logger] --- Analyse du marché 2026-02-16 (Highest temperature in London on February 16?) ---
+[2026-02-16 21:15:57] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-16 (j0_morning_only), skip
+[2026-02-16 21:15:57] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-16 21:15:57] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+1), skip
+[2026-02-16 21:15:57] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-16 21:15:57] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j2_morning), skip
+[2026-02-16 21:15:57] INFO [logger] ✅ Scan terminé
+[2026-02-16 23:15:57] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-16 23:15:57] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-16 23:15:57] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-16 23:15:58] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-16 23:15:58] INFO [logger] --- Analyse du marché 2026-02-16 (Highest temperature in London on February 16?) ---
+[2026-02-16 23:15:58] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-16 (j0_morning_only), skip
+[2026-02-16 23:15:58] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-16 23:15:58] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+1), skip
+[2026-02-16 23:15:58] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-16 23:15:58] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j2_morning), skip
+[2026-02-16 23:15:58] INFO [logger] ✅ Scan terminé
+[2026-02-17 01:15:58] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 01:15:58] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 01:15:58] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 01:15:59] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 01:15:59] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 01:15:59] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 01:15:59] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 01:15:59] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 01:15:59] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j1_afternoon), skip
+[2026-02-17 01:15:59] INFO [logger] ✅ Scan terminé
+[2026-02-17 03:15:59] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 03:15:59] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 03:15:59] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 03:16:00] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 03:16:00] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 03:16:00] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 03:16:00] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 03:16:00] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 03:16:00] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j1_afternoon), skip
+[2026-02-17 03:16:00] INFO [logger] ✅ Scan terminé
+[2026-02-17 05:16:00] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 05:16:00] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 05:16:00] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 05:16:00] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 05:16:00] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 05:16:00] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 05:16:00] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 05:16:00] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 05:16:00] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j1_afternoon), skip
+[2026-02-17 05:16:00] INFO [logger] ✅ Scan terminé
+[2026-02-17 07:16:00] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 07:16:00] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 07:16:01] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 07:16:01] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 07:16:01] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 07:16:01] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 07:16:01] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 07:16:01] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 07:16:01] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j1_afternoon), skip
+[2026-02-17 07:16:01] INFO [logger] ✅ Scan terminé
+[2026-02-17 07:57:17] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🔴 LIVE) — scan toutes les 2h
+[2026-02-17 07:57:17] INFO [logger] Telegram: message envoyé
+[2026-02-17 07:57:17] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 07:57:17] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 07:57:18] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 07:57:18] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 07:57:18] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 07:57:18] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 07:57:18] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 07:57:18] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 07:57:18] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j1_afternoon), skip
+[2026-02-17 07:57:18] INFO [logger] ✅ Scan terminé
+[2026-02-17 08:21:58] INFO [logger] 🤖 Bot Polymarket Météo London démarré (🔴 LIVE) — scan toutes les 2h
+[2026-02-17 08:21:58] INFO [logger] Telegram: message envoyé
+[2026-02-17 08:21:58] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 08:21:58] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 08:21:59] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 08:21:59] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 08:21:59] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 08:21:59] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 08:21:59] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 08:21:59] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 08:21:59] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 08:21:59] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 08:21:59] INFO [logger] Température Open-Meteo seule (fallback): 5.4°C
+[2026-02-17 08:22:00] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 08:22:00] INFO [logger] Ensemble: 50 membres, moyenne=6.1°C, spread=4.9°C
+[2026-02-17 08:22:00] INFO [logger] Distribution (ensemble): {'1-': 0.0, '2': 0.0, '3': 0.0, '4': 0.02, '5': 0.28, '6': 0.48, '7': 0.1, '8': 0.08, '9+': 0.04}
+[2026-02-17 08:22:00] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0'} raw_ask={'price': '0.005'}
+[2026-02-17 08:22:00] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.003'} raw_ask={'price': '0.005'}
+[2026-02-17 08:22:00] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.005'} raw_ask={'price': '0.01'}
+[2026-02-17 08:22:01] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.04'} raw_ask={'price': '0.06'}
+[2026-02-17 08:22:01] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.24'} raw_ask={'price': '0.26'}
+[2026-02-17 08:22:01] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.42'} raw_ask={'price': '0.44'}
+[2026-02-17 08:22:01] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.19'} raw_ask={'price': '0.21'}
+[2026-02-17 08:22:02] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.037'} raw_ask={'price': '0.076'}
+[2026-02-17 08:22:02] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.009'} raw_ask={'price': '0.016'}
+[2026-02-17 08:22:02] INFO [logger] Prix marché: {'1-': 0.0025, '2': 0.004, '3': 0.0075, '4': 0.05, '5': 0.25, '6': 0.43, '7': 0.2, '8': 0.056499999999999995, '9+': 0.0125}
+[2026-02-17 08:22:02] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 1-: notre proba 0% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 2: notre proba 0% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 7: notre proba 10% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 8: notre proba 8% < seuil 25%, skip
+[2026-02-17 08:22:02] DEBUG [logger] Tranche 9+: notre proba 4% < seuil 25%, skip
+[2026-02-17 08:22:02] INFO [logger] Override: tranche la plus probable 6 (48%) a un edge de 9% — priorité forcée
+[2026-02-17 08:22:02] INFO [logger] Meilleur pari: tranche 6 — edge 9%, score 0.021, notre proba 48% vs marché 0.44
+[2026-02-17 08:22:02] INFO [logger] Kelly dit de ne pas parier (taille = 0), skip
+[2026-02-17 08:22:02] INFO [logger] ✅ Scan terminé
+[2026-02-17 10:22:02] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 10:22:02] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 10:22:02] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 10:22:03] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 10:22:03] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-19 (slug: highest-temperature-in-london-on-february-19-2026)
+[2026-02-17 10:22:03] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-17 10:22:03] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 10:22:03] INFO [logger] ⏭️ Déjà parié sur 2026-02-17 (J+0), skip
+[2026-02-17 10:22:03] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 10:22:03] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 10:22:03] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 10:22:03] INFO [logger] Température Open-Meteo seule (fallback): 5.4°C
+[2026-02-17 10:22:04] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 10:22:04] INFO [logger] Ensemble: 50 membres, moyenne=5.5°C, spread=1.9°C
+[2026-02-17 10:22:04] INFO [logger] Distribution (ensemble): {'1-': 0.0, '2': 0.0, '3': 0.0, '4': 0.0, '5': 0.46, '6': 0.52, '7': 0.02, '8': 0.0, '9+': 0.0}
+[2026-02-17 10:22:04] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0'} raw_ask={'price': '0.004'}
+[2026-02-17 10:22:04] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.003'} raw_ask={'price': '0.005'}
+[2026-02-17 10:22:04] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.007'} raw_ask={'price': '0.012'}
+[2026-02-17 10:22:05] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.051'} raw_ask={'price': '0.069'}
+[2026-02-17 10:22:05] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.22'} raw_ask={'price': '0.25'}
+[2026-02-17 10:22:05] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.5'} raw_ask={'price': '0.53'}
+[2026-02-17 10:22:06] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.16'} raw_ask={'price': '0.18'}
+[2026-02-17 10:22:06] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.02'} raw_ask={'price': '0.038'}
+[2026-02-17 10:22:06] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.008'} raw_ask={'price': '0.016'}
+[2026-02-17 10:22:06] INFO [logger] Prix marché: {'1-': 0.002, '2': 0.004, '3': 0.0095, '4': 0.06, '5': 0.235, '6': 0.515, '7': 0.16999999999999998, '8': 0.028999999999999998, '9+': 0.012}
+[2026-02-17 10:22:06] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 1-: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 2: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 4: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 7: notre proba 2% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 8: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] DEBUG [logger] Tranche 9+: notre proba 0% < seuil 25%, skip
+[2026-02-17 10:22:06] INFO [logger] Meilleur pari: tranche 5 — edge 84%, score 0.178, notre proba 46% vs marché 0.25
+[2026-02-17 10:22:06] INFO [logger] 💵 Kelly sizing: 3.50$ (bankroll=50.0$, fraction=0.25, max=5.0$)
+[2026-02-17 10:22:06] INFO [logger] 💰 Placement pari: 3.50$ sur 5°C @ 0.25 (edge: 84%) [ensemble, J+1]
+[2026-02-17 10:22:07] ERROR [logger] Trader: erreur placement ordre — PolyApiException[status_code=403, error_message={'error': 'Trading restricted in your region, please refer to available regions - https://docs.polymarket.com/developers/CLOB/geoblock'}]
+[2026-02-17 10:22:07] INFO [logger] Pari enregistré pour 2026-02-18: tranche 5 (placed)
+[2026-02-17 10:22:07] INFO [logger] Telegram: message envoyé
+[2026-02-17 10:22:07] INFO [logger] ✅ Scan terminé
+[2026-02-17 12:22:07] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 12:22:07] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 12:22:07] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 12:22:07] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 12:22:08] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 12:22:08] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 12:22:08] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 12:22:08] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 12:22:08] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 12:22:08] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 12:22:08] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 12:22:08] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 12:22:08] INFO [logger] Température Open-Meteo seule (fallback): 5.8°C
+[2026-02-17 12:22:08] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 12:22:08] INFO [logger] Ensemble: 50 membres, moyenne=6.1°C, spread=6.4°C
+[2026-02-17 12:22:08] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.04, '4': 0.08, '5': 0.16, '6': 0.36, '7': 0.22, '8': 0.1, '9': 0.04, '10+': 0.0}
+[2026-02-17 12:22:08] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.001'} raw_ask={'price': '0.03'}
+[2026-02-17 12:22:08] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.01'} raw_ask={'price': '0.04'}
+[2026-02-17 12:22:09] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.01'} raw_ask={'price': '0.02'}
+[2026-02-17 12:22:09] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.14'} raw_ask={'price': '0.67'}
+[2026-02-17 12:22:09] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.2'} raw_ask={'price': '0.67'}
+[2026-02-17 12:22:10] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.47'} raw_ask={'price': '0.67'}
+[2026-02-17 12:22:10] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.13'} raw_ask={'price': '0.53'}
+[2026-02-17 12:22:10] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.02'} raw_ask={'price': '0.59'}
+[2026-02-17 12:22:10] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.01'} raw_ask={'price': '0.04'}
+[2026-02-17 12:22:10] INFO [logger] Prix marché: {'2-': 0.0155, '3': 0.025, '4': 0.015, '5': 0.405, '6': 0.43500000000000005, '7': 0.5700000000000001, '8': 0.33, '9': 0.305, '10+': 0.025}
+[2026-02-17 12:22:10] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 3: notre proba 4% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 4: notre proba 8% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 5: notre proba 16% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 6: spread trop large (0.47), skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 7: notre proba 22% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 8: notre proba 10% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Tranche 10+: notre proba 0% < seuil 25%, skip
+[2026-02-17 12:22:10] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-17 12:22:10] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 12:22:11] INFO [logger] Telegram: message envoyé
+[2026-02-17 12:22:11] INFO [logger] ✅ Scan terminé
+[2026-02-17 14:22:11] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 14:22:11] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 14:22:11] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 14:22:11] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 14:22:12] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 14:22:12] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 14:22:12] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 14:22:12] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 14:22:12] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 14:22:12] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 14:22:12] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 14:22:12] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 14:22:12] INFO [logger] Température Open-Meteo seule (fallback): 5.8°C
+[2026-02-17 14:22:12] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 14:22:12] INFO [logger] Ensemble: 50 membres, moyenne=6.1°C, spread=6.4°C
+[2026-02-17 14:22:12] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.04, '4': 0.08, '5': 0.16, '6': 0.36, '7': 0.22, '8': 0.1, '9': 0.04, '10+': 0.0}
+[2026-02-17 14:22:12] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-17 14:22:13] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.005'} raw_ask={'price': '0.049'}
+[2026-02-17 14:22:13] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.013'} raw_ask={'price': '0.109'}
+[2026-02-17 14:22:13] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.05'} raw_ask={'price': '0.22'}
+[2026-02-17 14:22:13] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.35'} raw_ask={'price': '0.39'}
+[2026-02-17 14:22:14] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.36'} raw_ask={'price': '0.43'}
+[2026-02-17 14:22:14] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.06'} raw_ask={'price': '0.15'}
+[2026-02-17 14:22:14] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.027'} raw_ask={'price': '0.119'}
+[2026-02-17 14:22:14] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.011'} raw_ask={'price': '0.029'}
+[2026-02-17 14:22:14] INFO [logger] Prix marché: {'2-': 0.006, '3': 0.027, '4': 0.061, '5': 0.135, '6': 0.37, '7': 0.395, '8': 0.105, '9': 0.073, '10+': 0.02}
+[2026-02-17 14:22:14] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 3: notre proba 4% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 4: notre proba 8% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 5: notre proba 16% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 7: notre proba 22% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 8: notre proba 10% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Tranche 10+: notre proba 0% < seuil 25%, skip
+[2026-02-17 14:22:14] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-17 14:22:14] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 14:22:15] INFO [logger] Telegram: message envoyé
+[2026-02-17 14:22:15] INFO [logger] ✅ Scan terminé
+[2026-02-17 16:22:15] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 16:22:15] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 16:22:15] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 16:22:15] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 16:22:15] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 16:22:15] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 16:22:15] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 16:22:15] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 16:22:15] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 16:22:15] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 16:22:16] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 16:22:16] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 16:22:16] INFO [logger] Température Open-Meteo seule (fallback): 6.9°C
+[2026-02-17 16:22:16] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 16:22:16] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=6.6°C
+[2026-02-17 16:22:16] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.08, '5': 0.16, '6': 0.18, '7': 0.22, '8': 0.2, '9': 0.06, '10+': 0.1}
+[2026-02-17 16:22:16] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.004'} raw_ask={'price': '0.009'}
+[2026-02-17 16:22:17] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.01'} raw_ask={'price': '0.037'}
+[2026-02-17 16:22:17] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.014'} raw_ask={'price': '0.03'}
+[2026-02-17 16:22:17] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.1'} raw_ask={'price': '0.17'}
+[2026-02-17 16:22:17] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.35'} raw_ask={'price': '0.4'}
+[2026-02-17 16:22:18] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.38'} raw_ask={'price': '0.41'}
+[2026-02-17 16:22:18] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.09'} raw_ask={'price': '0.13'}
+[2026-02-17 16:22:18] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.026'} raw_ask={'price': '0.089'}
+[2026-02-17 16:22:19] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.01'} raw_ask={'price': '0.018'}
+[2026-02-17 16:22:19] INFO [logger] Prix marché: {'2-': 0.0065, '3': 0.0235, '4': 0.022, '5': 0.135, '6': 0.375, '7': 0.395, '8': 0.11, '9': 0.057499999999999996, '10+': 0.013999999999999999}
+[2026-02-17 16:22:19] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 4: notre proba 8% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 5: notre proba 16% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 6: notre proba 18% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 7: notre proba 22% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 9: notre proba 6% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Tranche 10+: notre proba 10% < seuil 25%, skip
+[2026-02-17 16:22:19] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-17 16:22:19] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 16:22:19] INFO [logger] Telegram: message envoyé
+[2026-02-17 16:22:19] INFO [logger] ✅ Scan terminé
+[2026-02-17 18:22:19] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 18:22:19] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 18:22:19] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 18:22:19] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 18:22:20] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 18:22:20] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 18:22:20] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 18:22:20] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 18:22:20] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 18:22:20] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 18:22:20] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 18:22:20] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 18:22:20] INFO [logger] Température Open-Meteo seule (fallback): 5.7°C
+[2026-02-17 18:22:20] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 18:22:20] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=6.6°C
+[2026-02-17 18:22:20] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.08, '5': 0.16, '6': 0.18, '7': 0.22, '8': 0.2, '9': 0.06, '10+': 0.1}
+[2026-02-17 18:22:20] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.005'} raw_ask={'price': '0.009'}
+[2026-02-17 18:22:21] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.008'} raw_ask={'price': '0.026'}
+[2026-02-17 18:22:21] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.015'} raw_ask={'price': '0.049'}
+[2026-02-17 18:22:21] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.11'} raw_ask={'price': '0.16'}
+[2026-02-17 18:22:22] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.32'} raw_ask={'price': '0.39'}
+[2026-02-17 18:22:22] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.39'} raw_ask={'price': '0.45'}
+[2026-02-17 18:22:22] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.09'} raw_ask={'price': '0.1'}
+[2026-02-17 18:22:22] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.011'} raw_ask={'price': '0.099'}
+[2026-02-17 18:22:23] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.023'} raw_ask={'price': '0.025'}
+[2026-02-17 18:22:23] INFO [logger] Prix marché: {'2-': 0.006999999999999999, '3': 0.017, '4': 0.032, '5': 0.135, '6': 0.355, '7': 0.42000000000000004, '8': 0.095, '9': 0.055, '10+': 0.024}
+[2026-02-17 18:22:23] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 4: notre proba 8% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 5: notre proba 16% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 6: notre proba 18% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 7: notre proba 22% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 9: notre proba 6% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Tranche 10+: notre proba 10% < seuil 25%, skip
+[2026-02-17 18:22:23] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-17 18:22:23] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 18:22:23] INFO [logger] Telegram: message envoyé
+[2026-02-17 18:22:23] INFO [logger] ✅ Scan terminé
+[2026-02-17 20:22:23] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 20:22:23] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 20:22:23] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 20:22:23] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 20:22:24] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 20:22:24] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 20:22:24] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 20:22:24] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 20:22:24] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 20:22:24] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 20:22:24] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 20:22:24] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 20:22:24] INFO [logger] Température Open-Meteo seule (fallback): 5.7°C
+[2026-02-17 20:22:24] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 20:22:24] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=6.6°C
+[2026-02-17 20:22:24] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.08, '5': 0.16, '6': 0.18, '7': 0.22, '8': 0.2, '9': 0.06, '10+': 0.1}
+[2026-02-17 20:22:24] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-17 20:22:25] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.008'} raw_ask={'price': '0.013'}
+[2026-02-17 20:22:25] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.02'} raw_ask={'price': '0.043'}
+[2026-02-17 20:22:25] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.12'} raw_ask={'price': '0.14'}
+[2026-02-17 20:22:25] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.35'} raw_ask={'price': '0.4'}
+[2026-02-17 20:22:26] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.39'} raw_ask={'price': '0.4'}
+[2026-02-17 20:22:26] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.08'} raw_ask={'price': '0.1'}
+[2026-02-17 20:22:26] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.011'} raw_ask={'price': '0.087'}
+[2026-02-17 20:22:26] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.014'} raw_ask={'price': '0.026'}
+[2026-02-17 20:22:26] INFO [logger] Prix marché: {'2-': 0.006, '3': 0.010499999999999999, '4': 0.0315, '5': 0.13, '6': 0.375, '7': 0.395, '8': 0.09, '9': 0.048999999999999995, '10+': 0.02}
+[2026-02-17 20:22:26] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 4: notre proba 8% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 5: notre proba 16% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 6: notre proba 18% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 7: notre proba 22% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 9: notre proba 6% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Tranche 10+: notre proba 10% < seuil 25%, skip
+[2026-02-17 20:22:26] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-17 20:22:26] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 20:22:27] INFO [logger] Telegram: message envoyé
+[2026-02-17 20:22:27] INFO [logger] ✅ Scan terminé
+[2026-02-17 22:22:27] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-17 22:22:27] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-17 22:22:27] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-17 22:22:27] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-17 22:22:28] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-17 22:22:28] INFO [logger] --- Analyse du marché 2026-02-17 (Highest temperature in London on February 17?) ---
+[2026-02-17 22:22:28] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-17 (j0_morning_only), skip
+[2026-02-17 22:22:28] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-17 22:22:28] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+1), skip
+[2026-02-17 22:22:28] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-17 22:22:28] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-17 22:22:28] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-17 22:22:28] INFO [logger] Température Open-Meteo seule (fallback): 7.1°C
+[2026-02-17 22:22:28] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-17 22:22:28] INFO [logger] Ensemble: 50 membres, moyenne=6.6°C, spread=6.1°C
+[2026-02-17 22:22:28] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.18, '6': 0.32, '7': 0.32, '8': 0.08, '9': 0.02, '10+': 0.06}
+[2026-02-17 22:22:28] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-17 22:22:28] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.007'} raw_ask={'price': '0.015'}
+[2026-02-17 22:22:29] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.021'} raw_ask={'price': '0.056'}
+[2026-02-17 22:22:29] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.1'} raw_ask={'price': '0.15'}
+[2026-02-17 22:22:29] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.35'} raw_ask={'price': '0.39'}
+[2026-02-17 22:22:30] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.38'} raw_ask={'price': '0.42'}
+[2026-02-17 22:22:30] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.08'} raw_ask={'price': '0.1'}
+[2026-02-17 22:22:30] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.021'} raw_ask={'price': '0.042'}
+[2026-02-17 22:22:31] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.021'} raw_ask={'price': '0.027'}
+[2026-02-17 22:22:31] INFO [logger] Prix marché: {'2-': 0.006, '3': 0.011, '4': 0.0385, '5': 0.125, '6': 0.37, '7': 0.4, '8': 0.09, '9': 0.0315, '10+': 0.024}
+[2026-02-17 22:22:31] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-17 22:22:31] INFO [logger] ⚠️ Trop serré entre 6°C (32%) et 7°C (32%), skip
+[2026-02-17 22:22:31] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-17 22:22:31] INFO [logger] Telegram: message envoyé
+[2026-02-17 22:22:31] INFO [logger] ✅ Scan terminé
+[2026-02-18 00:22:31] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 00:22:31] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 00:22:31] INFO [logger] 📊 Vérification du résultat pour 2026-02-17...
+[2026-02-18 00:22:32] WARNING [logger] Weather Underground: scraping échec pour 2026-02-17 (données JS non disponibles)
+[2026-02-18 00:22:32] INFO [logger] Open-Meteo archive: temp max réelle pour 2026-02-17 = 6.2°C
+[2026-02-18 00:22:32] INFO [logger] ✅ Résultat 2026-02-17 | Temp réelle: 6°C (6.2°C) | Prédiction bot: 6°C (proba: 29%) | Prix marché: 0.21 | Résultat: GAGNÉ ✅
+[2026-02-18 00:22:32] INFO [logger] Telegram: message envoyé
+[2026-02-18 00:22:33] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-02-18 00:22:33] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 00:22:33] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 00:22:33] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 00:22:33] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 00:22:33] INFO [logger] 🔁 Renforcement possible: pari précédent à J+1, maintenant J+0 — autorisation de renforcer
+[2026-02-18 00:22:33] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 00:22:33] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 00:22:33] INFO [logger] Température Open-Meteo seule (fallback): 5.6°C
+[2026-02-18 00:22:34] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 00:22:34] INFO [logger] Ensemble: 50 membres, moyenne=5.4°C, spread=2.1°C
+[2026-02-18 00:22:34] INFO [logger] Distribution (ensemble): {'1-': 0.0, '2': 0.0, '3': 0.0, '4': 0.02, '5': 0.52, '6': 0.46, '7': 0.0, '8': 0.0, '9+': 0.0}
+[2026-02-18 00:22:34] DEBUG [logger] DEBUG get_price token 8695866784605539... — raw_bid={'price': '0'} raw_ask={'price': '0.002'}
+[2026-02-18 00:22:34] DEBUG [logger] DEBUG get_price token 4008007344355977... — raw_bid={'price': '0.001'} raw_ask={'price': '0.003'}
+[2026-02-18 00:22:34] DEBUG [logger] DEBUG get_price token 1667836829624972... — raw_bid={'price': '0.003'} raw_ask={'price': '0.013'}
+[2026-02-18 00:22:35] DEBUG [logger] DEBUG get_price token 8999708894319618... — raw_bid={'price': '0.039'} raw_ask={'price': '0.051'}
+[2026-02-18 00:22:35] DEBUG [logger] DEBUG get_price token 2093126120937502... — raw_bid={'price': '0.32'} raw_ask={'price': '0.34'}
+[2026-02-18 00:22:35] DEBUG [logger] DEBUG get_price token 7835198160406100... — raw_bid={'price': '0.45'} raw_ask={'price': '0.47'}
+[2026-02-18 00:22:36] DEBUG [logger] DEBUG get_price token 1093168940919311... — raw_bid={'price': '0.14'} raw_ask={'price': '0.15'}
+[2026-02-18 00:22:36] DEBUG [logger] DEBUG get_price token 1797898562248093... — raw_bid={'price': '0.025'} raw_ask={'price': '0.027'}
+[2026-02-18 00:22:36] DEBUG [logger] DEBUG get_price token 4442705684932400... — raw_bid={'price': '0.005'} raw_ask={'price': '0.009'}
+[2026-02-18 00:22:36] INFO [logger] Prix marché: {'1-': 0.001, '2': 0.002, '3': 0.008, '4': 0.045, '5': 0.33, '6': 0.45999999999999996, '7': 0.14500000000000002, '8': 0.026000000000000002, '9+': 0.006999999999999999}
+[2026-02-18 00:22:36] INFO [logger] Edge minimum dynamique pour J+0: 8%
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 1-: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 2: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 7: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 8: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] DEBUG [logger] Tranche 9+: notre proba 0% < seuil 25%, skip
+[2026-02-18 00:22:36] INFO [logger] Meilleur pari: tranche 5 — edge 53%, score 0.143, notre proba 52% vs marché 0.34
+[2026-02-18 00:22:36] INFO [logger] 💵 Kelly sizing: 3.41$ (bankroll=50.0$, fraction=0.25, max=5.0$)
+[2026-02-18 00:22:36] INFO [logger] 💰 Placement pari: 3.41$ sur 5°C @ 0.34 (edge: 53%) [ensemble, J+0]
+[2026-02-18 00:22:37] ERROR [logger] Trader: erreur placement ordre — PolyApiException[status_code=403, error_message={'error': 'Trading restricted in your region, please refer to available regions - https://docs.polymarket.com/developers/CLOB/geoblock'}]
+[2026-02-18 00:22:37] INFO [logger] Pari enregistré pour 2026-02-18: tranche 5 (placed)
+[2026-02-18 00:22:37] INFO [logger] Telegram: message envoyé
+[2026-02-18 00:22:37] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 00:22:37] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 00:22:37] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 00:22:37] INFO [logger] Température Open-Meteo seule (fallback): 7.6°C
+[2026-02-18 00:22:37] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 00:22:37] INFO [logger] Ensemble: 50 membres, moyenne=6.6°C, spread=6.1°C
+[2026-02-18 00:22:37] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.18, '6': 0.32, '7': 0.32, '8': 0.08, '9': 0.02, '10+': 0.06}
+[2026-02-18 00:22:38] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-18 00:22:38] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.005'} raw_ask={'price': '0.006'}
+[2026-02-18 00:22:38] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.018'} raw_ask={'price': '0.021'}
+[2026-02-18 00:22:39] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.08'} raw_ask={'price': '0.1'}
+[2026-02-18 00:22:39] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.31'} raw_ask={'price': '0.35'}
+[2026-02-18 00:22:39] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.38'} raw_ask={'price': '0.4'}
+[2026-02-18 00:22:39] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.15'} raw_ask={'price': '0.16'}
+[2026-02-18 00:22:40] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.031'} raw_ask={'price': '0.036'}
+[2026-02-18 00:22:40] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.021'} raw_ask={'price': '0.027'}
+[2026-02-18 00:22:40] INFO [logger] Prix marché: {'2-': 0.006, '3': 0.0055, '4': 0.0195, '5': 0.09, '6': 0.32999999999999996, '7': 0.39, '8': 0.155, '9': 0.0335, '10+': 0.024}
+[2026-02-18 00:22:40] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 00:22:40] INFO [logger] ⚠️ Trop serré entre 6°C (32%) et 7°C (32%), skip
+[2026-02-18 00:22:40] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-18 00:22:40] INFO [logger] Telegram: message envoyé
+[2026-02-18 00:22:40] INFO [logger] ✅ Scan terminé
+[2026-02-18 02:22:40] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 02:22:40] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 02:22:40] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 02:22:41] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 02:22:41] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 02:22:41] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 02:22:41] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 02:22:41] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+0), skip
+[2026-02-18 02:22:41] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 02:22:41] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 02:22:41] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 02:22:41] INFO [logger] Température Open-Meteo seule (fallback): 7.6°C
+[2026-02-18 02:22:41] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 02:22:41] INFO [logger] Ensemble: 50 membres, moyenne=6.6°C, spread=6.1°C
+[2026-02-18 02:22:41] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.18, '6': 0.32, '7': 0.32, '8': 0.08, '9': 0.02, '10+': 0.06}
+[2026-02-18 02:22:42] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-18 02:22:42] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.005'} raw_ask={'price': '0.006'}
+[2026-02-18 02:22:42] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.015'} raw_ask={'price': '0.019'}
+[2026-02-18 02:22:43] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.08'} raw_ask={'price': '0.09'}
+[2026-02-18 02:22:43] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.26'} raw_ask={'price': '0.27'}
+[2026-02-18 02:22:43] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.37'} raw_ask={'price': '0.4'}
+[2026-02-18 02:22:44] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.21'} raw_ask={'price': '0.22'}
+[2026-02-18 02:22:44] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.023'} raw_ask={'price': '0.11'}
+[2026-02-18 02:22:44] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.02'} raw_ask={'price': '0.024'}
+[2026-02-18 02:22:44] INFO [logger] Prix marché: {'2-': 0.006, '3': 0.0055, '4': 0.017, '5': 0.08499999999999999, '6': 0.265, '7': 0.385, '8': 0.215, '9': 0.0665, '10+': 0.022}
+[2026-02-18 02:22:44] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 5: notre proba 18% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 8: notre proba 8% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 9: notre proba 2% < seuil 25%, skip
+[2026-02-18 02:22:44] DEBUG [logger] Tranche 10+: notre proba 6% < seuil 25%, skip
+[2026-02-18 02:22:44] INFO [logger] Meilleur pari: tranche 6 — edge 19%, score 0.019, notre proba 32% vs marché 0.27
+[2026-02-18 02:22:44] INFO [logger] Kelly dit de ne pas parier (taille = 0), skip
+[2026-02-18 02:22:44] INFO [logger] ✅ Scan terminé
+[2026-02-18 04:22:44] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 04:22:44] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 04:22:44] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 04:22:44] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 04:22:45] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 04:22:45] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 04:22:45] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 04:22:45] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+0), skip
+[2026-02-18 04:22:45] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 04:22:45] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 04:22:45] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 04:22:45] INFO [logger] Température Open-Meteo seule (fallback): 7.0°C
+[2026-02-18 04:22:45] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 04:22:45] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=5.4°C
+[2026-02-18 04:22:45] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.14, '6': 0.16, '7': 0.34, '8': 0.2, '9': 0.12, '10+': 0.02}
+[2026-02-18 04:22:45] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.002'} raw_ask={'price': '0.009'}
+[2026-02-18 04:22:46] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.005'} raw_ask={'price': '0.006'}
+[2026-02-18 04:22:46] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.01'} raw_ask={'price': '0.019'}
+[2026-02-18 04:22:46] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.08'} raw_ask={'price': '0.1'}
+[2026-02-18 04:22:47] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.27'} raw_ask={'price': '0.28'}
+[2026-02-18 04:22:47] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.4'} raw_ask={'price': '0.41'}
+[2026-02-18 04:22:47] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.2'} raw_ask={'price': '0.25'}
+[2026-02-18 04:22:47] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.025'} raw_ask={'price': '0.08'}
+[2026-02-18 04:22:48] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.023'} raw_ask={'price': '0.024'}
+[2026-02-18 04:22:48] INFO [logger] Prix marché: {'2-': 0.0055, '3': 0.0055, '4': 0.014499999999999999, '5': 0.09, '6': 0.275, '7': 0.405, '8': 0.225, '9': 0.052500000000000005, '10+': 0.0235}
+[2026-02-18 04:22:48] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 5: notre proba 14% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 6: notre proba 16% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 9: notre proba 12% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Tranche 10+: notre proba 2% < seuil 25%, skip
+[2026-02-18 04:22:48] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-18 04:22:48] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-18 04:22:48] INFO [logger] Telegram: message envoyé
+[2026-02-18 04:22:48] INFO [logger] ✅ Scan terminé
+[2026-02-18 06:22:48] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 06:22:48] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 06:22:48] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 06:22:48] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 06:22:49] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 06:22:49] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 06:22:49] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 06:22:49] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+0), skip
+[2026-02-18 06:22:49] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 06:22:49] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 06:22:49] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 06:22:49] INFO [logger] Température Open-Meteo seule (fallback): 6.3°C
+[2026-02-18 06:22:49] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 06:22:49] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=5.4°C
+[2026-02-18 06:22:49] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.14, '6': 0.16, '7': 0.34, '8': 0.2, '9': 0.12, '10+': 0.02}
+[2026-02-18 06:22:49] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.001'} raw_ask={'price': '0.007'}
+[2026-02-18 06:22:50] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-02-18 06:22:50] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.004'} raw_ask={'price': '0.01'}
+[2026-02-18 06:22:50] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.07'} raw_ask={'price': '0.09'}
+[2026-02-18 06:22:50] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.23'} raw_ask={'price': '0.27'}
+[2026-02-18 06:22:51] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.42'} raw_ask={'price': '0.47'}
+[2026-02-18 06:22:51] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.18'} raw_ask={'price': '0.22'}
+[2026-02-18 06:22:51] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.02'} raw_ask={'price': '0.044'}
+[2026-02-18 06:22:52] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.01'} raw_ask={'price': '0.021'}
+[2026-02-18 06:22:52] INFO [logger] Prix marché: {'2-': 0.004, '3': 0.004, '4': 0.007, '5': 0.08, '6': 0.25, '7': 0.44499999999999995, '8': 0.2, '9': 0.032, '10+': 0.0155}
+[2026-02-18 06:22:52] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 5: notre proba 14% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 6: notre proba 16% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 9: notre proba 12% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Tranche 10+: notre proba 2% < seuil 25%, skip
+[2026-02-18 06:22:52] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-18 06:22:52] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-18 06:22:52] INFO [logger] Telegram: message envoyé
+[2026-02-18 06:22:52] INFO [logger] ✅ Scan terminé
+[2026-02-18 08:22:52] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 08:22:52] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 08:22:52] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 08:22:52] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 08:22:53] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 08:22:53] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 08:22:53] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 08:22:53] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+0), skip
+[2026-02-18 08:22:53] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 08:22:53] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 08:22:53] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 08:22:53] INFO [logger] Température Open-Meteo seule (fallback): 6.3°C
+[2026-02-18 08:22:53] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 08:22:53] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=5.4°C
+[2026-02-18 08:22:53] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.02, '5': 0.14, '6': 0.16, '7': 0.34, '8': 0.2, '9': 0.12, '10+': 0.02}
+[2026-02-18 08:22:53] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.001'} raw_ask={'price': '0.005'}
+[2026-02-18 08:22:54] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-02-18 08:22:54] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.006'} raw_ask={'price': '0.015'}
+[2026-02-18 08:22:54] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.07'} raw_ask={'price': '0.1'}
+[2026-02-18 08:22:54] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.27'} raw_ask={'price': '0.31'}
+[2026-02-18 08:22:55] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.44'} raw_ask={'price': '0.47'}
+[2026-02-18 08:22:55] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.15'} raw_ask={'price': '0.19'}
+[2026-02-18 08:22:55] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.015'} raw_ask={'price': '0.035'}
+[2026-02-18 08:22:56] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.007'} raw_ask={'price': '0.011'}
+[2026-02-18 08:22:56] INFO [logger] Prix marché: {'2-': 0.003, '3': 0.004, '4': 0.010499999999999999, '5': 0.085, '6': 0.29000000000000004, '7': 0.45499999999999996, '8': 0.16999999999999998, '9': 0.025, '10+': 0.009}
+[2026-02-18 08:22:56] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 4: notre proba 2% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 5: notre proba 14% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 6: notre proba 16% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 8: notre proba 20% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 9: notre proba 12% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Tranche 10+: notre proba 2% < seuil 25%, skip
+[2026-02-18 08:22:56] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-18 08:22:56] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-19
+[2026-02-18 08:22:56] INFO [logger] Telegram: message envoyé
+[2026-02-18 08:22:56] INFO [logger] ✅ Scan terminé
+[2026-02-18 10:22:56] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 10:22:56] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 10:22:56] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 10:22:56] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 10:22:57] INFO [logger] Gamma API: aucun événement trouvé pour 2026-02-20 (slug: highest-temperature-in-london-on-february-20-2026)
+[2026-02-18 10:22:57] INFO [logger] Gamma API: 2 marché(s) température Londres trouvé(s)
+[2026-02-18 10:22:57] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 10:22:57] INFO [logger] ⏭️ Déjà parié sur 2026-02-18 (J+0), skip
+[2026-02-18 10:22:57] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 10:22:57] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 10:22:57] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 10:22:57] INFO [logger] Température Open-Meteo seule (fallback): 7.3°C
+[2026-02-18 10:22:57] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 10:22:57] INFO [logger] Ensemble: 50 membres, moyenne=6.9°C, spread=4.4°C
+[2026-02-18 10:22:57] INFO [logger] Distribution (ensemble): {'2-': 0.0, '3': 0.0, '4': 0.0, '5': 0.06, '6': 0.3, '7': 0.34, '8': 0.26, '9': 0.04, '10+': 0.0}
+[2026-02-18 10:22:57] DEBUG [logger] DEBUG get_price token 6986449798810530... — raw_bid={'price': '0.001'} raw_ask={'price': '0.009'}
+[2026-02-18 10:22:58] DEBUG [logger] DEBUG get_price token 1055654665933784... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-02-18 10:22:58] DEBUG [logger] DEBUG get_price token 3673831012199538... — raw_bid={'price': '0.005'} raw_ask={'price': '0.006'}
+[2026-02-18 10:22:58] DEBUG [logger] DEBUG get_price token 8502105020766722... — raw_bid={'price': '0.03'} raw_ask={'price': '0.039'}
+[2026-02-18 10:22:58] DEBUG [logger] DEBUG get_price token 1066003480298095... — raw_bid={'price': '0.19'} raw_ask={'price': '0.21'}
+[2026-02-18 10:22:59] DEBUG [logger] DEBUG get_price token 2180566174228849... — raw_bid={'price': '0.49'} raw_ask={'price': '0.5'}
+[2026-02-18 10:22:59] DEBUG [logger] DEBUG get_price token 5995866166143232... — raw_bid={'price': '0.2'} raw_ask={'price': '0.3'}
+[2026-02-18 10:22:59] DEBUG [logger] DEBUG get_price token 1627744183337697... — raw_bid={'price': '0.02'} raw_ask={'price': '0.028'}
+[2026-02-18 10:23:00] DEBUG [logger] DEBUG get_price token 1692709053067689... — raw_bid={'price': '0.005'} raw_ask={'price': '0.013'}
+[2026-02-18 10:23:00] INFO [logger] Prix marché: {'2-': 0.004999999999999999, '3': 0.004, '4': 0.0055, '5': 0.0345, '6': 0.2, '7': 0.495, '8': 0.25, '9': 0.024, '10+': 0.009}
+[2026-02-18 10:23:00] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 2-: notre proba 0% < seuil 25%, skip
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 3: notre proba 0% < seuil 25%, skip
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 4: notre proba 0% < seuil 25%, skip
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 5: notre proba 6% < seuil 25%, skip
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-18 10:23:00] DEBUG [logger] Tranche 10+: notre proba 0% < seuil 25%, skip
+[2026-02-18 10:23:00] INFO [logger] Meilleur pari: tranche 6 — edge 43%, score 0.039, notre proba 30% vs marché 0.21
+[2026-02-18 10:23:00] INFO [logger] 💵 Kelly sizing: 1.42$ (bankroll=50.0$, fraction=0.25, max=5.0$)
+[2026-02-18 10:23:00] INFO [logger] 💰 Placement pari: 1.42$ sur 6°C @ 0.21 (edge: 43%) [ensemble, J+1]
+[2026-02-18 10:23:00] ERROR [logger] Trader: erreur placement ordre — PolyApiException[status_code=403, error_message={'error': 'Trading restricted in your region, please refer to available regions - https://docs.polymarket.com/developers/CLOB/geoblock'}]
+[2026-02-18 10:23:00] INFO [logger] Pari enregistré pour 2026-02-19: tranche 6 (placed)
+[2026-02-18 10:23:00] INFO [logger] Telegram: message envoyé
+[2026-02-18 10:23:00] INFO [logger] ✅ Scan terminé
+[2026-02-18 12:23:00] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 12:23:00] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 12:23:00] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 12:23:01] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 12:23:01] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-18 12:23:01] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 12:23:01] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j0_morning_only), skip
+[2026-02-18 12:23:01] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 12:23:01] INFO [logger] ⏭️ Déjà parié sur 2026-02-19 (J+1), skip
+[2026-02-18 12:23:01] INFO [logger] --- Analyse du marché 2026-02-20 (Highest temperature in London on February 20?) ---
+[2026-02-18 12:23:01] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 12:23:01] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 12:23:01] INFO [logger] Température Open-Meteo seule (fallback): 12.9°C
+[2026-02-18 12:23:01] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 12:23:01] INFO [logger] Ensemble: 50 membres, moyenne=10.8°C, spread=3.5°C
+[2026-02-18 12:23:01] INFO [logger] Distribution (ensemble): {'5-': 0.0, '6': 0.0, '7': 0.0, '8': 0.0, '9': 0.04, '10': 0.24, '11': 0.64, '12': 0.04, '13+': 0.04}
+[2026-02-18 12:23:02] DEBUG [logger] DEBUG get_price token 7396847793866544... — raw_bid={'price': '0.002'} raw_ask={'price': '0.02'}
+[2026-02-18 12:23:02] DEBUG [logger] DEBUG get_price token 6943081174911039... — raw_bid={'price': '0.01'} raw_ask={'price': '0.02'}
+[2026-02-18 12:23:02] DEBUG [logger] DEBUG get_price token 1001040963459552... — raw_bid={'price': '0.01'} raw_ask={'price': '0.039'}
+[2026-02-18 12:23:03] DEBUG [logger] DEBUG get_price token 1566547864767529... — raw_bid={'price': '0.01'} raw_ask={'price': '0.04'}
+[2026-02-18 12:23:03] DEBUG [logger] DEBUG get_price token 1128329097311583... — raw_bid={'price': '0.02'} raw_ask={'price': '0.3'}
+[2026-02-18 12:23:03] DEBUG [logger] DEBUG get_price token 9056162384940658... — raw_bid={'price': '0.02'} raw_ask={'price': '0.69'}
+[2026-02-18 12:23:03] DEBUG [logger] DEBUG get_price token 7832411352993371... — raw_bid={'price': '0.02'} raw_ask={'price': '0.7'}
+[2026-02-18 12:23:04] DEBUG [logger] DEBUG get_price token 1024462526093625... — raw_bid={'price': '0.09'} raw_ask={'price': '0.38'}
+[2026-02-18 12:23:04] DEBUG [logger] DEBUG get_price token 6879702544394441... — raw_bid={'price': '0.46'} raw_ask={'price': '0.95'}
+[2026-02-18 12:23:04] INFO [logger] Prix marché: {'5-': 0.011, '6': 0.015, '7': 0.0245, '8': 0.025, '9': 0.16, '10': 0.355, '11': 0.36, '12': 0.235, '13+': 0.705}
+[2026-02-18 12:23:04] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 5-: notre proba 0% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 6: notre proba 0% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 7: notre proba 0% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 8: notre proba 0% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 10: notre proba 24% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 11: spread trop large (0.68), skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 12: notre proba 4% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Tranche 13+: notre proba 4% < seuil 25%, skip
+[2026-02-18 12:23:04] DEBUG [logger] Aucun pari avec edge suffisant trouvé
+[2026-02-18 12:23:04] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-20
+[2026-02-18 12:23:04] INFO [logger] Telegram: message envoyé
+[2026-02-18 12:23:04] INFO [logger] ✅ Scan terminé
+[2026-02-18 14:23:04] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 14:23:04] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 14:23:04] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 14:23:04] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 14:23:05] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-18 14:23:05] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 14:23:05] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j0_morning_only), skip
+[2026-02-18 14:23:05] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 14:23:05] INFO [logger] ⏭️ Déjà parié sur 2026-02-19 (J+1), skip
+[2026-02-18 14:23:05] INFO [logger] --- Analyse du marché 2026-02-20 (Highest temperature in London on February 20?) ---
+[2026-02-18 14:23:05] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-02-18 14:23:05] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-02-18 14:23:05] INFO [logger] Température Open-Meteo seule (fallback): 12.9°C
+[2026-02-18 14:23:05] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-18 14:23:05] INFO [logger] Ensemble: 50 membres, moyenne=10.8°C, spread=3.5°C
+[2026-02-18 14:23:05] INFO [logger] Distribution (ensemble): {'5-': 0.0, '6': 0.0, '7': 0.0, '8': 0.0, '9': 0.04, '10': 0.24, '11': 0.64, '12': 0.04, '13+': 0.04}
+[2026-02-18 14:23:06] DEBUG [logger] DEBUG get_price token 7396847793866544... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-02-18 14:23:06] DEBUG [logger] DEBUG get_price token 6943081174911039... — raw_bid={'price': '0.002'} raw_ask={'price': '0.005'}
+[2026-02-18 14:23:06] DEBUG [logger] DEBUG get_price token 1001040963459552... — raw_bid={'price': '0.004'} raw_ask={'price': '0.014'}
+[2026-02-18 14:23:06] DEBUG [logger] DEBUG get_price token 1566547864767529... — raw_bid={'price': '0.006'} raw_ask={'price': '0.036'}
+[2026-02-18 14:23:07] DEBUG [logger] DEBUG get_price token 1128329097311583... — raw_bid={'price': '0.01'} raw_ask={'price': '0.08'}
+[2026-02-18 14:23:07] DEBUG [logger] DEBUG get_price token 9056162384940658... — raw_bid={'price': '0.07'} raw_ask={'price': '0.14'}
+[2026-02-18 14:23:07] DEBUG [logger] DEBUG get_price token 7832411352993371... — raw_bid={'price': '0.25'} raw_ask={'price': '0.28'}
+[2026-02-18 14:23:08] DEBUG [logger] DEBUG get_price token 1024462526093625... — raw_bid={'price': '0.29'} raw_ask={'price': '0.41'}
+[2026-02-18 14:23:08] DEBUG [logger] DEBUG get_price token 6879702544394441... — raw_bid={'price': '0.32'} raw_ask={'price': '0.33'}
+[2026-02-18 14:23:08] INFO [logger] Prix marché: {'5-': 0.006, '6': 0.0035, '7': 0.009000000000000001, '8': 0.020999999999999998, '9': 0.045, '10': 0.10500000000000001, '11': 0.265, '12': 0.35, '13+': 0.325}
+[2026-02-18 14:23:08] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 5-: notre proba 0% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 6: notre proba 0% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 7: notre proba 0% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 8: notre proba 0% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 9: notre proba 4% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 10: notre proba 24% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 12: notre proba 4% < seuil 25%, skip
+[2026-02-18 14:23:08] DEBUG [logger] Tranche 13+: notre proba 4% < seuil 25%, skip
+[2026-02-18 14:23:08] INFO [logger] Meilleur pari: tranche 11 — edge 129%, score 0.527, notre proba 64% vs marché 0.28
+[2026-02-18 14:23:08] INFO [logger] 💵 Kelly sizing: 5.00$ (bankroll=50.0$, fraction=0.25, max=5.0$)
+[2026-02-18 14:23:08] INFO [logger] 💰 Placement pari: 5.00$ sur 11°C @ 0.28 (edge: 129%) [ensemble, J+2]
+[2026-02-18 14:23:08] ERROR [logger] Trader: erreur placement ordre — PolyApiException[status_code=403, error_message={'error': 'Trading restricted in your region, please refer to available regions - https://docs.polymarket.com/developers/CLOB/geoblock'}]
+[2026-02-18 14:23:09] INFO [logger] Pari enregistré pour 2026-02-20: tranche 11 (placed)
+[2026-02-18 14:23:09] INFO [logger] Telegram: message envoyé
+[2026-02-18 14:23:09] INFO [logger] ✅ Scan terminé
+[2026-02-18 16:23:09] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 16:23:09] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 16:23:09] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 16:23:09] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 16:23:10] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-18 16:23:10] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 16:23:10] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j0_morning_only), skip
+[2026-02-18 16:23:10] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 16:23:10] INFO [logger] ⏭️ Déjà parié sur 2026-02-19 (J+1), skip
+[2026-02-18 16:23:10] INFO [logger] --- Analyse du marché 2026-02-20 (Highest temperature in London on February 20?) ---
+[2026-02-18 16:23:10] INFO [logger] ⏭️ Déjà parié sur 2026-02-20 (J+2), skip
+[2026-02-18 16:23:10] INFO [logger] ✅ Scan terminé
+[2026-02-18 18:23:10] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-02-18 18:23:10] INFO [logger] 🔄 Démarrage du scan...
+[2026-02-18 18:23:10] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-02-18 18:23:10] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-02-18 18:23:10] INFO [logger] Gamma API: 3 marché(s) température Londres trouvé(s)
+[2026-02-18 18:23:10] INFO [logger] --- Analyse du marché 2026-02-18 (Highest temperature in London on February 18?) ---
+[2026-02-18 18:23:10] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-02-18 (j0_morning_only), skip
+[2026-02-18 18:23:10] INFO [logger] --- Analyse du marché 2026-02-19 (Highest temperature in London on February 19?) ---
+[2026-02-18 18:23:10] INFO [logger] ⏭️ Déjà parié sur 2026-02-19 (J+1), skip
+[2026-02-18 18:23:10] INFO [logger] --- Analyse du marché 2026-02-20 (Highest temperature in London on February 20?) ---
+[2026-02-18 18:23:10] INFO [logger] ⏭️ Déjà parié sur 2026-02-20 (J+2), skip
+[2026-02-18 18:23:10] INFO [logger] ✅ Scan terminé

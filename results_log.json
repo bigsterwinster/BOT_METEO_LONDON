@@ -1,0 +1,62 @@
+[
+    {
+        "date": "2026-02-12",
+        "forecast_temp": 10.8,
+        "bot_prediction": "11°C",
+        "bot_probability": 0.3759,
+        "market_price_at_bet": 0.24,
+        "actual_temp_raw": 10.6,
+        "actual_result": "11°C",
+        "would_have_won": true,
+        "status": "simulated",
+        "checked_at": "2026-02-13T00:27:48.304595"
+    },
+    {
+        "date": "2026-02-13",
+        "forecast_temp": 8.0,
+        "bot_prediction": "9+°C",
+        "bot_probability": 0.3694,
+        "market_price_at_bet": 0.033,
+        "actual_temp_raw": 9.6,
+        "actual_result": "10°C",
+        "would_have_won": true,
+        "status": "simulated",
+        "checked_at": "2026-02-14T00:28:16.574524"
+    },
+    {
+        "date": "2026-02-14",
+        "forecast_temp": 6.1,
+        "bot_prediction": "5°C",
+        "bot_probability": 0.2195,
+        "market_price_at_bet": 0.11,
+        "actual_temp_raw": 5.7,
+        "actual_result": "6°C",
+        "would_have_won": false,
+        "status": "simulated",
+        "checked_at": "2026-02-15T03:13:24.071393"
+    },
+    {
+        "date": "2026-02-15",
+        "forecast_temp": 9.6,
+        "bot_prediction": "11°C",
+        "bot_probability": 0.1716,
+        "market_price_at_bet": 0.12,
+        "actual_temp_raw": 8.1,
+        "actual_result": "8°C",
+        "would_have_won": false,
+        "status": "simulated",
+        "checked_at": "2026-02-16T03:13:44.533779"
+    },
+    {
+        "date": "2026-02-17",
+        "forecast_temp": 6.8,
+        "bot_prediction": "6°C",
+        "bot_probability": 0.2853,
+        "market_price_at_bet": 0.21,
+        "actual_temp_raw": 6.2,
+        "actual_result": "6°C",
+        "would_have_won": true,
+        "status": "simulated",
+        "checked_at": "2026-02-18T00:22:32.794408"
+    }
+]

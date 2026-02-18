@@ -1,0 +1,74 @@
+{
+    "2026-02-12": {
+        "tranche": "11",
+        "amount_usdc": 10.0,
+        "price_paid": 0.24,
+        "our_probability": 0.3759,
+        "edge": 0.5662500000000001,
+        "forecast_temp": 10.8,
+        "timestamp": "2026-02-11T21:20:55.280134",
+        "order_id": "none",
+        "status": "simulated"
+    },
+    "2026-02-13": {
+        "tranche": "9+",
+        "amount_usdc": 10.0,
+        "price_paid": 0.033,
+        "our_probability": 0.3694,
+        "edge": 10.193939393939395,
+        "forecast_temp": 8.0,
+        "timestamp": "2026-02-11T21:21:12.613712",
+        "order_id": "none",
+        "status": "simulated"
+    },
+    "2026-02-17": {
+        "tranche": "6",
+        "amount_usdc": 10.0,
+        "price_paid": 0.21,
+        "our_probability": 0.2853,
+        "edge": 0.3585714285714286,
+        "forecast_temp": 6.8,
+        "timestamp": "2026-02-16T18:53:26.915627",
+        "order_id": "none",
+        "status": "simulated"
+    },
+    "2026-02-18": {
+        "tranche": "5",
+        "amount_usdc": 3.41,
+        "price_paid": 0.34,
+        "our_probability": 0.52,
+        "edge": 0.5294117647058822,
+        "forecast_temp": 5.6,
+        "days_ahead": 0,
+        "method": "ensemble",
+        "timestamp": "2026-02-18T00:22:37.093085",
+        "order_id": "none",
+        "status": "placed"
+    },
+    "2026-02-19": {
+        "tranche": "6",
+        "amount_usdc": 1.42,
+        "price_paid": 0.21,
+        "our_probability": 0.3,
+        "edge": 0.42857142857142855,
+        "forecast_temp": 7.3,
+        "days_ahead": 1,
+        "method": "ensemble",
+        "timestamp": "2026-02-18T10:23:00.566047",
+        "order_id": "none",
+        "status": "placed"
+    },
+    "2026-02-20": {
+        "tranche": "11",
+        "amount_usdc": 5.0,
+        "price_paid": 0.28,
+        "our_probability": 0.64,
+        "edge": 1.2857142857142856,
+        "forecast_temp": 12.9,
+        "days_ahead": 2,
+        "method": "ensemble",
+        "timestamp": "2026-02-18T14:23:09.000507",
+        "order_id": "none",
+        "status": "placed"
+    }
+}
