@@ -107,9 +107,7 @@ def already_bet_on(market_date: str, days_ahead: int) -> bool:
     """
     Check if we already placed a bet on this market date for this horizon.
 
-    Allows reinforcement: a bet placed at J+2 does NOT block a new bet at J+1
-    if the forecast has been confirmed.
-    Also allows retry: a failed bet does NOT block a new attempt.
+    Allows retry: a failed bet does NOT block a new attempt.
     """
     history = load_bets_history()
     if market_date not in history:
@@ -122,15 +120,6 @@ def already_bet_on(market_date: str, days_ahead: int) -> bool:
         log(
             f"🔁 Pari précédent ÉCHOUÉ pour {market_date}, "
             f"nouvelle tentative autorisée"
-        )
-        return False
-
-    # Allow reinforcement if we bet at a longer horizon
-    prev_horizon = previous_bet.get("days_ahead")
-    if prev_horizon is not None and prev_horizon > days_ahead:
-        log(
-            f"🔁 Renforcement possible: pari précédent à J+{prev_horizon}, "
-            f"maintenant J+{days_ahead} — autorisation de renforcer"
         )
         return False
 

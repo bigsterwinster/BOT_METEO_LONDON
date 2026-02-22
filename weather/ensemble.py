@@ -5,6 +5,7 @@ Provides a REAL probability distribution based on 51 model runs instead
 of an artificial Gaussian approximation.
 """
 
+import math
 import requests
 from utils.logger import log
 from config import LONDON_CITY_AIRPORT_LAT, LONDON_CITY_AIRPORT_LON
@@ -94,7 +95,7 @@ def build_probability_from_ensemble(
     for tranche in tranches:
         count = 0
         for temp in member_temps:
-            rounded = round(temp)
+            rounded = math.floor(temp + 0.5)
 
             if tranche.endswith("-"):
                 threshold = int(tranche[:-1])
