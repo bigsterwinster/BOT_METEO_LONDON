@@ -1,13 +1,17 @@
 import requests
 from utils.logger import log
-from config import LONDON_CITY_AIRPORT_LAT, LONDON_CITY_AIRPORT_LON
 
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
 
-def get_forecasts(forecast_days: int = 3) -> dict | None:
+def get_forecasts(
+    lat: float,
+    lon: float,
+    timezone: str = "Europe/London",
+    forecast_days: int = 3,
+) -> dict | None:
     """
-    Fetch 3-day temperature forecast from Open-Meteo for London City Airport.
+    Fetch daily temperature forecast from Open-Meteo for a given city.
 
     Returns:
         {
@@ -18,10 +22,10 @@ def get_forecasts(forecast_days: int = 3) -> dict | None:
         or None on failure.
     """
     params = {
-        "latitude": LONDON_CITY_AIRPORT_LAT,
-        "longitude": LONDON_CITY_AIRPORT_LON,
+        "latitude": lat,
+        "longitude": lon,
         "daily": "temperature_2m_max,temperature_2m_min",
-        "timezone": "Europe/London",
+        "timezone": timezone,
         "forecast_days": forecast_days,
     }
 

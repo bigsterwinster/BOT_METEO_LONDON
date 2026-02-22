@@ -8,13 +8,52 @@ of an artificial Gaussian approximation.
 import math
 import requests
 from utils.logger import log
-from config import LONDON_CITY_AIRPORT_LAT, LONDON_CITY_AIRPORT_LON
 
 ENSEMBLE_API_URL = "https://ensemble-api.open-meteo.com/v1/ensemble"
 
 
+def _round_half_up(temp: float) -> int:
+    """Round to nearest integer with .5 rounded away from zero."""
+    if temp >= 0:
+        return int(math.floor(temp + 0.5))
+    return int(math.ceil(temp - 0.5))
+
+
+def _celsius_to_fahrenheit(temp_c: float) -> float:
+    return temp_c * 9.0 / 5.0 + 32.0
+
+
+def _temp_matches_tranche(rounded_temp: int, tranche: str) -> bool:
+    """Return True when rounded_temp belongs to the tranche label."""
+    label = tranche.strip()
+
+    try:
+        if label.endswith("-"):
+            threshold = int(label[:-1])
+            return rounded_temp <= threshold
+
+        if label.endswith("+"):
+            threshold = int(label[:-1])
+            return rounded_temp >= threshold
+
+        # US style range, e.g. "38-39"
+        if "-" in label:
+            low_str, high_str = label.split("-", 1)
+            if low_str and high_str:
+                low = int(low_str)
+                high = int(high_str)
+                return low <= rounded_temp <= high
+
+        return rounded_temp == int(label)
+    except ValueError:
+        return False
+
+
 def get_ensemble_forecasts(
-    lat: float = None, lon: float = None, days: int = 3
+    lat: float,
+    lon: float,
+    timezone: str = "Europe/London",
+    days: int = 3,
 ) -> dict[str, list[float]] | None:
     """
     Fetch max-temperature forecasts from 51 ECMWF IFS ensemble members.
@@ -27,16 +66,13 @@ def get_ensemble_forecasts(
         }
         or None on failure.
     """
-    lat = lat or LONDON_CITY_AIRPORT_LAT
-    lon = lon or LONDON_CITY_AIRPORT_LON
-
     params = {
         "latitude": lat,
         "longitude": lon,
         "daily": "temperature_2m_max",
         "models": "ecmwf_ifs025",
         "forecast_days": days,
-        "timezone": "Europe/London",
+        "timezone": timezone,
     }
 
     try:
@@ -78,7 +114,7 @@ def get_ensemble_forecasts(
 
 
 def build_probability_from_ensemble(
-    member_temps: list[float], tranches: list[str]
+    member_temps: list[float], tranches: list[str], unit: str = "celsius"
 ) -> dict[str, float]:
     """
     Build probability distribution directly from ensemble members.
@@ -90,24 +126,16 @@ def build_probability_from_ensemble(
     if total == 0:
         return {t: 0.0 for t in tranches}
 
-    probabilities = {}
+    probabilities: dict[str, float] = {}
+    use_fahrenheit = unit.lower() == "fahrenheit"
+
+    rounded_temps = []
+    for temp in member_temps:
+        value = _celsius_to_fahrenheit(temp) if use_fahrenheit else temp
+        rounded_temps.append(_round_half_up(value))
 
     for tranche in tranches:
-        count = 0
-        for temp in member_temps:
-            rounded = math.floor(temp + 0.5)
-
-            if tranche.endswith("-"):
-                threshold = int(tranche[:-1])
-                if rounded <= threshold:
-                    count += 1
-            elif tranche.endswith("+"):
-                threshold = int(tranche[:-1])
-                if rounded >= threshold:
-                    count += 1
-            else:
-                if rounded == int(tranche):
-                    count += 1
+        count = sum(1 for rounded in rounded_temps if _temp_matches_tranche(rounded, tranche))
 
         probabilities[tranche] = round(count / total, 4)
 

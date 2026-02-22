@@ -5,7 +5,7 @@ print("TEST 1: Ensemble API")
 print("=" * 60)
 try:
     from weather.ensemble import get_ensemble_forecasts, build_probability_from_ensemble
-    data = get_ensemble_forecasts(51.5053, 0.0553, 3)
+    data = get_ensemble_forecasts(51.5053, 0.0553, days=3)
     if data:
         for d, temps in data.items():
             print(f"  {d}: {len(temps)} members, min={min(temps):.1f}, max={max(temps):.1f}, mean={sum(temps)/len(temps):.1f}")
@@ -64,16 +64,28 @@ print("=" * 60)
 print("TEST 4: Analyzer — get_probability_distribution (ensemble + fallback)")
 print("=" * 60)
 try:
-    from weather.analyzer import get_probability_distribution
+    from weather.analyzer import get_probability_distribution, build_probability_distribution_gaussian
     from datetime import date, timedelta
     
     tomorrow = (date.today() + timedelta(days=1)).isoformat()
     tranches = ["5-", "6", "7", "8", "9", "10", "11+"]
     
-    probs, method = get_probability_distribution(tomorrow, tranches, days_ahead=1, forecast_temp=8.0)
-    print(f"  Method: {method}")
+    probs, source_info = get_probability_distribution(tomorrow, tranches, days_ahead=1, forecast_temp=8.0)
+    print(f"  Method: {source_info['method']}")
+    print(f"  Source info: {source_info}")
     print(f"  Distribution: {probs}")
     print(f"  Sum: {sum(probs.values()):.4f}")
+
+    nyc_tranches = ["34-", "35", "36-37", "38-39", "40-41", "42+"]
+    nyc_probs = build_probability_distribution_gaussian(
+        forecast_temp=8.0,  # °C input, internally converted to °F
+        sigma=1.0,
+        tranches=nyc_tranches,
+        unit="fahrenheit",
+    )
+    print(f"  NYC (°F) Distribution: {nyc_probs}")
+    print(f"  NYC (°F) Sum: {sum(nyc_probs.values()):.4f}")
+
     print("  ✅ Analyzer OK")
 except Exception as e:
     print(f"  ❌ Analyzer error: {e}")

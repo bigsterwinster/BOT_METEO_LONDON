@@ -3223,3 +3223,13 @@ py_clob_client.exceptions.PolyApiException: PolyApiException[status_code=400, er
 [2026-02-22 12:55:33] INFO [logger] 🔍 Aucun edge trouvé pour 2026-02-24
 [2026-02-22 12:55:33] INFO [logger] Telegram: message envoyé
 [2026-02-22 12:55:33] INFO [logger] ✅ Scan terminé
+[2026-02-22 18:40:11] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:40:11] INFO [logger] Ensemble: 50 membres, moyenne=12.3°C, spread=2.5°C
+[2026-02-22 18:40:29] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:40:29] INFO [logger] Ensemble: 50 membres, moyenne=12.3°C, spread=2.5°C
+[2026-02-22 18:40:36] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:40:40] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:40:40] INFO [logger] Ensemble: 50 membres, moyenne=12.3°C, spread=2.5°C
+[2026-02-22 18:41:14] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:41:18] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-02-22 18:41:18] INFO [logger] Ensemble: 50 membres, moyenne=12.3°C, spread=2.5°C

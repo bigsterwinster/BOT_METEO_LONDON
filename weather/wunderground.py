@@ -1,16 +1,13 @@
 import requests
 from utils.logger import log
-from config import LONDON_CITY_AIRPORT_LAT, LONDON_CITY_AIRPORT_LON, WU_API_KEY
+from config import WU_API_KEY
 
 # Weather Underground uses api.weather.com (The Weather Company) internally.
 # The API key is the one embedded in WU's frontend — public but may rotate.
 WU_FORECAST_URL = "https://api.weather.com/v3/wx/forecast/daily/5day"
-WU_HISTORY_URL_TEMPLATE = (
-    "https://www.wunderground.com/history/daily/gb/london/{station}/date/{date}"
-)
 
 
-def get_forecasts(forecast_days: int = 5) -> dict | None:
+def get_forecasts(lat: float, lon: float, forecast_days: int = 5) -> dict | None:
     """
     Fetch daily max/min temperature forecast from Weather Underground
     via the api.weather.com v3 internal API.
@@ -28,7 +25,7 @@ def get_forecasts(forecast_days: int = 5) -> dict | None:
         return None
 
     params = {
-        "geocode": f"{LONDON_CITY_AIRPORT_LAT},{LONDON_CITY_AIRPORT_LON}",
+        "geocode": f"{lat},{lon}",
         "language": "en-GB",
         "format": "json",
         "units": "m",

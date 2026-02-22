@@ -11,9 +11,10 @@ import sys
 import json
 from datetime import date, timedelta
 
+from cities import CITIES
 from utils.logger import log
 from polymarket.client import create_client, get_price
-from polymarket.markets import find_london_temperature_markets
+from polymarket.markets import find_temperature_markets
 from polymarket.trader import place_bet
 from notifications.telegram import send_telegram
 
@@ -39,7 +40,7 @@ def main():
 
     # 2. Find a market
     print("2. Recherche de marchés Londres...")
-    markets = find_london_temperature_markets(days_ahead=3)
+    markets = find_temperature_markets({"id": "london", **CITIES["london"]}, days_ahead=3)
     if not markets:
         print("❌ ÉCHEC: aucun marché température Londres trouvé")
         sys.exit(1)

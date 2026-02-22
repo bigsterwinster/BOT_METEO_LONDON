@@ -11,11 +11,15 @@ POLYMARKET_FUNDER_ADDRESS = os.getenv("POLYMARKET_FUNDER_ADDRESS")
 POLYMARKET_SIGNATURE_TYPE = 1  # Google/Magic wallet
 
 # Météo
-LONDON_CITY_AIRPORT_LAT = 51.5053
-LONDON_CITY_AIRPORT_LON = 0.0553
-WUNDERGROUND_STATION = "EGLC"
-WUNDERGROUND_URL = "https://www.wunderground.com/history/daily/gb/london/EGLC"
 WU_API_KEY = os.getenv("WU_API_KEY", "")
+
+# Villes actives (liste de city_id depuis cities.py)
+# Peut être overridé par ACTIVE_CITIES dans .env (comma-separated)
+ACTIVE_CITIES = [
+    city.strip().lower()
+    for city in os.getenv("ACTIVE_CITIES", "london,nyc").split(",")
+    if city.strip()
+]
 
 # Stratégie
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() in ("true", "1", "yes")

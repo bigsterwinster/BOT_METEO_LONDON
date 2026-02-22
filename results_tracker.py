@@ -6,13 +6,14 @@ data and logs whether the bot's prediction would have won.
 """
 
 import json
+import math
 import os
-from datetime import datetime, date, timedelta
+import re
+from datetime import datetime, date
 
 import requests
-from bs4 import BeautifulSoup
 
-from config import LONDON_CITY_AIRPORT_LAT, LONDON_CITY_AIRPORT_LON
+from cities import CITIES
 from utils.logger import log
 from notifications.telegram import send_telegram
 
@@ -20,11 +21,76 @@ RESULTS_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "res
 BETS_HISTORY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bets_history.json")
 
 
+def _unit_symbol(unit: str) -> str:
+    return "\u00b0F" if unit.lower() == "fahrenheit" else "\u00b0C"
+
+
+def _celsius_to_fahrenheit(temp_c: float) -> float:
+    return temp_c * 9.0 / 5.0 + 32.0
+
+
+def _round_half_up(temp: float) -> int:
+    if temp >= 0:
+        return int(math.floor(temp + 0.5))
+    return int(math.ceil(temp - 0.5))
+
+
+def _temp_matches_tranche(rounded_temp: int, tranche_label: str) -> bool:
+    label = _normalize_tranche_label(tranche_label)
+
+    try:
+        if label.endswith("-"):
+            threshold = int(label[:-1])
+            return rounded_temp <= threshold
+
+        if label.endswith("+"):
+            threshold = int(label[:-1])
+            return rounded_temp >= threshold
+
+        if "-" in label:
+            low_str, high_str = label.split("-", 1)
+            if low_str and high_str:
+                low = int(low_str)
+                high = int(high_str)
+                return low <= rounded_temp <= high
+
+        return rounded_temp == int(label)
+    except ValueError:
+        return False
+
+
+def _normalize_tranche_label(label: str) -> str:
+    normalized = label.strip().lower().replace(" ", "").replace("°", "")
+    if normalized.endswith("c") or normalized.endswith("f"):
+        normalized = normalized[:-1]
+    return normalized
+
+
+def _extract_city_and_date(market_key: str, bet_info: dict) -> tuple[str, str]:
+    """
+    Return (city_id, market_date) from bet record.
+
+    Supports both new keys (city_date) and legacy keys (date only).
+    """
+    city_id = (bet_info.get("city_id") or "").strip().lower()
+    market_date = (bet_info.get("market_date") or "").strip()
+
+    if market_date:
+        return city_id or "london", market_date
+
+    if isinstance(market_key, str) and "_" in market_key:
+        maybe_city, maybe_date = market_key.split("_", 1)
+        if maybe_city in CITIES:
+            return city_id or maybe_city, maybe_date
+
+    return city_id or "london", str(market_key)
+
+
 # ---------------------------------------------------------------------------
 # Actual temperature retrieval
 # ---------------------------------------------------------------------------
 
-def get_actual_temperature_open_meteo(target_date: str) -> float | None:
+def get_actual_temperature_open_meteo(target_date: str, city_config: dict) -> float | None:
     """
     Fetch actual max temperature from Open-Meteo archive API for a past date.
 
@@ -32,16 +98,18 @@ def get_actual_temperature_open_meteo(target_date: str) -> float | None:
         target_date: date string in YYYY-MM-DD format
 
     Returns:
-        Max temperature in °C, or None on failure.
+        Max temperature in city market unit, or None on failure.
     """
     url = "https://archive-api.open-meteo.com/v1/archive"
+    unit = city_config.get("unit", "celsius")
+    unit_symbol = _unit_symbol(unit)
     params = {
-        "latitude": LONDON_CITY_AIRPORT_LAT,
-        "longitude": LONDON_CITY_AIRPORT_LON,
+        "latitude": city_config["lat"],
+        "longitude": city_config["lon"],
         "start_date": target_date,
         "end_date": target_date,
         "daily": "temperature_2m_max",
-        "timezone": "Europe/London",
+        "timezone": city_config.get("timezone", "Europe/London"),
     }
 
     try:
@@ -51,8 +119,12 @@ def get_actual_temperature_open_meteo(target_date: str) -> float | None:
 
         max_temps = data.get("daily", {}).get("temperature_2m_max", [])
         if max_temps and max_temps[0] is not None:
-            temp = float(max_temps[0])
-            log(f"Open-Meteo archive: temp max réelle pour {target_date} = {temp}°C")
+            temp_c = float(max_temps[0])
+            temp = _celsius_to_fahrenheit(temp_c) if unit == "fahrenheit" else temp_c
+            log(
+                f"Open-Meteo archive [{city_config['name']}]: "
+                f"temp max réelle pour {target_date} = {temp:.1f}{unit_symbol}"
+            )
             return temp
 
         log(f"Open-Meteo archive: pas de données pour {target_date}", "warning")
@@ -63,7 +135,7 @@ def get_actual_temperature_open_meteo(target_date: str) -> float | None:
         return None
 
 
-def get_actual_temperature_wunderground(target_date: str) -> float | None:
+def get_actual_temperature_wunderground(target_date: str, city_config: dict) -> float | None:
     """
     Attempt to scrape actual max temperature from Weather Underground history page.
 
@@ -74,10 +146,16 @@ def get_actual_temperature_wunderground(target_date: str) -> float | None:
         target_date: date string in YYYY-MM-DD format
 
     Returns:
-        Max temperature in °C, or None on failure.
+        Max temperature in city market unit, or None on failure.
     """
     d = date.fromisoformat(target_date)
-    url = f"https://www.wunderground.com/history/daily/gb/london/EGLC/date/{d.year}-{d.month}-{d.day}"
+    base_url = city_config.get("wu_history_url")
+    if not base_url:
+        return None
+
+    url = f"{base_url}/date/{d.year}-{d.month}-{d.day}"
+    unit = city_config.get("unit", "celsius")
+    unit_symbol = _unit_symbol(unit)
 
     headers = {
         "User-Agent": (
@@ -91,20 +169,40 @@ def get_actual_temperature_wunderground(target_date: str) -> float | None:
         response = requests.get(url, headers=headers, timeout=15)
         response.raise_for_status()
 
-        # Try to find temperature data in embedded script tags
-        soup = BeautifulSoup(response.text, "html.parser")
+        match_c = re.search(r'"maxTempC"\s*:\s*(-?[\d.]+)', response.text)
+        match_f = re.search(r'"maxTempF"\s*:\s*(-?[\d.]+)', response.text)
 
-        # WU sometimes embeds data in a lib-city-history-observation element
-        for script in soup.find_all("script"):
-            text = script.string or ""
-            if "temperature" in text.lower() and "max" in text.lower():
-                # Try to parse embedded JSON
-                import re
-                match = re.search(r'"maxTempC"\s*:\s*([\d.]+)', text)
-                if match:
-                    temp = float(match.group(1))
-                    log(f"Weather Underground: temp max réelle pour {target_date} = {temp}°C")
-                    return temp
+        temp_c = float(match_c.group(1)) if match_c else None
+        temp_f = float(match_f.group(1)) if match_f else None
+
+        if unit == "fahrenheit":
+            if temp_f is not None:
+                log(
+                    f"Weather Underground [{city_config['name']}]: "
+                    f"temp max réelle pour {target_date} = {temp_f:.1f}{unit_symbol}"
+                )
+                return temp_f
+            if temp_c is not None:
+                converted = _celsius_to_fahrenheit(temp_c)
+                log(
+                    f"Weather Underground [{city_config['name']}]: "
+                    f"temp max réelle convertie pour {target_date} = {converted:.1f}{unit_symbol}"
+                )
+                return converted
+        else:
+            if temp_c is not None:
+                log(
+                    f"Weather Underground [{city_config['name']}]: "
+                    f"temp max réelle pour {target_date} = {temp_c:.1f}{unit_symbol}"
+                )
+                return temp_c
+            if temp_f is not None:
+                converted = (temp_f - 32.0) * 5.0 / 9.0
+                log(
+                    f"Weather Underground [{city_config['name']}]: "
+                    f"temp max réelle convertie pour {target_date} = {converted:.1f}{unit_symbol}"
+                )
+                return converted
 
         log(f"Weather Underground: scraping échec pour {target_date} (données JS non disponibles)", "warning")
         return None
@@ -114,19 +212,19 @@ def get_actual_temperature_wunderground(target_date: str) -> float | None:
         return None
 
 
-def get_actual_temperature(target_date: str) -> float | None:
+def get_actual_temperature(target_date: str, city_config: dict) -> float | None:
     """
     Get the actual max temperature for a past date.
     Tries Weather Underground first (official resolution source),
     falls back to Open-Meteo archive.
     """
     # Try WU first (official source)
-    temp = get_actual_temperature_wunderground(target_date)
+    temp = get_actual_temperature_wunderground(target_date, city_config)
     if temp is not None:
         return temp
 
     # Fallback to Open-Meteo archive
-    return get_actual_temperature_open_meteo(target_date)
+    return get_actual_temperature_open_meteo(target_date, city_config)
 
 
 # ---------------------------------------------------------------------------
@@ -161,10 +259,13 @@ def load_bets_history() -> dict:
         return {}
 
 
-def already_checked(target_date: str) -> bool:
-    """Check if we already have a result for this date."""
+def already_checked(target_date: str, city_id: str) -> bool:
+    """Check if we already have a result for this city/date pair."""
     results = load_results_log()
-    return any(r["date"] == target_date for r in results)
+    return any(
+        r.get("date") == target_date and r.get("city_id", "london") == city_id
+        for r in results
+    )
 
 
 def determine_winning_tranche(actual_temp_rounded: int, tranches_labels: list[str]) -> str:
@@ -179,17 +280,8 @@ def determine_winning_tranche(actual_temp_rounded: int, tranches_labels: list[st
         The matching tranche label.
     """
     for label in tranches_labels:
-        if label.endswith("-"):
-            threshold = int(label[:-1])
-            if actual_temp_rounded <= threshold:
-                return label
-        elif label.endswith("+"):
-            threshold = int(label[:-1])
-            if actual_temp_rounded >= threshold:
-                return label
-        else:
-            if actual_temp_rounded == int(label):
-                return label
+        if _temp_matches_tranche(actual_temp_rounded, label):
+            return label
 
     return f"{actual_temp_rounded}"
 
@@ -211,9 +303,19 @@ def check_yesterday_results():
     today = date.today()
     checked_count = 0
 
-    for market_date, bet_info in history.items():
+    for market_key, bet_info in history.items():
+        city_id, market_date = _extract_city_and_date(market_key, bet_info)
+        city_config = CITIES.get(city_id)
+        if city_config is None:
+            log(f"Results tracker: city_id inconnu '{city_id}' pour {market_key}", "warning")
+            continue
+
+        city_name = city_config.get("name", city_id)
+        unit = city_config.get("unit", "celsius")
+        unit_symbol = _unit_symbol(unit)
+
         # Skip if already checked
-        if already_checked(market_date):
+        if already_checked(market_date, city_id):
             continue
 
         # Only check past dates (resolved markets)
@@ -225,33 +327,38 @@ def check_yesterday_results():
         if target >= today:
             continue  # Market not yet resolved
 
-        log(f"📊 Vérification du résultat pour {market_date}...")
+        log(f"📊 Vérification du résultat pour {city_name} {market_date}...")
 
         # Get actual temperature
-        actual_temp = get_actual_temperature(market_date)
+        actual_temp = get_actual_temperature(market_date, city_config)
         if actual_temp is None:
-            log(f"Results tracker: impossible de récupérer la temp réelle pour {market_date}", "warning")
+            log(
+                f"Results tracker: impossible de récupérer la temp réelle pour {city_name} {market_date}",
+                "warning",
+            )
             continue
 
-        actual_rounded = round(actual_temp)
-        bot_prediction = bet_info.get("tranche", "?")
+        actual_rounded = _round_half_up(actual_temp)
+        bot_prediction = _normalize_tranche_label(str(bet_info.get("tranche", "?")).strip())
+        forecast_temp = bet_info.get("forecast_temp")
+        if forecast_temp is not None and unit == "fahrenheit":
+            forecast_temp = _celsius_to_fahrenheit(float(forecast_temp))
 
         # Determine if prediction was correct
-        would_have_won = str(actual_rounded) == bot_prediction
-        # Also check edge tranches (e.g. "14+" means >=14, "8-" means <=8)
-        if bot_prediction.endswith("+") and actual_rounded >= int(bot_prediction[:-1]):
-            would_have_won = True
-        elif bot_prediction.endswith("-") and actual_rounded <= int(bot_prediction[:-1]):
-            would_have_won = True
+        would_have_won = _temp_matches_tranche(actual_rounded, bot_prediction)
 
         result_entry = {
+            "market_key": market_key,
+            "city_id": city_id,
+            "city_name": city_name,
             "date": market_date,
-            "forecast_temp": bet_info.get("forecast_temp"),
-            "bot_prediction": f"{bot_prediction}°C",
+            "unit": unit,
+            "forecast_temp": round(float(forecast_temp), 1) if forecast_temp is not None else None,
+            "bot_prediction": f"{bot_prediction}{unit_symbol}",
             "bot_probability": bet_info.get("our_probability"),
             "market_price_at_bet": bet_info.get("price_paid"),
             "actual_temp_raw": actual_temp,
-            "actual_result": f"{actual_rounded}°C",
+            "actual_result": f"{actual_rounded}{unit_symbol}",
             "would_have_won": would_have_won,
             "status": bet_info.get("status", "unknown"),
             "checked_at": datetime.now().isoformat(),
@@ -265,9 +372,9 @@ def check_yesterday_results():
         # Log and notify
         emoji = "✅" if would_have_won else "❌"
         msg = (
-            f"{emoji} *Résultat {market_date}*\n"
-            f"Temp réelle: {actual_rounded}°C ({actual_temp:.1f}°C)\n"
-            f"Prédiction bot: {bot_prediction}°C (proba: {bet_info.get('our_probability', 0):.0%})\n"
+            f"{emoji} *Résultat {city_name} — {market_date}*\n"
+            f"Temp réelle: {actual_rounded}{unit_symbol} ({actual_temp:.1f}{unit_symbol})\n"
+            f"Prédiction bot: {bot_prediction}{unit_symbol} (proba: {bet_info.get('our_probability', 0):.0%})\n"
             f"Prix marché: {bet_info.get('price_paid', 0):.2f}\n"
             f"Résultat: {'GAGNÉ ✅' if would_have_won else 'PERDU ❌'}"
         )

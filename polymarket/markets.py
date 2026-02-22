@@ -3,6 +3,7 @@ import json
 import requests
 from datetime import datetime, timedelta
 from py_clob_client.client import ClobClient
+from cities import CITIES
 from utils.logger import log
 from polymarket.client import get_price
 
@@ -10,10 +11,9 @@ GAMMA_EVENTS_URL = "https://gamma-api.polymarket.com/events"
 GAMMA_MARKETS_URL = "https://gamma-api.polymarket.com/markets"
 
 
-def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
+def find_temperature_markets(city_config: dict, days_ahead: int = 3) -> list[dict]:
     """
-    Find all active Polymarket events for "Highest temperature in London on ..."
-    by constructing the known slug pattern for each day.
+    Find all active Polymarket events for a given city using its slug pattern.
 
     Args:
         days_ahead: number of days to scan (today + N-1 days)
@@ -22,9 +22,12 @@ def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
         List of parsed market dicts:
         [
             {
+                "city_id": str,
+                "city_name": str,
                 "event_id": str,
                 "title": str,
                 "date": "YYYY-MM-DD",
+                "unit": "celsius" | "fahrenheit",
                 "tranches": [
                     {
                         "label": "12",          # or "8-" / "14+"
@@ -39,7 +42,12 @@ def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
             ...
         ]
     """
-    london_events = []
+    city_id = city_config.get("id", "unknown")
+    city_name = city_config.get("name", city_id)
+    unit = city_config.get("unit", "celsius")
+    slug_pattern = city_config["slug_pattern"]
+
+    city_events = []
     today = datetime.now()
 
     for offset in range(days_ahead):
@@ -49,7 +57,7 @@ def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
         year = target.year
         market_date = target.strftime("%Y-%m-%d")
 
-        slug = f"highest-temperature-in-london-on-{month}-{day}-{year}"
+        slug = slug_pattern.format(month=month, day=day, year=year)
 
         try:
             response = requests.get(
@@ -73,15 +81,23 @@ def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
             log(f"Gamma API: aucune tranche trouvée pour '{event.get('title')}'", "warning")
             continue
 
-        london_events.append({
+        city_events.append({
+            "city_id": city_id,
+            "city_name": city_name,
             "event_id": event.get("id", ""),
             "title": event.get("title", ""),
             "date": market_date,
+            "unit": unit,
             "tranches": tranches,
         })
 
-    log(f"Gamma API: {len(london_events)} marché(s) température Londres trouvé(s)")
-    return london_events
+    log(f"Gamma API: {len(city_events)} marché(s) température {city_name} trouvé(s)")
+    return city_events
+
+
+def find_london_temperature_markets(days_ahead: int = 3) -> list[dict]:
+    """Backward-compatible alias for London-only scripts."""
+    return find_temperature_markets({"id": "london", **CITIES["london"]}, days_ahead=days_ahead)
 
 
 def _parse_tranches(markets: list[dict]) -> list[dict]:
@@ -133,18 +149,23 @@ def _extract_tranche_label(question: str) -> str | None:
     """
     q = question.strip().lower()
 
-    # "X°C or below" / "X°c or less"
-    match = re.search(r"(\d+)\s*°?\s*c?\s*(or\s+below|or\s+less)", q)
+    # US style exact range: "38-39°F"
+    match = re.search(r"(\d+)\s*-\s*(\d+)\s*°?\s*[cf]?", q)
+    if match:
+        return f"{match.group(1)}-{match.group(2)}"
+
+    # "X°C or below" / "X°F or less"
+    match = re.search(r"(-?\d+)\s*°?\s*[cf]?\s*(or\s+below|or\s+less)", q)
     if match:
         return match.group(1) + "-"
 
-    # "X°C or higher" / "X°C or above" / "X°C or more"
-    match = re.search(r"(\d+)\s*°?\s*c?\s*(or\s+higher|or\s+above|or\s+more)", q)
+    # "X°C or higher" / "X°F or above" / "X°F or more"
+    match = re.search(r"(-?\d+)\s*°?\s*[cf]?\s*(or\s+higher|or\s+above|or\s+more)", q)
     if match:
         return match.group(1) + "+"
 
-    # Exact "X°C" or just "X"
-    match = re.search(r"(\d+)\s*°?\s*c?", q)
+    # Exact "X°C" / "X°F" / just "X"
+    match = re.search(r"(-?\d+)\s*°?\s*[cf]?", q)
     if match:
         return match.group(1)
 
