@@ -58,5 +58,41 @@
         "would_have_won": true,
         "status": "simulated",
         "checked_at": "2026-02-18T00:22:32.794408"
+    },
+    {
+        "date": "2026-02-19",
+        "forecast_temp": 7.4,
+        "bot_prediction": "6°C",
+        "bot_probability": 0.4,
+        "market_price_at_bet": 0.14,
+        "actual_temp_raw": 6.9,
+        "actual_result": "7°C",
+        "would_have_won": false,
+        "status": "placed",
+        "checked_at": "2026-02-20T00:49:32.331473"
+    },
+    {
+        "date": "2026-02-20",
+        "forecast_temp": 11.8,
+        "bot_prediction": "10°C",
+        "bot_probability": 0.48,
+        "market_price_at_bet": 0.07,
+        "actual_temp_raw": 10.9,
+        "actual_result": "11°C",
+        "would_have_won": false,
+        "status": "placed",
+        "checked_at": "2026-02-21T00:50:55.057763"
+    },
+    {
+        "date": "2026-02-21",
+        "forecast_temp": 14.8,
+        "bot_prediction": "13°C",
+        "bot_probability": 0.52,
+        "market_price_at_bet": 0.33,
+        "actual_temp_raw": 13.1,
+        "actual_result": "13°C",
+        "would_have_won": true,
+        "status": "placed",
+        "checked_at": "2026-02-22T00:52:30.288359"
     }
 ]

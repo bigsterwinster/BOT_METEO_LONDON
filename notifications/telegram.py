@@ -70,5 +70,21 @@ def notify_dry_run_bet(amount: float, tranche: str, market_date: str, edge: floa
     )
 
 
+def notify_bet_failed(amount: float, tranche: str, market_date: str, error_detail: str,
+                       source_summary: str = "", forecast_temp: float = None):
+    forecast_str = f"{forecast_temp:.1f}°C" if forecast_temp is not None else "N/A"
+    send_telegram(
+        f"❌ *ÉCHEC ORDRE* : {amount:.2f}$ sur {tranche}°C pour le {market_date}\n"
+        f"Erreur: {error_detail}\n"
+        f"📊 Source: {source_summary} | Prévision: {forecast_str}"
+    )
+
+
+def notify_heartbeat(last_scan_time: str, markets_summary: str):
+    send_telegram(
+        f"🔄 Bot actif — dernier scan : {last_scan_time} — {markets_summary}"
+    )
+
+
 def notify_error(detail: str):
     send_telegram(f"❌ Erreur : {detail}")

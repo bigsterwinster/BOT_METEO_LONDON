@@ -31,9 +31,11 @@ from notifications.telegram import (
     send_telegram,
     notify_scan_no_edge,
     notify_bet_placed,
+    notify_bet_failed,
     notify_dry_run_bet,
     notify_uncertainty,
     notify_error,
+    notify_heartbeat,
 )
 
 BETS_HISTORY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bets_history.json")
@@ -107,12 +109,21 @@ def already_bet_on(market_date: str, days_ahead: int) -> bool:
 
     Allows reinforcement: a bet placed at J+2 does NOT block a new bet at J+1
     if the forecast has been confirmed.
+    Also allows retry: a failed bet does NOT block a new attempt.
     """
     history = load_bets_history()
     if market_date not in history:
         return False
 
     previous_bet = history[market_date]
+
+    # Allow retry if previous bet failed
+    if previous_bet.get("status") == "failed":
+        log(
+            f"🔁 Pari précédent ÉCHOUÉ pour {market_date}, "
+            f"nouvelle tentative autorisée"
+        )
+        return False
 
     # Allow reinforcement if we bet at a longer horizon
     prev_horizon = previous_bet.get("days_ahead")
@@ -124,6 +135,7 @@ def already_bet_on(market_date: str, days_ahead: int) -> bool:
         return False
 
     return True
+
 
 
 def record_bet(market_date: str, bet_info: dict, order_response: dict | None,
@@ -320,24 +332,43 @@ def run_bot():
                 size=bet_amount,
             )
 
-            # 12. Record the bet
-            record_bet(
-                market_date, best_bet, result,
-                forecast_temp=forecast_temp, status="placed",
-                days_ahead=days_ahead, bet_amount=bet_amount, method=method,
-            )
-
-            # 13. Notify
-            notify_bet_placed(
-                amount=bet_amount,
-                tranche=best_bet["tranche"],
-                market_date=market_date,
-                edge=best_bet["edge"],
-                our_prob=best_bet["our_probability"],
-                market_price=best_bet["market_price"],
-                source_summary=source_summary,
-                forecast_temp=forecast_temp,
-            )
+            if result is not None:
+                # 12a. Ordre réussi — enregistrer et notifier
+                record_bet(
+                    market_date, best_bet, result,
+                    forecast_temp=forecast_temp, status="placed",
+                    days_ahead=days_ahead, bet_amount=bet_amount, method=method,
+                )
+                notify_bet_placed(
+                    amount=bet_amount,
+                    tranche=best_bet["tranche"],
+                    market_date=market_date,
+                    edge=best_bet["edge"],
+                    our_prob=best_bet["our_probability"],
+                    market_price=best_bet["market_price"],
+                    source_summary=source_summary,
+                    forecast_temp=forecast_temp,
+                )
+            else:
+                # 12b. Ordre ÉCHOUÉ — enregistrer comme failed et notifier l'erreur
+                log(
+                    f"❌ ÉCHEC placement pari: {bet_amount:.2f}$ sur {best_bet['tranche']}°C "
+                    f"@ {best_bet['market_price']:.2f} — place_bet() a retourné None",
+                    "error",
+                )
+                record_bet(
+                    market_date, best_bet, None,
+                    forecast_temp=forecast_temp, status="failed",
+                    days_ahead=days_ahead, bet_amount=bet_amount, method=method,
+                )
+                notify_bet_failed(
+                    amount=bet_amount,
+                    tranche=best_bet["tranche"],
+                    market_date=market_date,
+                    error_detail="place_bet() a retourné None — voir logs pour détails",
+                    source_summary=source_summary,
+                    forecast_temp=forecast_temp,
+                )
 
       except Exception as e:
         log(f"❌ Erreur sur le marché {market.get('date', '?')}: {e}", "error")
@@ -380,12 +411,15 @@ if __name__ == "__main__":
 
     # Keep running
     scan_count = 0
+    heartbeat_count = 0
     while True:
         schedule.run_pending()
         time.sleep(60)
 
-        # Heartbeat log every ~2h (120 iterations × 60s sleep)
         scan_count += 1
+        heartbeat_count += 1
+
+        # Heartbeat log every ~2h (120 iterations × 60s sleep)
         if scan_count % 120 == 0:
             next_run = schedule.next_run()
             if next_run:
@@ -394,3 +428,16 @@ if __name__ == "__main__":
                 log(f"🔄 Heartbeat — bot actif, prochain scan dans {minutes_left}min")
             else:
                 log("🔄 Heartbeat — bot actif")
+
+        # Heartbeat Telegram every ~12h (720 iterations × 60s sleep)
+        if heartbeat_count % 720 == 0:
+            heartbeat_count = 0
+            now = datetime.now()
+            last_scan = now.strftime("%H:%M")
+            tomorrow = (date.today() + timedelta(days=1)).strftime("%d/%m")
+            after_tomorrow = (date.today() + timedelta(days=2)).strftime("%d/%m")
+            markets_summary = f"prochains paris possibles : J+1 {tomorrow}, J+2 {after_tomorrow}"
+            try:
+                notify_heartbeat(last_scan, markets_summary)
+            except Exception:
+                pass
