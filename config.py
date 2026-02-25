@@ -17,7 +17,7 @@ WU_API_KEY = os.getenv("WU_API_KEY", "")
 # Peut être overridé par ACTIVE_CITIES dans .env (comma-separated)
 ACTIVE_CITIES = [
     city.strip().lower()
-    for city in os.getenv("ACTIVE_CITIES", "london,nyc").split(",")
+    for city in os.getenv("ACTIVE_CITIES", "london").split(",")
     if city.strip()
 ]
 

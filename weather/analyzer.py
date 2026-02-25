@@ -122,7 +122,10 @@ def get_probability_distribution(
         if ensemble_data and target_date in ensemble_data:
             member_temps = ensemble_data[target_date]
             if len(member_temps) >= 10:  # need enough members
-                probs = build_probability_from_ensemble(member_temps, tranches, unit=unit)
+                probs = build_probability_from_ensemble(
+                    member_temps, tranches, unit=unit,
+                    city_id=city_config.get("id"),
+                )
                 member_temps_local = [
                     _celsius_to_fahrenheit(temp) if unit == "fahrenheit" else temp
                     for temp in member_temps

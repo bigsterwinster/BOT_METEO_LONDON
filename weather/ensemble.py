@@ -114,7 +114,8 @@ def get_ensemble_forecasts(
 
 
 def build_probability_from_ensemble(
-    member_temps: list[float], tranches: list[str], unit: str = "celsius"
+    member_temps: list[float], tranches: list[str], unit: str = "celsius",
+    city_id: str | None = None,
 ) -> dict[str, float]:
     """
     Build probability distribution directly from ensemble members.
@@ -122,6 +123,11 @@ def build_probability_from_ensemble(
     NO Gaussian — we simply count how many of the 51 members fall into each
     temperature tranche.  Example: 20/51 members predict 12°C → P = 39%.
     """
+    # Bias correction for London (ECMWF cold bias on max temp: +1°C)
+    if city_id == "london":
+        member_temps = [t + 1.0 for t in member_temps]
+        log("Bias correction London: +1°C appliquée sur ensemble")
+
     total = len(member_temps)
     if total == 0:
         return {t: 0.0 for t in tranches}
