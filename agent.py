@@ -153,7 +153,16 @@ def read_env_file() -> dict:
     return env
 
 
+PROTECTED_ENV_KEYS = {"AGENT_MODEL", "OPENAI_API_KEY", "POLYMARKET_PRIVATE_KEY", "TELEGRAM_BOT_TOKEN"}
+
+
 def update_env_file(changes: dict):
+    # Filtrer les clés protégées
+    changes = {k: v for k, v in changes.items() if k not in PROTECTED_ENV_KEYS}
+    if not changes:
+        agent_log("⚠️ Toutes les modifications demandées concernent des clés protégées — ignorées")
+        return
+
     env_path = PROJECT_ROOT / ".env"
     lines = []
     if env_path.exists():
@@ -389,8 +398,8 @@ LOGS SYSTEMD (dernières lignes):
     elif action == "alert":
         agent_log(f"🚨 ALERTE: {reason}")
 
-    # Redémarrer si nécessaire
-    if restart_needed:
+    # Ne redémarre que si modification de code, pas juste de config
+    if restart_needed and action == "update_code":
         restart_bot()
 
     # Notification Telegram
