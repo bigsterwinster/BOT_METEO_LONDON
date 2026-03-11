@@ -150,25 +150,29 @@ def find_best_bet(
 
         # Skip if our own probability is too low
         if our_prob < MIN_OUR_PROBABILITY:
-            log(f"Tranche {tranche}: notre proba {our_prob:.0%} < seuil {MIN_OUR_PROBABILITY:.0%}, skip", "debug")
+            log(f"  ❌ Tranche {tranche}: proba {our_prob:.0%} < seuil {MIN_OUR_PROBABILITY:.0%} → skip")
             continue
 
         # Skip if already too expensive or no liquidity
         if market_price >= 0.95:
+            log(f"  ❌ Tranche {tranche}: prix marché {market_price:.2f} trop élevé → skip")
             continue
         if market_price <= 0.01:
+            log(f"  ❌ Tranche {tranche}: prix marché {market_price:.2f} sans liquidité → skip")
             continue
 
         # Skip if spread too large (illiquid)
         spread = price_info.get("spread", 1.0)
         if spread > 0.15:
-            log(f"Tranche {tranche}: spread trop large ({spread:.2f}), skip", "debug")
+            log(f"  ❌ Tranche {tranche}: spread {spread:.2f} trop large → skip")
             continue
 
         edge = calculate_edge(our_prob, market_price)
         if edge < min_edge:
+            log(f"  ❌ Tranche {tranche}: edge {edge:.0%} < minimum {min_edge:.0%} → skip")
             continue
 
+        log(f"  ✅ Tranche {tranche}: proba={our_prob:.0%}, prix={market_price:.2f}, edge={edge:.0%} → candidat")
         score = calculate_score(our_prob, market_price)
 
         if score > best_score:
@@ -182,41 +186,13 @@ def find_best_bet(
                 "expected_value": (our_prob / market_price) - 1,
             }
 
-    # --- Override: if the most probable tranche has edge, always pick it ---
-    most_probable_tranche = max(probability_distribution, key=probability_distribution.get)
-    most_probable_prob = probability_distribution[most_probable_tranche]
-    most_probable_price_info = market_prices.get(most_probable_tranche)
-
-    if most_probable_price_info and most_probable_prob > 0.35:
-        mp_price = most_probable_price_info.get("ask", 1.0)
-        mp_spread = most_probable_price_info.get("spread", 1.0)
-
-        if 0.01 < mp_price < 0.95 and mp_spread <= 0.15 and most_probable_prob > mp_price:
-            mp_edge = calculate_edge(most_probable_prob, mp_price)
-            mp_score = calculate_score(most_probable_prob, mp_price)
-
-            # Force pick if best_bet was on a different tranche
-            if best_bet is None or best_bet["tranche"] != most_probable_tranche:
-                log(
-                    f"Override: tranche la plus probable {most_probable_tranche} "
-                    f"({most_probable_prob:.0%}) a un edge de {mp_edge:.0%} — priorité forcée"
-                )
-                best_bet = {
-                    "tranche": most_probable_tranche,
-                    "our_probability": most_probable_prob,
-                    "market_price": mp_price,
-                    "edge": mp_edge,
-                    "score": mp_score,
-                    "expected_value": (most_probable_prob / mp_price) - 1,
-                }
-
     if best_bet:
         log(
-            f"Meilleur pari: tranche {best_bet['tranche']} — "
+            f"✅ Meilleur pari retenu: tranche {best_bet['tranche']} — "
             f"edge {best_bet['edge']:.0%}, score {best_bet['score']:.3f}, "
             f"notre proba {best_bet['our_probability']:.0%} vs marché {best_bet['market_price']:.2f}"
         )
     else:
-        log("Aucun pari avec edge suffisant trouvé", "debug")
+        log("🔍 Aucun pari avec edge suffisant — toutes les tranches rejetées")
 
     return best_bet

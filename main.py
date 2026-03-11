@@ -512,6 +512,12 @@ def safe_run_bot():
     """Wrapper around run_bot with global exception handling."""
     try:
         run_bot()
+        # Déclencher l'agent IA après chaque cycle
+        try:
+            from agent import run_agent
+            run_agent()
+        except Exception as agent_err:
+            log(f"⚠️ Agent IA: erreur non bloquante — {agent_err}", "warning")
     except Exception as e:
         log(f"💀 CRASH dans run_bot(): {e}", "error")
         log(traceback.format_exc(), "error")

@@ -128,9 +128,21 @@ def build_probability_from_ensemble(
         member_temps = [t + 1.0 for t in member_temps]
         log("Bias correction London: +1°C appliquée sur ensemble")
 
+    import statistics
     total = len(member_temps)
     if total == 0:
         return {t: 0.0 for t in tranches}
+
+    mean_raw = statistics.mean(member_temps)
+    spread = max(member_temps) - min(member_temps)
+    log(
+        f"🌡️ Ensemble membres: {total} | "
+        f"moyenne={mean_raw:.1f}°C | "
+        f"min={min(member_temps):.1f}°C | "
+        f"max={max(member_temps):.1f}°C | "
+        f"spread={spread:.1f}°C"
+    )
+
 
     probabilities: dict[str, float] = {}
     use_fahrenheit = unit.lower() == "fahrenheit"
@@ -144,5 +156,9 @@ def build_probability_from_ensemble(
         count = sum(1 for rounded in rounded_temps if _temp_matches_tranche(rounded, tranche))
 
         probabilities[tranche] = round(count / total, 4)
+
+    # Log distribution complète pour analyse agent IA
+    dist_str = " | ".join([f"{t}:{p:.0%}" for t, p in sorted(probabilities.items(), key=lambda x: x[1], reverse=True)[:5]])
+    log(f"📊 Distribution top-5: {dist_str}")
 
     return probabilities

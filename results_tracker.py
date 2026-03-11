@@ -347,6 +347,13 @@ def check_yesterday_results():
         # Determine if prediction was correct
         would_have_won = _temp_matches_tranche(actual_rounded, bot_prediction)
 
+        # Écart prévision/réalité
+        forecast_error = None
+        if forecast_temp is not None:
+            forecast_error = round(float(forecast_temp) - actual_temp, 1)
+            direction = "trop chaud" if forecast_error > 0 else "trop froid" if forecast_error < 0 else "exact"
+            log(f"📐 Écart prévision/réalité [{city_name}]: {forecast_error:+.1f}{unit_symbol} ({direction})")
+
         result_entry = {
             "market_key": market_key,
             "city_id": city_id,
@@ -357,8 +364,9 @@ def check_yesterday_results():
             "bot_prediction": f"{bot_prediction}{unit_symbol}",
             "bot_probability": bet_info.get("our_probability"),
             "market_price_at_bet": bet_info.get("price_paid"),
-            "actual_temp_raw": actual_temp,
+            "actual_temp_raw": round(actual_temp, 1),
             "actual_result": f"{actual_rounded}{unit_symbol}",
+            "forecast_error": forecast_error,
             "would_have_won": would_have_won,
             "status": bet_info.get("status", "unknown"),
             "checked_at": datetime.now().isoformat(),
@@ -371,10 +379,12 @@ def check_yesterday_results():
 
         # Log and notify
         emoji = "✅" if would_have_won else "❌"
+        error_str = f"{forecast_error:+.1f}{unit_symbol}" if forecast_error is not None else "N/A"
         msg = (
             f"{emoji} *Résultat {city_name} — {market_date}*\n"
             f"Temp réelle: {actual_rounded}{unit_symbol} ({actual_temp:.1f}{unit_symbol})\n"
             f"Prédiction bot: {bot_prediction}{unit_symbol} (proba: {bet_info.get('our_probability', 0):.0%})\n"
+            f"Écart prévision/réalité: {error_str}\n"
             f"Prix marché: {bet_info.get('price_paid', 0):.2f}\n"
             f"Résultat: {'GAGNÉ ✅' if would_have_won else 'PERDU ❌'}"
         )
