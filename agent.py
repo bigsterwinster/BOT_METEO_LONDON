@@ -267,6 +267,26 @@ def run_agent():
     recent_bets = get_recent_bets(10)
     systemd_logs = get_recent_systemd_logs(80)
     current_env = read_env_file()
+
+    # Structure du projet pour que GPT sache quels fichiers existent
+    project_structure = """
+Fichiers modifiables du projet (chemins relatifs depuis la racine) :
+- agent.py
+- main.py
+- config.py
+- cities.py
+- strategy/edge_calculator.py
+- weather/analyzer.py
+- weather/ensemble.py
+- weather/open_meteo.py
+- weather/wunderground.py
+- results_tracker.py
+- polymarket/client.py
+- polymarket/markets.py
+- polymarket/trader.py
+- notifications/telegram.py
+"""
+
     bias_summary = compute_recent_bias_summary(recent_results)
 
     # Statistiques rapides
