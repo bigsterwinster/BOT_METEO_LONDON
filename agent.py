@@ -299,6 +299,9 @@ Fichiers modifiables du projet (chemins relatifs depuis la racine) :
     context = f"""
 === ÉTAT DU BOT — {datetime.now().strftime('%Y-%m-%d %H:%M')} ===
 
+STRUCTURE DU PROJET:
+{project_structure}
+
 CONFIG ACTUELLE (.env):
 {json.dumps({k: v for k, v in current_env.items() if not 'KEY' in k and not 'TOKEN' in k and not 'CHAT' in k}, indent=2)}
 
