@@ -229,6 +229,10 @@ def run_bot():
         return
 
     candidates = []
+    markets_analyzed = 0
+    bets_placed = 0
+    bets_skipped = 0
+    bets_history = load_bets_history()
 
     for city_config in city_configs:
         city_id = city_config["id"]
@@ -260,15 +264,26 @@ def run_bot():
                     log(f"Marché {market_date} déjà passé, skip")
                     continue
 
+                markets_analyzed += 1
+
                 # 2. Amélioration 2 — Check timing
                 should_bet, timing_reason = should_bet_on_market(market_date)
                 if not should_bet:
                     log(f"⏰ Pas le bon moment pour parier sur {market_date} ({timing_reason}), skip")
+                    bets_skipped += 1
                     continue
 
                 # 3. Check if we already bet on this market
                 if already_bet_on(market_key):
-                    log(f"⏭️ Déjà parié sur {city_name} {market_date} (J+{days_ahead}), skip")
+                    existing = bets_history.get(market_key, {})
+                    log(
+                        f"⏭️ Déjà parié sur {city_name} {market_date} (J+{days_ahead}) — "
+                        f"tranche {existing.get('tranche', '?')}, "
+                        f"edge {existing.get('edge', 0):.0%}, "
+                        f"proba {existing.get('our_probability', 0):.0%}, "
+                        f"prix payé {existing.get('price_paid', 0):.2f}"
+                    )
+                    bets_skipped += 1
                     continue
 
                 # 4. Fetch weather forecasts
@@ -320,6 +335,7 @@ def run_bot():
                 if best_bet is None:
                     log(f"🔍 Aucun edge trouvé pour {city_name} {market_date}")
                     notify_scan_no_edge(market_date, city_name=city_name)
+                    bets_skipped += 1
                     continue
 
                 candidates.append(
@@ -435,6 +451,7 @@ def run_bot():
                 unit=unit,
             )
             remaining_bankroll = round(remaining_bankroll - bet_amount, 2)
+            bets_placed += 1
         else:
             log(
                 f"💰 [{city_name}] Placement pari: {bet_amount:.2f}$ sur {best_bet['tranche']}{unit_symbol} "
@@ -475,6 +492,7 @@ def run_bot():
                     unit=unit,
                 )
                 remaining_bankroll = round(remaining_bankroll - bet_amount, 2)
+                bets_placed += 1
             else:
                 # Ordre ÉCHOUÉ — enregistrer comme failed et notifier
                 log(
@@ -505,6 +523,11 @@ def run_bot():
                     unit=unit,
                 )
 
+    log(
+        f"📋 Résumé cycle: {markets_analyzed} marchés analysés | "
+        f"{bets_placed} pari(s) placé(s) | "
+        f"{bets_skipped} skip(s)"
+    )
     log(f"✅ Scan terminé — bankroll restant estimé: {remaining_bankroll:.2f}$")
 
 

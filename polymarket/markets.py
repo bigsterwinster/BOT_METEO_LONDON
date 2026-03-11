@@ -91,6 +91,17 @@ def find_temperature_markets(city_config: dict, days_ahead: int = 3) -> list[dic
             "tranches": tranches,
         })
 
+        # Log time remaining until market close
+        end_date_iso = event.get("endDate") or event.get("end_date_iso") or event.get("endDateIso")
+        if end_date_iso:
+            try:
+                closes_at = datetime.fromisoformat(end_date_iso.replace("Z", "+00:00"))
+                now_utc = datetime.now(closes_at.tzinfo)
+                hours_left = (closes_at - now_utc).total_seconds() / 3600
+                log(f"⏱️ Marché {market_date} ferme dans {hours_left:.1f}h")
+            except Exception:
+                pass
+
     log(f"Gamma API: {len(city_events)} marché(s) température {city_name} trouvé(s)")
     return city_events
 

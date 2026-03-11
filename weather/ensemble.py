@@ -161,4 +161,15 @@ def build_probability_from_ensemble(
     dist_str = " | ".join([f"{t}:{p:.0%}" for t, p in sorted(probabilities.items(), key=lambda x: x[1], reverse=True)[:5]])
     log(f"📊 Distribution top-5: {dist_str}")
 
+    # Indicateur de confiance : % de membres dans la tranche majoritaire
+    top_tranche = max(probabilities, key=probabilities.get)
+    top_prob = probabilities[top_tranche]
+    if top_prob >= 0.50:
+        confidence = "🟢 FORTE"
+    elif top_prob >= 0.30:
+        confidence = "🟡 MODÉRÉE"
+    else:
+        confidence = "🔴 FAIBLE"
+    log(f"🎯 Confiance ensemble: {confidence} ({top_prob:.0%} des membres → tranche {top_tranche})")
+
     return probabilities

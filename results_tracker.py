@@ -295,6 +295,23 @@ def check_yesterday_results():
     Check results for any past bets/simulations that haven't been verified yet.
     Looks at bets_history.json for predictions and compares with actual temperatures.
     """
+    # Biais moyen London sur 7 derniers jours
+    try:
+        all_results = load_results_log()
+        london_results = [
+            r for r in all_results
+            if r.get("city_id") == "london" and r.get("forecast_error") is not None
+        ][-7:]
+        if london_results:
+            mean_bias = sum(r["forecast_error"] for r in london_results) / len(london_results)
+            direction = "trop froid 🥶" if mean_bias < -0.5 else "trop chaud 🔥" if mean_bias > 0.5 else "calibré ✅"
+            log(
+                f"📐 Biais London (7j): {mean_bias:+.2f}°C ({direction}) "
+                f"sur {len(london_results)} résultats"
+            )
+    except Exception:
+        pass
+
     history = load_bets_history()
     if not history:
         log("Results tracker: aucun pari/simulation à vérifier")
