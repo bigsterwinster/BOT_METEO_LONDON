@@ -1,0 +1,126 @@
+[2026-03-11 21:41:25] 🤖 Agent IA démarré
+[2026-03-11 21:41:25] ❌ OPENAI_API_KEY manquante dans .env
+[2026-03-11 21:48:22] 🤖 Agent IA démarré
+[2026-03-11 21:48:22] 📡 Appel gpt-5.4...
+[2026-03-11 21:48:23] ❌ Erreur OpenAI: Error code: 403 - {'error': {'message': 'Project `proj_nrqBlWyvh6l0ckMaJq4zfhN9` does not have access to model `gpt-5.4`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+[2026-03-11 21:49:05] 🤖 Agent IA démarré
+[2026-03-11 21:49:05] 📡 Appel gpt-5.4...
+[2026-03-11 21:49:06] ❌ Erreur OpenAI: Error code: 403 - {'error': {'message': 'Project `proj_nrqBlWyvh6l0ckMaJq4zfhN9` does not have access to model `gpt-5.4`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+[2026-03-11 21:55:52] 🤖 Agent IA démarré
+[2026-03-11 21:55:52] 📡 Appel gpt-5.4...
+[2026-03-11 21:55:53] ❌ Erreur OpenAI: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+[2026-03-11 21:58:47] 🤖 Agent IA démarré
+[2026-03-11 21:58:47] 📡 Appel gpt-5.4...
+[2026-03-11 21:58:59] ✅ Réponse reçue (3067 chars)
+[2026-03-11 21:58:59] 🧠 Décision: update_code | warning | L’agent IA échoue à chaque exécution à cause d’un appel API OpenAI incompatible avec le modèle configuré.
+[2026-03-11 21:58:59] ❌ Fichier introuvable: agent/openai_client.py
+[2026-03-11 21:58:59] ❌ Fichier introuvable: bot/config_logic.py
+[2026-03-11 21:58:59] 🏁 Agent terminé — action=update_code, restart=False
+[2026-03-11 21:59:53] 🤖 Agent IA démarré
+[2026-03-11 21:59:53] 📡 Appel gpt-5.4...
+[2026-03-11 22:00:03] ✅ Réponse reçue (2309 chars)
+[2026-03-11 22:00:03] 🧠 Décision: alert | warning | L’agent IA rencontre encore des erreurs d’intégration OpenAI et ses corrections automatiques ciblent des fichiers inexistants ; aucun changement de paramètres de trading n’est suffisamment justifié.
+[2026-03-11 22:00:03] 🚨 ALERTE: L’agent IA rencontre encore des erreurs d’intégration OpenAI et ses corrections automatiques ciblent des fichiers inexistants ; aucun changement de paramètres de trading n’est suffisamment justifié.
+[2026-03-11 22:00:03] 🏁 Agent terminé — action=alert, restart=False
+[2026-03-11 22:09:35] 🤖 Agent IA démarré
+[2026-03-11 22:09:35] 📡 Appel gpt-5.4...
+[2026-03-11 22:09:36] ❌ Erreur OpenAI: Error code: 403 - {'error': {'message': 'Project `proj_nrqBlWyvh6l0ckMaJq4zfhN9` does not have access to model `gpt-5.4`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+[2026-03-11 22:10:39] 🤖 Agent IA démarré
+[2026-03-11 22:10:39] 📡 Appel gpt-5.4...
+[2026-03-11 22:10:46] ✅ Réponse reçue (1751 chars)
+[2026-03-11 22:10:46] 🧠 Décision: update_env | warning | Le modèle IA configuré n’est pas accessible (403) et une série de 4 pertes consécutives justifie un relèvement prudent du seuil d’edge.
+[2026-03-11 22:10:46] ⚙️ .env: MIN_EDGE_PERCENT → 12
+[2026-03-11 22:10:46] ⚙️ .env: AGENT_MODEL → gpt-4.1-mini
+[2026-03-11 22:10:46] ❌ Erreur restart: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: il est nécessaire de saisir un mot de passe
+
+[2026-03-11 22:10:47] 🏁 Agent terminé — action=update_env, restart=True
+[2026-03-11 22:11:45] 🤖 Agent IA démarré
+[2026-03-11 22:11:45] 📡 Appel gpt-4.1-mini...
+[2026-03-11 22:11:51] ✅ Réponse reçue (1116 chars)
+[2026-03-11 22:11:51] 🧠 Décision: update_env | warning | Série de 4 pertes consécutives détectée et modèle IA gpt-5.4 inaccessible, ajustement prudent du seuil d'edge.
+[2026-03-11 22:11:51] ⚙️ .env: MIN_EDGE_PERCENT → 14
+[2026-03-11 22:11:51] ⚙️ .env: AGENT_MODEL → gpt-4.1-mini
+[2026-03-11 22:11:51] ❌ Erreur restart: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: il est nécessaire de saisir un mot de passe
+
+[2026-03-11 22:11:51] 🏁 Agent terminé — action=update_env, restart=True
+[2026-03-11 22:12:22] 🤖 Agent IA démarré
+[2026-03-11 22:12:22] 📡 Appel gpt-4.1-mini...
+[2026-03-11 22:12:29] ✅ Réponse reçue (1164 chars)
+[2026-03-11 22:12:29] 🧠 Décision: update_env | warning | Série de 4 pertes consécutives détectée sur Londres, augmentation prudente de MIN_EDGE_PERCENT
+[2026-03-11 22:12:29] ⚙️ .env: MIN_EDGE_PERCENT → 16
+[2026-03-11 22:12:29] ❌ Erreur restart: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: il est nécessaire de saisir un mot de passe
+
+[2026-03-11 22:12:29] 🏁 Agent terminé — action=update_env, restart=True
+[2026-03-11 22:14:48] 🤖 Agent IA démarré
+[2026-03-11 22:14:48] 📡 Appel gpt-5.4...
+[2026-03-11 22:14:49] ❌ Erreur OpenAI: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+[2026-03-11 22:21:21] 🤖 Agent IA démarré
+[2026-03-11 22:21:22] 📡 Appel gpt-5.4...
+[2026-03-11 22:21:33] ✅ Réponse reçue (2508 chars)
+[2026-03-11 22:21:33] 🧠 Décision: update_code | warning | Bug bloquant dans l’appel OpenAI avec gpt-5.4 : usage de max_tokens non supporté.
+[2026-03-11 22:21:33] ❌ Code à remplacer non trouvé dans agent.py
+[2026-03-11 22:21:33] 🏁 Agent terminé — action=update_code, restart=False
+[2026-03-11 22:23:40] 🤖 Agent IA démarré
+[2026-03-11 22:23:40] 📡 Appel gpt-5.4...
+[2026-03-11 22:23:40] ❌ Erreur OpenAI: Error code: 403 - {'error': {'message': 'Project `proj_nrqBlWyvh6l0ckMaJq4zfhN9` does not have access to model `gpt-5.4`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+[2026-03-11 22:24:21] 🤖 Agent IA démarré
+[2026-03-11 22:24:21] 📡 Appel gpt-5.4...
+[2026-03-11 22:24:36] ✅ Réponse reçue (3011 chars)
+[2026-03-11 22:24:36] 🧠 Décision: update_env | warning | Le modèle d’agent configuré est inaccessible et la série récente de pertes justifie un filtre d’edge plus strict.
+[2026-03-11 22:24:36] ⚙️ .env: MIN_EDGE_PERCENT → 18
+[2026-03-11 22:24:36] ⚙️ .env: AGENT_MODEL → gpt-4o-mini
+[2026-03-11 22:24:38] 🤖 Agent IA démarré
+[2026-03-11 22:24:38] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:24:44] ✅ Réponse reçue (858 chars)
+[2026-03-11 22:24:44] 🧠 Décision: update_env | warning | Le modèle d’agent configuré est inaccessible et la série récente de pertes justifie un filtre d’edge plus strict.
+[2026-03-11 22:24:44] ⚙️ .env: MIN_EDGE_PERCENT → 20
+[2026-03-11 22:24:44] ⚙️ .env: AGENT_MODEL → gpt-4o-mini
+[2026-03-11 22:24:46] 🤖 Agent IA démarré
+[2026-03-11 22:24:46] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:24:50] ✅ Réponse reçue (672 chars)
+[2026-03-11 22:24:50] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:24:50] ⚙️ .env: MIN_EDGE_PERCENT → 22
+[2026-03-11 22:24:52] 🤖 Agent IA démarré
+[2026-03-11 22:24:52] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:03] ✅ Réponse reçue (708 chars)
+[2026-03-11 22:25:03] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:03] ⚙️ .env: MIN_EDGE_PERCENT → 24
+[2026-03-11 22:25:05] 🤖 Agent IA démarré
+[2026-03-11 22:25:05] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:18] ✅ Réponse reçue (734 chars)
+[2026-03-11 22:25:18] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:18] ⚙️ .env: MIN_EDGE_PERCENT → 26
+[2026-03-11 22:25:20] 🤖 Agent IA démarré
+[2026-03-11 22:25:20] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:25] ✅ Réponse reçue (831 chars)
+[2026-03-11 22:25:25] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:25] ⚙️ .env: MIN_EDGE_PERCENT → 28
+[2026-03-11 22:25:27] 🤖 Agent IA démarré
+[2026-03-11 22:25:27] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:32] ✅ Réponse reçue (701 chars)
+[2026-03-11 22:25:32] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:32] ⚙️ .env: MIN_EDGE_PERCENT → 30
+[2026-03-11 22:25:34] 🤖 Agent IA démarré
+[2026-03-11 22:25:34] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:42] ✅ Réponse reçue (783 chars)
+[2026-03-11 22:25:42] 🧠 Décision: update_env | warning | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:42] ⚙️ .env: MIN_EDGE_PERCENT → 30
+[2026-03-11 22:25:44] 🤖 Agent IA démarré
+[2026-03-11 22:25:44] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:25:48] ✅ Réponse reçue (804 chars)
+[2026-03-11 22:25:48] 🧠 Décision: update_env | info | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:25:49] 🏁 Agent terminé — action=update_env, restart=False
+[2026-03-11 22:30:02] 🤖 Agent IA démarré
+[2026-03-11 22:30:02] 📡 Appel gpt-4o-mini...
+[2026-03-11 22:30:12] ✅ Réponse reçue (771 chars)
+[2026-03-11 22:30:12] 🧠 Décision: update_env | info | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:30:12] 🏁 Agent terminé — action=update_env, restart=False
+[2026-03-11 22:36:32] 🤖 Agent IA démarré
+[2026-03-11 22:36:32] 📡 Appel gpt-4o...
+[2026-03-11 22:36:37] ✅ Réponse reçue (735 chars)
+[2026-03-11 22:36:37] 🧠 Décision: update_env | info | Le bot a subi 3 pertes consécutives, ce qui justifie une augmentation du seuil de profit.
+[2026-03-11 22:36:37] ⚙️ .env: MIN_EDGE_PERCENT → 30
+[2026-03-11 22:36:37] 🏁 Agent terminé — action=update_env, restart=True

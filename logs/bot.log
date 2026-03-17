@@ -4154,3 +4154,1599 @@ py_clob_client.exceptions.PolyApiException: PolyApiException[status_code=400, er
 [2026-02-25 10:58:59] INFO [logger] --- [NYC] Analyse du marché 2026-02-26 (Highest temperature in NYC on February 26?) ---
 [2026-02-25 10:58:59] INFO [logger] ⏭️ Déjà parié sur NYC 2026-02-26 (J+1), skip
 [2026-02-25 10:58:59] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-11 23:01:53] INFO [logger] 🤖 Bot Polymarket Météo multi-ville démarré (🧪 DRY RUN) — scan toutes les 2h — villes: london
+[2026-03-11 23:01:53] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:01:53] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-11 23:01:53] INFO [logger] 📊 Vérification du résultat pour London 2026-02-26...
+[2026-03-11 23:01:54] WARNING [logger] Weather Underground: scraping échec pour 2026-02-26 (données JS non disponibles)
+[2026-03-11 23:01:54] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-02-26 = 13.4°C
+[2026-03-11 23:01:54] INFO [logger] 📐 Écart prévision/réalité [London]: -0.2°C (trop froid)
+[2026-03-11 23:01:54] INFO [logger] ✅ Résultat London — 2026-02-26 | Temp réelle: 13°C (13.4°C) | Prédiction bot: 13°C (proba: 58%) | Écart prévision/réalité: -0.2°C | Prix marché: 0.39 | Résultat: GAGNÉ ✅
+[2026-03-11 23:01:54] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:01:54] INFO [logger] 📊 Vérification du résultat pour NYC 2026-02-26...
+[2026-03-11 23:01:55] WARNING [logger] Weather Underground: scraping échec pour 2026-02-26 (données JS non disponibles)
+[2026-03-11 23:01:55] INFO [logger] Open-Meteo archive [NYC]: temp max réelle pour 2026-02-26 = 39.7°F
+[2026-03-11 23:01:55] INFO [logger] 📐 Écart prévision/réalité [NYC]: -7.2°F (trop froid)
+[2026-03-11 23:01:55] INFO [logger] ❌ Résultat NYC — 2026-02-26 | Temp réelle: 40°F (39.7°F) | Prédiction bot: 36-37°F (proba: 40%) | Écart prévision/réalité: -7.2°F | Prix marché: 0.34 | Résultat: PERDU ❌
+[2026-03-11 23:01:55] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:01:55] INFO [logger] 📊 Vérification du résultat pour London 2026-02-25...
+[2026-03-11 23:01:57] WARNING [logger] Weather Underground: scraping échec pour 2026-02-25 (données JS non disponibles)
+[2026-03-11 23:01:57] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-02-25 = 17.0°C
+[2026-03-11 23:01:57] INFO [logger] 📐 Écart prévision/réalité [London]: +0.4°C (trop chaud)
+[2026-03-11 23:01:57] INFO [logger] ✅ Résultat London — 2026-02-25 | Temp réelle: 17°C (17.0°C) | Prédiction bot: 17°C (proba: 82%) | Écart prévision/réalité: +0.4°C | Prix marché: 0.39 | Résultat: GAGNÉ ✅
+[2026-03-11 23:01:57] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:01:57] INFO [logger] 📊 Vérification du résultat pour NYC 2026-02-25...
+[2026-03-11 23:01:59] WARNING [logger] Weather Underground: scraping échec pour 2026-02-25 (données JS non disponibles)
+[2026-03-11 23:01:59] INFO [logger] Open-Meteo archive [NYC]: temp max réelle pour 2026-02-25 = 36.9°F
+[2026-03-11 23:01:59] INFO [logger] 📐 Écart prévision/réalité [NYC]: +3.8°F (trop chaud)
+[2026-03-11 23:01:59] INFO [logger] ❌ Résultat NYC — 2026-02-25 | Temp réelle: 37°F (36.9°F) | Prédiction bot: 38-39°F (proba: 52%) | Écart prévision/réalité: +3.8°F | Prix marché: 0.17 | Résultat: PERDU ❌
+[2026-03-11 23:02:00] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:02:00] INFO [logger] 📊 4 résultat(s) vérifié(s)
+[2026-03-11 23:02:00] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-11 23:02:00] INFO [logger] ⏱️ Marché 2026-03-11 ferme dans -10.0h
+[2026-03-11 23:02:00] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 14.0h
+[2026-03-11 23:02:00] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 38.0h
+[2026-03-11 23:02:00] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-11 23:02:00] INFO [logger] --- [London] Analyse du marché 2026-03-11 (Highest temperature in London on March 11?) ---
+[2026-03-11 23:02:00] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-11 (j0_morning_only), skip
+[2026-03-11 23:02:00] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-11 23:02:00] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-11 23:02:00] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-11 23:02:00] INFO [logger] Température Open-Meteo seule (fallback): 12.0°C
+[2026-03-11 23:02:00] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-11 23:02:00] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-11 23:02:00] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=12.8°C | min=11.8°C | max=13.4°C | spread=1.6°C
+[2026-03-11 23:02:00] INFO [logger] 📊 Distribution top-5: 13:90% | 12:10% | 7-:0% | 8:0% | 9:0%
+[2026-03-11 23:02:00] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (90% des membres → tranche 13)
+[2026-03-11 23:02:00] INFO [logger] Ensemble: 50 membres, moyenne=11.8°C, spread=1.6°C
+[2026-03-11 23:02:00] INFO [logger] [London] Distribution (ensemble): {'7-': 0.0, '8': 0.0, '9': 0.0, '10': 0.0, '11': 0.0, '12': 0.1, '13': 0.9, '14': 0.0, '15+': 0.0}
+[2026-03-11 23:02:01] DEBUG [logger] DEBUG get_price token 1135566987688562... — raw_bid={'price': '0.001'} raw_ask={'price': '0.002'}
+[2026-03-11 23:02:01] DEBUG [logger] DEBUG get_price token 1032620478331222... — raw_bid={'price': '0.001'} raw_ask={'price': '0.005'}
+[2026-03-11 23:02:01] DEBUG [logger] DEBUG get_price token 3033335903911277... — raw_bid={'price': '0.012'} raw_ask={'price': '0.019'}
+[2026-03-11 23:02:01] DEBUG [logger] DEBUG get_price token 6842401364539303... — raw_bid={'price': '0.026'} raw_ask={'price': '0.032'}
+[2026-03-11 23:02:02] DEBUG [logger] DEBUG get_price token 1152061483311407... — raw_bid={'price': '0.11'} raw_ask={'price': '0.12'}
+[2026-03-11 23:02:02] DEBUG [logger] DEBUG get_price token 7970113980044836... — raw_bid={'price': '0.4'} raw_ask={'price': '0.43'}
+[2026-03-11 23:02:02] DEBUG [logger] DEBUG get_price token 4216553165009527... — raw_bid={'price': '0.35'} raw_ask={'price': '0.37'}
+[2026-03-11 23:02:02] DEBUG [logger] DEBUG get_price token 2834144496128874... — raw_bid={'price': '0.064'} raw_ask={'price': '0.067'}
+[2026-03-11 23:02:03] DEBUG [logger] DEBUG get_price token 4021399055422569... — raw_bid={'price': '0.011'} raw_ask={'price': '0.021'}
+[2026-03-11 23:02:03] INFO [logger] [London] Prix marché: {'7-': 0.0015, '8': 0.003, '9': 0.0155, '10': 0.028999999999999998, '11': 0.11499999999999999, '12': 0.41500000000000004, '13': 0.36, '14': 0.0655, '15+': 0.016}
+[2026-03-11 23:02:03] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 7-: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 8: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 10: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 11: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 12: proba 10% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ✅ Tranche 13: proba=90%, prix=0.37, edge=143% → candidat
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 14: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger]   ❌ Tranche 15+: proba 0% < seuil 25% → skip
+[2026-03-11 23:02:03] INFO [logger] ✅ Meilleur pari retenu: tranche 13 — edge 143%, score 1.160, notre proba 90% vs marché 0.37
+[2026-03-11 23:02:03] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-11 23:02:03] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j2_daytime), skip
+[2026-03-11 23:02:03] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-11 23:02:03] INFO [logger] 💵 [London] Kelly sizing: 10.00$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-11 23:02:03] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 10.00$ sur 13°C @ 0.37 (edge: 143%) [ensemble, J+1]
+[2026-03-11 23:02:03] INFO [logger] Pari enregistré pour London 2026-03-12: tranche 13 (simulated)
+[2026-03-11 23:02:03] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:02:03] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-11 23:02:03] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 40.00$
+[2026-03-11 23:02:14] INFO [logger] 🤖 Bot Polymarket Météo multi-ville démarré (🧪 DRY RUN) — scan toutes les 2h — villes: london
+[2026-03-11 23:02:14] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:02:14] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-11 23:02:14] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-11 23:02:14] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-11 23:02:15] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-11 23:02:15] INFO [logger] ⏱️ Marché 2026-03-11 ferme dans -10.0h
+[2026-03-11 23:02:15] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 14.0h
+[2026-03-11 23:02:15] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 38.0h
+[2026-03-11 23:02:15] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-11 23:02:15] INFO [logger] --- [London] Analyse du marché 2026-03-11 (Highest temperature in London on March 11?) ---
+[2026-03-11 23:02:15] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-11 (j0_morning_only), skip
+[2026-03-11 23:02:15] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-11 23:02:15] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+1) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-11 23:02:15] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-11 23:02:15] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j2_daytime), skip
+[2026-03-11 23:02:15] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-11 23:03:16] INFO [logger] 🤖 Bot Polymarket Météo multi-ville démarré (🧪 DRY RUN) — scan toutes les 2h — villes: london
+[2026-03-11 23:03:16] INFO [logger] Telegram: message envoyé
+[2026-03-11 23:03:16] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-11 23:03:16] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-11 23:03:16] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-11 23:03:16] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-11 23:03:16] INFO [logger] ⏱️ Marché 2026-03-11 ferme dans -10.1h
+[2026-03-11 23:03:17] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 13.9h
+[2026-03-11 23:03:17] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 37.9h
+[2026-03-11 23:03:17] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-11 23:03:17] INFO [logger] --- [London] Analyse du marché 2026-03-11 (Highest temperature in London on March 11?) ---
+[2026-03-11 23:03:17] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-11 (j0_morning_only), skip
+[2026-03-11 23:03:17] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-11 23:03:17] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+1) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-11 23:03:17] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-11 23:03:17] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j2_daytime), skip
+[2026-03-11 23:03:17] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 01:03:17] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 01:03:17] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 01:03:17] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 01:03:17] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 01:03:17] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 01:03:17] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 11.9h
+[2026-03-12 01:03:17] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 35.9h
+[2026-03-12 01:03:17] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 01:03:17] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 01:03:17] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 01:03:17] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 01:03:17] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 01:03:18] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-12 01:03:18] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-12 01:03:18] INFO [logger] Température Open-Meteo seule (fallback): 11.8°C
+[2026-03-12 01:03:18] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-12 01:03:18] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-12 01:03:18] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=11.9°C | min=11.1°C | max=12.8°C | spread=1.7°C
+[2026-03-12 01:03:18] INFO [logger] 📊 Distribution top-5: 12+:94% | 11:6% | 7:0% | 8:0% | 9:0%
+[2026-03-12 01:03:18] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (94% des membres → tranche 12+)
+[2026-03-12 01:03:18] INFO [logger] Ensemble: 50 membres, moyenne=10.9°C, spread=1.7°C
+[2026-03-12 01:03:18] INFO [logger] [London] Distribution (ensemble): {'7': 0.0, '8': 0.0, '9': 0.0, '10': 0.0, '11': 0.06, '4-': 0.0, '5': 0.0, '6': 0.0, '12+': 0.94}
+[2026-03-12 01:03:18] DEBUG [logger] DEBUG get_price token 1712628159345707... — raw_bid={'price': '0.008'} raw_ask={'price': '0.019'}
+[2026-03-12 01:03:18] DEBUG [logger] DEBUG get_price token 5103292626419648... — raw_bid={'price': '0.022'} raw_ask={'price': '0.03'}
+[2026-03-12 01:03:18] DEBUG [logger] DEBUG get_price token 4675538800434622... — raw_bid={'price': '0.05'} raw_ask={'price': '0.07'}
+[2026-03-12 01:03:19] DEBUG [logger] DEBUG get_price token 3176917237273020... — raw_bid={'price': '0.09'} raw_ask={'price': '0.11'}
+[2026-03-12 01:03:19] DEBUG [logger] DEBUG get_price token 9695916433238557... — raw_bid={'price': '0.3'} raw_ask={'price': '0.32'}
+[2026-03-12 01:03:19] DEBUG [logger] DEBUG get_price token 6070116678570073... — raw_bid={'price': '0.002'} raw_ask={'price': '0.004'}
+[2026-03-12 01:03:19] DEBUG [logger] DEBUG get_price token 7015779711407170... — raw_bid={'price': '0.003'} raw_ask={'price': '0.007'}
+[2026-03-12 01:03:20] DEBUG [logger] DEBUG get_price token 4277892052401509... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-03-12 01:03:20] DEBUG [logger] DEBUG get_price token 5004855843159534... — raw_bid={'price': '0.5'} raw_ask={'price': '0.52'}
+[2026-03-12 01:03:20] INFO [logger] [London] Prix marché: {'7': 0.0135, '8': 0.026, '9': 0.060000000000000005, '10': 0.1, '11': 0.31, '4-': 0.003, '5': 0.005, '6': 0.004, '12+': 0.51}
+[2026-03-12 01:03:20] INFO [logger] Edge minimum dynamique pour J+1: 12%
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 7: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 8: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 10: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 11: proba 6% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 4-: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 5: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ❌ Tranche 6: proba 0% < seuil 25% → skip
+[2026-03-12 01:03:20] INFO [logger]   ✅ Tranche 12+: proba=94%, prix=0.52, edge=81% → candidat
+[2026-03-12 01:03:20] INFO [logger] ✅ Meilleur pari retenu: tranche 12+ — edge 81%, score 0.714, notre proba 94% vs marché 0.52
+[2026-03-12 01:03:20] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-12 01:03:20] INFO [logger] 💵 [London] Kelly sizing: 10.00$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-12 01:03:20] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 10.00$ sur 12+°C @ 0.52 (edge: 81%) [ensemble, J+1]
+[2026-03-12 01:03:20] INFO [logger] Pari enregistré pour London 2026-03-13: tranche 12+ (simulated)
+[2026-03-12 01:03:20] INFO [logger] Telegram: message envoyé
+[2026-03-12 01:03:20] INFO [logger] 📋 Résumé cycle: 2 marchés analysés | 1 pari(s) placé(s) | 1 skip(s)
+[2026-03-12 01:03:20] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 40.00$
+[2026-03-12 03:03:20] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 03:03:20] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 03:03:20] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 03:03:20] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 03:03:20] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 03:03:21] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 9.9h
+[2026-03-12 03:03:21] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 33.9h
+[2026-03-12 03:03:21] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 03:03:21] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 03:03:21] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 03:03:21] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 03:03:21] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 03:03:21] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 03:03:21] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 05:03:21] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 05:03:21] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 05:03:21] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 05:03:21] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 05:03:21] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 05:03:21] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 7.9h
+[2026-03-12 05:03:22] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 31.9h
+[2026-03-12 05:03:22] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 05:03:22] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 05:03:22] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 05:03:22] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 05:03:22] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 05:03:22] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 05:03:22] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 07:03:22] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 07:03:22] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 07:03:22] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 07:03:22] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 07:03:22] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 07:03:22] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 5.9h
+[2026-03-12 07:03:23] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 29.9h
+[2026-03-12 07:03:23] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 07:03:23] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 07:03:23] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 07:03:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 07:03:23] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 07:03:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 07:03:23] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 09:03:23] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 09:03:23] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 09:03:23] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 09:03:23] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 09:03:23] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 09:03:23] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 3.9h
+[2026-03-12 09:03:23] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 27.9h
+[2026-03-12 09:03:23] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 09:03:23] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 09:03:23] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 09:03:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 09:03:23] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 09:03:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 09:03:23] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 11:03:23] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 11:03:24] INFO [logger] Telegram: message envoyé
+[2026-03-12 11:03:24] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 11:03:24] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 11:03:24] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 11:03:24] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 11:03:24] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans 1.9h
+[2026-03-12 11:03:24] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 25.9h
+[2026-03-12 11:03:24] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-14 (slug: highest-temperature-in-london-on-march-14-2026)
+[2026-03-12 11:03:24] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-12 11:03:24] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 11:03:24] INFO [logger] ⏭️ Déjà parié sur London 2026-03-12 (J+0) — tranche 13, edge 143%, proba 90%, prix payé 0.37
+[2026-03-12 11:03:24] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 11:03:24] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 11:03:24] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 13:03:24] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 13:03:24] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 13:03:24] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 13:03:24] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 13:03:25] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 13:03:25] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -0.1h
+[2026-03-12 13:03:25] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 23.9h
+[2026-03-12 13:03:25] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 47.9h
+[2026-03-12 13:03:25] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 13:03:25] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 13:03:25] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 13:03:25] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 13:03:25] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 13:03:25] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 13:03:25] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-12 13:03:25] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-12 13:03:25] INFO [logger] Température Open-Meteo seule (fallback): 10.4°C
+[2026-03-12 13:03:25] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-12 13:03:25] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-12 13:03:25] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=11.2°C | min=10.4°C | max=11.9°C | spread=1.5°C
+[2026-03-12 13:03:25] INFO [logger] 📊 Distribution top-5: 11:66% | 12:30% | 10:4% | 13:0% | 14+:0%
+[2026-03-12 13:03:25] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (66% des membres → tranche 11)
+[2026-03-12 13:03:25] INFO [logger] Ensemble: 50 membres, moyenne=10.2°C, spread=1.5°C
+[2026-03-12 13:03:25] INFO [logger] [London] Distribution (ensemble): {'10': 0.04, '11': 0.66, '12': 0.3, '13': 0.0, '14+': 0.0, '6-': 0.0, '7': 0.0, '8': 0.0, '9': 0.0}
+[2026-03-12 13:03:26] DEBUG [logger] DEBUG get_price token 4517008672248576... — raw_bid={'price': '0.3'} raw_ask={'price': '0.35'}
+[2026-03-12 13:03:26] DEBUG [logger] DEBUG get_price token 9359425722112922... — raw_bid={'price': '0.33'} raw_ask={'price': '0.41'}
+[2026-03-12 13:03:26] DEBUG [logger] DEBUG get_price token 5003716370607137... — raw_bid={'price': '0.15'} raw_ask={'price': '0.17'}
+[2026-03-12 13:03:26] DEBUG [logger] DEBUG get_price token 2875531044477596... — raw_bid={'price': '0.04'} raw_ask={'price': '0.07'}
+[2026-03-12 13:03:27] DEBUG [logger] DEBUG get_price token 7701426345083431... — raw_bid={'price': '0.011'} raw_ask={'price': '0.03'}
+[2026-03-12 13:03:27] DEBUG [logger] DEBUG get_price token 8605713393974552... — raw_bid={'price': '0.003'} raw_ask={'price': '0.007'}
+[2026-03-12 13:03:27] DEBUG [logger] DEBUG get_price token 9269282067193737... — raw_bid={'price': '0.012'} raw_ask={'price': '0.014'}
+[2026-03-12 13:03:27] DEBUG [logger] DEBUG get_price token 8027487552444752... — raw_bid={'price': '0.004'} raw_ask={'price': '0.029'}
+[2026-03-12 13:03:28] DEBUG [logger] DEBUG get_price token 6337457532978845... — raw_bid={'price': '0.14'} raw_ask={'price': '0.17'}
+[2026-03-12 13:03:28] INFO [logger] [London] Prix marché: {'10': 0.32499999999999996, '11': 0.37, '12': 0.16, '13': 0.05500000000000001, '14+': 0.020499999999999997, '6-': 0.005, '7': 0.013000000000000001, '8': 0.0165, '9': 0.15500000000000003}
+[2026-03-12 13:03:28] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 10: proba 4% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ✅ Tranche 11: proba=66%, prix=0.41, edge=61% → candidat
+[2026-03-12 13:03:28] INFO [logger]   ✅ Tranche 12: proba=30%, prix=0.17, edge=76% → candidat
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 13: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 14+: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 6-: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 7: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 8: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-12 13:03:28] INFO [logger] ✅ Meilleur pari retenu: tranche 11 — edge 61%, score 0.266, notre proba 66% vs marché 0.41
+[2026-03-12 13:03:28] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-12 13:03:28] INFO [logger] 💵 [London] Kelly sizing: 5.30$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-12 13:03:28] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 5.30$ sur 11°C @ 0.41 (edge: 61%) [ensemble, J+2]
+[2026-03-12 13:03:28] INFO [logger] Pari enregistré pour London 2026-03-14: tranche 11 (simulated)
+[2026-03-12 13:03:28] INFO [logger] Telegram: message envoyé
+[2026-03-12 13:03:28] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-12 13:03:28] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 44.70$
+[2026-03-12 15:03:28] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 15:03:28] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 15:03:28] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 15:03:28] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 15:03:28] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 15:03:29] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -2.1h
+[2026-03-12 15:03:29] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 21.9h
+[2026-03-12 15:03:29] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 45.9h
+[2026-03-12 15:03:29] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 15:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 15:03:29] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 15:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 15:03:29] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 15:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 15:03:29] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+2) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-12 15:03:29] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 17:03:29] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 17:03:29] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 17:03:29] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 17:03:29] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 17:03:29] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 17:03:29] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -4.1h
+[2026-03-12 17:03:29] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 19.9h
+[2026-03-12 17:03:29] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 43.9h
+[2026-03-12 17:03:29] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 17:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 17:03:29] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 17:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 17:03:29] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 17:03:29] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 17:03:29] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+2) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-12 17:03:29] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 19:03:29] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 19:03:29] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 19:03:29] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 19:03:29] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 19:03:30] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 19:03:30] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -6.1h
+[2026-03-12 19:03:30] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 17.9h
+[2026-03-12 19:03:30] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 41.9h
+[2026-03-12 19:03:30] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 19:03:30] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 19:03:30] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 19:03:30] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 19:03:30] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 19:03:30] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 19:03:30] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+2) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-12 19:03:30] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 21:03:30] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 21:03:30] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 21:03:30] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 21:03:30] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 21:03:31] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 21:03:31] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -8.1h
+[2026-03-12 21:03:31] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 15.9h
+[2026-03-12 21:03:31] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 39.9h
+[2026-03-12 21:03:31] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 21:03:31] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 21:03:31] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 21:03:31] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 21:03:31] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 21:03:31] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 21:03:31] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+2) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-12 21:03:31] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-12 23:03:31] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-12 23:03:31] INFO [logger] Telegram: message envoyé
+[2026-03-12 23:03:31] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-12 23:03:31] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-12 23:03:31] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-12 23:03:31] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-12 23:03:32] INFO [logger] ⏱️ Marché 2026-03-12 ferme dans -10.1h
+[2026-03-12 23:03:32] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 13.9h
+[2026-03-12 23:03:32] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 37.9h
+[2026-03-12 23:03:32] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-12 23:03:32] INFO [logger] --- [London] Analyse du marché 2026-03-12 (Highest temperature in London on March 12?) ---
+[2026-03-12 23:03:32] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-12 (j0_morning_only), skip
+[2026-03-12 23:03:32] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-12 23:03:32] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+1) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-12 23:03:32] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-12 23:03:32] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j2_daytime), skip
+[2026-03-12 23:03:32] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 01:03:32] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 01:03:32] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 01:03:32] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 2 résultats
+[2026-03-13 01:03:32] INFO [logger] 📊 Vérification du résultat pour London 2026-03-12...
+[2026-03-13 01:03:34] WARNING [logger] Weather Underground: scraping échec pour 2026-03-12 (données JS non disponibles)
+[2026-03-13 01:03:34] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-03-12 = 11.6°C
+[2026-03-13 01:03:34] INFO [logger] 📐 Écart prévision/réalité [London]: +0.4°C (trop chaud)
+[2026-03-13 01:03:34] INFO [logger] ❌ Résultat London — 2026-03-12 | Temp réelle: 12°C (11.6°C) | Prédiction bot: 13°C (proba: 90%) | Écart prévision/réalité: +0.4°C | Prix marché: 0.37 | Résultat: PERDU ❌
+[2026-03-13 01:03:34] INFO [logger] Telegram: message envoyé
+[2026-03-13 01:03:34] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-03-13 01:03:34] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 01:03:35] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 11.9h
+[2026-03-13 01:03:35] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 35.9h
+[2026-03-13 01:03:35] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 01:03:35] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 01:03:35] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 01:03:35] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 01:03:35] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 01:03:35] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 01:03:35] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 03:03:35] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 03:03:35] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 03:03:35] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 03:03:35] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 03:03:35] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 03:03:35] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 9.9h
+[2026-03-13 03:03:35] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 33.9h
+[2026-03-13 03:03:35] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 03:03:35] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 03:03:35] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 03:03:35] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 03:03:35] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 03:03:35] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 03:03:35] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 05:03:35] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 05:03:35] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 05:03:35] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 05:03:35] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 05:03:36] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 05:03:36] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 7.9h
+[2026-03-13 05:03:36] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 31.9h
+[2026-03-13 05:03:36] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 05:03:36] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 05:03:36] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 05:03:36] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 05:03:36] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 05:03:36] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 05:03:36] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 07:03:36] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 07:03:36] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 07:03:36] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 07:03:36] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 07:03:36] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 07:03:36] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 5.9h
+[2026-03-13 07:03:37] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 29.9h
+[2026-03-13 07:03:37] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 07:03:37] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 07:03:37] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 07:03:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 07:03:37] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 07:03:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 07:03:37] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 09:03:37] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 09:03:37] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 09:03:37] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 09:03:37] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 09:03:37] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 09:03:37] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 3.9h
+[2026-03-13 09:03:37] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 27.9h
+[2026-03-13 09:03:37] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 09:03:37] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 09:03:37] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 09:03:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 09:03:37] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 09:03:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 09:03:37] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 11:03:37] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 11:03:37] INFO [logger] Telegram: message envoyé
+[2026-03-13 11:03:37] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 11:03:37] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 11:03:37] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 11:03:38] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 11:03:38] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans 1.9h
+[2026-03-13 11:03:38] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 25.9h
+[2026-03-13 11:03:38] INFO [logger] Gamma API: aucun événement trouvé pour 2026-03-15 (slug: highest-temperature-in-london-on-march-15-2026)
+[2026-03-13 11:03:38] INFO [logger] Gamma API: 2 marché(s) température London trouvé(s)
+[2026-03-13 11:03:38] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 11:03:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-13 (J+0) — tranche 12+, edge 81%, proba 94%, prix payé 0.52
+[2026-03-13 11:03:38] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 11:03:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 11:03:38] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 13:03:38] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 13:03:38] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 13:03:38] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 13:03:38] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 13:03:38] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 13:03:38] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -0.1h
+[2026-03-13 13:03:38] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 23.9h
+[2026-03-13 13:03:39] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 47.9h
+[2026-03-13 13:03:39] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 13:03:39] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 13:03:39] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 13:03:39] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 13:03:39] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 13:03:39] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 13:03:39] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-13 13:03:39] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-13 13:03:39] INFO [logger] Température Open-Meteo seule (fallback): 11.0°C
+[2026-03-13 13:03:39] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-13 13:03:39] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-13 13:03:39] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=11.1°C | min=9.8°C | max=12.3°C | spread=2.5°C
+[2026-03-13 13:03:39] INFO [logger] 📊 Distribution top-5: 11:54% | 12:32% | 10:14% | 8:0% | 6-:0%
+[2026-03-13 13:03:39] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (54% des membres → tranche 11)
+[2026-03-13 13:03:39] INFO [logger] Ensemble: 50 membres, moyenne=10.1°C, spread=2.5°C
+[2026-03-13 13:03:39] INFO [logger] [London] Distribution (ensemble): {'8': 0.0, '6-': 0.0, '7': 0.0, '11': 0.54, '9': 0.0, '10': 0.14, '12': 0.32, '13': 0.0, '14+': 0.0}
+[2026-03-13 13:03:39] DEBUG [logger] DEBUG get_price token 2014318006438992... — raw_bid={'price': '0.003'} raw_ask={'price': '0.035'}
+[2026-03-13 13:03:39] DEBUG [logger] DEBUG get_price token 1871078686141232... — raw_bid={'price': '0.003'} raw_ask={'price': '0.009'}
+[2026-03-13 13:03:40] DEBUG [logger] DEBUG get_price token 1937381976884484... — raw_bid={'price': '0.005'} raw_ask={'price': '0.006'}
+[2026-03-13 13:03:40] DEBUG [logger] DEBUG get_price token 5524206850251913... — raw_bid={'price': '0.4'} raw_ask={'price': '0.46'}
+[2026-03-13 13:03:40] DEBUG [logger] DEBUG get_price token 7723138417586058... — raw_bid={'price': '0.05'} raw_ask={'price': '0.1'}
+[2026-03-13 13:03:40] DEBUG [logger] DEBUG get_price token 6124842957201637... — raw_bid={'price': '0.26'} raw_ask={'price': '0.38'}
+[2026-03-13 13:03:41] DEBUG [logger] DEBUG get_price token 2586042941726501... — raw_bid={'price': '0.13'} raw_ask={'price': '0.18'}
+[2026-03-13 13:03:41] DEBUG [logger] DEBUG get_price token 7776090765531499... — raw_bid={'price': '0.021'} raw_ask={'price': '0.05'}
+[2026-03-13 13:03:41] DEBUG [logger] DEBUG get_price token 5330547720154776... — raw_bid={'price': '0.011'} raw_ask={'price': '0.05'}
+[2026-03-13 13:03:41] INFO [logger] [London] Prix marché: {'8': 0.019000000000000003, '6-': 0.006, '7': 0.0055, '11': 0.43000000000000005, '9': 0.07500000000000001, '10': 0.32, '12': 0.155, '13': 0.035500000000000004, '14+': 0.0305}
+[2026-03-13 13:03:41] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 8: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 6-: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 7: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 11: edge 17% < minimum 20% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 10: proba 14% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ✅ Tranche 12: proba=32%, prix=0.18, edge=78% → candidat
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 13: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger]   ❌ Tranche 14+: proba 0% < seuil 25% → skip
+[2026-03-13 13:03:41] INFO [logger] ✅ Meilleur pari retenu: tranche 12 — edge 78%, score 0.080, notre proba 32% vs marché 0.18
+[2026-03-13 13:03:41] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-13 13:03:41] INFO [logger] 💵 [London] Kelly sizing: 2.13$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-13 13:03:41] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 2.13$ sur 12°C @ 0.18 (edge: 78%) [ensemble, J+2]
+[2026-03-13 13:03:41] INFO [logger] Pari enregistré pour London 2026-03-15: tranche 12 (simulated)
+[2026-03-13 13:03:41] INFO [logger] Telegram: message envoyé
+[2026-03-13 13:03:41] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-13 13:03:41] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 47.87$
+[2026-03-13 15:03:41] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 15:03:41] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 15:03:41] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 15:03:41] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 15:03:42] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 15:03:42] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -2.1h
+[2026-03-13 15:03:42] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 21.9h
+[2026-03-13 15:03:42] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 45.9h
+[2026-03-13 15:03:42] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 15:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 15:03:42] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 15:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 15:03:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 15:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 15:03:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+2) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-13 15:03:42] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 17:03:42] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 17:03:42] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 17:03:42] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 17:03:42] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 17:03:42] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 17:03:42] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -4.1h
+[2026-03-13 17:03:42] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 19.9h
+[2026-03-13 17:03:42] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 43.9h
+[2026-03-13 17:03:42] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 17:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 17:03:42] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 17:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 17:03:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 17:03:42] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 17:03:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+2) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-13 17:03:42] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 19:03:42] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 19:03:42] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 19:03:42] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 19:03:42] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 19:03:43] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 19:03:43] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -6.1h
+[2026-03-13 19:03:43] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 17.9h
+[2026-03-13 19:03:43] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 41.9h
+[2026-03-13 19:03:43] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 19:03:43] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 19:03:43] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 19:03:43] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 19:03:43] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 19:03:43] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 19:03:43] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+2) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-13 19:03:43] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 21:03:43] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 21:03:43] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 21:03:43] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 21:03:43] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 21:03:43] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 21:03:43] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -8.1h
+[2026-03-13 21:03:44] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 15.9h
+[2026-03-13 21:03:44] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 39.9h
+[2026-03-13 21:03:44] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 21:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 21:03:44] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 21:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 21:03:44] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 21:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 21:03:44] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+2) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-13 21:03:44] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-13 23:03:44] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-13 23:03:44] INFO [logger] Telegram: message envoyé
+[2026-03-13 23:03:44] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-13 23:03:44] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-13 23:03:44] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-13 23:03:44] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-13 23:03:44] INFO [logger] ⏱️ Marché 2026-03-13 ferme dans -10.1h
+[2026-03-13 23:03:44] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 13.9h
+[2026-03-13 23:03:44] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 37.9h
+[2026-03-13 23:03:44] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-13 23:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-13 (Highest temperature in London on March 13?) ---
+[2026-03-13 23:03:44] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-13 (j0_morning_only), skip
+[2026-03-13 23:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-13 23:03:44] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+1) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-13 23:03:44] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-13 23:03:44] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j2_daytime), skip
+[2026-03-13 23:03:44] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 01:03:45] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 01:03:45] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 01:03:45] INFO [logger] 📐 Biais London (7j): +0.20°C (calibré ✅) sur 3 résultats
+[2026-03-14 01:03:45] INFO [logger] 📊 Vérification du résultat pour London 2026-03-13...
+[2026-03-14 01:03:46] WARNING [logger] Weather Underground: scraping échec pour 2026-03-13 (données JS non disponibles)
+[2026-03-14 01:03:46] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-03-13 = 11.1°C
+[2026-03-14 01:03:46] INFO [logger] 📐 Écart prévision/réalité [London]: +0.7°C (trop chaud)
+[2026-03-14 01:03:46] INFO [logger] ❌ Résultat London — 2026-03-13 | Temp réelle: 11°C (11.1°C) | Prédiction bot: 12+°C (proba: 94%) | Écart prévision/réalité: +0.7°C | Prix marché: 0.52 | Résultat: PERDU ❌
+[2026-03-14 01:03:46] INFO [logger] Telegram: message envoyé
+[2026-03-14 01:03:46] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-03-14 01:03:47] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 01:03:47] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 11.9h
+[2026-03-14 01:03:47] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 35.9h
+[2026-03-14 01:03:47] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 59.9h
+[2026-03-14 01:03:47] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 01:03:47] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 01:03:47] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 01:03:47] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 01:03:47] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 01:03:47] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 01:03:47] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j2_daytime), skip
+[2026-03-14 01:03:47] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 03:03:47] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 03:03:47] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 03:03:47] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 03:03:47] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 03:03:47] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 03:03:47] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 9.9h
+[2026-03-14 03:03:47] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 33.9h
+[2026-03-14 03:03:48] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 57.9h
+[2026-03-14 03:03:48] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 03:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 03:03:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 03:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 03:03:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 03:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 03:03:48] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j2_daytime), skip
+[2026-03-14 03:03:48] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 05:03:48] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 05:03:48] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 05:03:48] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 05:03:48] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 05:03:48] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 05:03:48] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 7.9h
+[2026-03-14 05:03:48] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 31.9h
+[2026-03-14 05:03:48] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 55.9h
+[2026-03-14 05:03:48] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 05:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 05:03:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 05:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 05:03:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 05:03:48] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 05:03:48] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j2_daytime), skip
+[2026-03-14 05:03:48] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 07:03:48] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 07:03:48] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 07:03:48] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 07:03:48] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 07:03:49] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 07:03:49] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 5.9h
+[2026-03-14 07:03:49] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 29.9h
+[2026-03-14 07:03:49] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 53.9h
+[2026-03-14 07:03:49] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 07:03:49] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 07:03:49] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 07:03:49] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 07:03:49] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 07:03:49] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 07:03:49] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-14 07:03:49] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-14 07:03:49] INFO [logger] Température Open-Meteo seule (fallback): 9.8°C
+[2026-03-14 07:03:49] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-14 07:03:49] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-14 07:03:49] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=12.0°C | min=10.8°C | max=13.3°C | spread=2.5°C
+[2026-03-14 07:03:49] INFO [logger] 📊 Distribution top-5: 12:64% | 13:24% | 11:12% | 9:0% | 7:0%
+[2026-03-14 07:03:49] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (64% des membres → tranche 12)
+[2026-03-14 07:03:49] INFO [logger] Ensemble: 50 membres, moyenne=11.0°C, spread=2.5°C
+[2026-03-14 07:03:49] INFO [logger] [London] Distribution (ensemble): {'9': 0.0, '7': 0.0, '10': 0.0, '14': 0.0, '5-': 0.0, '13': 0.24, '15+': 0.0, '6': 0.0, '8': 0.0, '11': 0.12, '12': 0.64}
+[2026-03-14 07:03:49] DEBUG [logger] DEBUG get_price token 1046086007048412... — raw_bid={'price': '0.09'} raw_ask={'price': '0.1'}
+[2026-03-14 07:03:50] DEBUG [logger] DEBUG get_price token 9394699899252686... — raw_bid={'price': '0.014'} raw_ask={'price': '0.017'}
+[2026-03-14 07:03:50] DEBUG [logger] DEBUG get_price token 1049665085974306... — raw_bid={'price': '0.27'} raw_ask={'price': '0.29'}
+[2026-03-14 07:03:50] DEBUG [logger] DEBUG get_price token 1034383132815679... — raw_bid={'price': '0.011'} raw_ask={'price': '0.026'}
+[2026-03-14 07:03:50] DEBUG [logger] DEBUG get_price token 1090677307580755... — raw_bid={'price': '0.003'} raw_ask={'price': '0.011'}
+[2026-03-14 07:03:51] DEBUG [logger] DEBUG get_price token 2271891516735807... — raw_bid={'price': '0.08'} raw_ask={'price': '0.11'}
+[2026-03-14 07:03:51] DEBUG [logger] DEBUG get_price token 1299530377906593... — raw_bid={'price': '0.01'} raw_ask={'price': '0.02'}
+[2026-03-14 07:03:51] DEBUG [logger] DEBUG get_price token 6669473158230359... — raw_bid={'price': '0.01'} raw_ask={'price': '0.019'}
+[2026-03-14 07:03:51] DEBUG [logger] DEBUG get_price token 3679110391759617... — raw_bid={'price': '0.031'} raw_ask={'price': '0.041'}
+[2026-03-14 07:03:52] DEBUG [logger] DEBUG get_price token 2833919489032377... — raw_bid={'price': '0.28'} raw_ask={'price': '0.32'}
+[2026-03-14 07:03:52] DEBUG [logger] DEBUG get_price token 7376927194484637... — raw_bid={'price': '0.17'} raw_ask={'price': '0.2'}
+[2026-03-14 07:03:52] INFO [logger] [London] Prix marché: {'9': 0.095, '7': 0.0155, '10': 0.28, '14': 0.0185, '5-': 0.006999999999999999, '13': 0.095, '15+': 0.015, '6': 0.014499999999999999, '8': 0.036000000000000004, '11': 0.30000000000000004, '12': 0.185}
+[2026-03-14 07:03:52] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 7: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 10: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 14: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 5-: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 13: proba 24% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 15+: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 6: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 8: proba 0% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ❌ Tranche 11: proba 12% < seuil 25% → skip
+[2026-03-14 07:03:52] INFO [logger]   ✅ Tranche 12: proba=64%, prix=0.20, edge=220% → candidat
+[2026-03-14 07:03:52] INFO [logger] ✅ Meilleur pari retenu: tranche 12 — edge 220%, score 0.901, notre proba 64% vs marché 0.20
+[2026-03-14 07:03:52] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-14 07:03:52] INFO [logger] 💵 [London] Kelly sizing: 6.88$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-14 07:03:52] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 6.88$ sur 12°C @ 0.20 (edge: 220%) [ensemble, J+2]
+[2026-03-14 07:03:52] INFO [logger] Pari enregistré pour London 2026-03-16: tranche 12 (simulated)
+[2026-03-14 07:03:52] INFO [logger] Telegram: message envoyé
+[2026-03-14 07:03:52] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-14 07:03:52] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 43.12$
+[2026-03-14 09:03:52] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 09:03:52] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 09:03:52] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 09:03:52] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 09:03:52] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 09:03:52] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 3.9h
+[2026-03-14 09:03:53] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 27.9h
+[2026-03-14 09:03:53] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 51.9h
+[2026-03-14 09:03:53] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 09:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 09:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 09:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 09:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 09:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 09:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 09:03:53] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 11:03:53] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 11:03:53] INFO [logger] Telegram: message envoyé
+[2026-03-14 11:03:53] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 11:03:53] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 11:03:53] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 11:03:53] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 11:03:53] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans 1.9h
+[2026-03-14 11:03:53] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 25.9h
+[2026-03-14 11:03:53] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 49.9h
+[2026-03-14 11:03:53] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 11:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 11:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-14 (J+0) — tranche 11, edge 61%, proba 66%, prix payé 0.41
+[2026-03-14 11:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 11:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 11:03:53] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 11:03:53] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 11:03:53] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 13:03:54] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 13:03:54] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 13:03:54] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 13:03:54] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 13:03:54] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 13:03:54] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -0.1h
+[2026-03-14 13:03:54] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 23.9h
+[2026-03-14 13:03:54] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 47.9h
+[2026-03-14 13:03:54] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 13:03:54] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 13:03:54] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 13:03:54] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 13:03:54] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 13:03:54] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 13:03:54] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 13:03:54] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 15:03:54] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 15:03:54] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 15:03:54] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 15:03:54] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 15:03:54] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 15:03:55] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -2.1h
+[2026-03-14 15:03:55] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 21.9h
+[2026-03-14 15:03:55] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 45.9h
+[2026-03-14 15:03:55] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 15:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 15:03:55] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 15:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 15:03:55] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 15:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 15:03:55] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 15:03:55] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 17:03:55] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 17:03:55] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 17:03:55] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 17:03:55] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 17:03:55] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 17:03:55] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -4.1h
+[2026-03-14 17:03:55] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 19.9h
+[2026-03-14 17:03:55] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 43.9h
+[2026-03-14 17:03:55] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 17:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 17:03:55] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 17:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 17:03:55] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 17:03:55] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 17:03:55] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 17:03:55] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 19:03:56] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 19:03:56] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 19:03:56] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 19:03:56] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 19:03:56] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 19:03:56] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -6.1h
+[2026-03-14 19:03:56] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 17.9h
+[2026-03-14 19:03:56] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 41.9h
+[2026-03-14 19:03:56] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 19:03:56] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 19:03:56] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 19:03:56] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 19:03:56] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 19:03:56] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 19:03:56] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 19:03:56] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 21:03:56] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 21:03:56] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 21:03:56] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 21:03:56] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 21:03:57] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 21:03:57] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -8.1h
+[2026-03-14 21:03:57] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 15.9h
+[2026-03-14 21:03:57] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 39.9h
+[2026-03-14 21:03:57] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 21:03:57] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 21:03:57] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 21:03:57] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 21:03:57] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 21:03:57] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 21:03:57] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+2) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-14 21:03:57] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-14 23:03:57] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-14 23:03:57] INFO [logger] Telegram: message envoyé
+[2026-03-14 23:03:57] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-14 23:03:57] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-14 23:03:57] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-14 23:03:57] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-14 23:03:58] INFO [logger] ⏱️ Marché 2026-03-14 ferme dans -10.1h
+[2026-03-14 23:03:58] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 13.9h
+[2026-03-14 23:03:58] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 37.9h
+[2026-03-14 23:03:58] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-14 23:03:58] INFO [logger] --- [London] Analyse du marché 2026-03-14 (Highest temperature in London on March 14?) ---
+[2026-03-14 23:03:58] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-14 (j0_morning_only), skip
+[2026-03-14 23:03:58] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-14 23:03:58] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+1) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-14 23:03:58] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-14 23:03:58] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j2_daytime), skip
+[2026-03-14 23:03:58] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 01:03:58] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 01:03:58] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 01:03:58] INFO [logger] 📐 Biais London (7j): +0.33°C (calibré ✅) sur 4 résultats
+[2026-03-15 01:03:58] INFO [logger] 📊 Vérification du résultat pour London 2026-03-14...
+[2026-03-15 01:03:59] WARNING [logger] Weather Underground: scraping échec pour 2026-03-14 (données JS non disponibles)
+[2026-03-15 01:03:59] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-03-14 = 10.5°C
+[2026-03-15 01:03:59] INFO [logger] 📐 Écart prévision/réalité [London]: -0.1°C (trop froid)
+[2026-03-15 01:03:59] INFO [logger] ✅ Résultat London — 2026-03-14 | Temp réelle: 11°C (10.5°C) | Prédiction bot: 11°C (proba: 66%) | Écart prévision/réalité: -0.1°C | Prix marché: 0.41 | Résultat: GAGNÉ ✅
+[2026-03-15 01:04:00] INFO [logger] Telegram: message envoyé
+[2026-03-15 01:04:00] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-03-15 01:04:00] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 01:04:00] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 11.9h
+[2026-03-15 01:04:00] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 35.9h
+[2026-03-15 01:04:01] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 59.9h
+[2026-03-15 01:04:01] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 01:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 01:04:01] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 01:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 01:04:01] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 01:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 01:04:01] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j2_daytime), skip
+[2026-03-15 01:04:01] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 03:04:01] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 03:04:01] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 03:04:01] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 03:04:01] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 03:04:01] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 03:04:01] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 9.9h
+[2026-03-15 03:04:01] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 33.9h
+[2026-03-15 03:04:01] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 57.9h
+[2026-03-15 03:04:01] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 03:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 03:04:01] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 03:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 03:04:01] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 03:04:01] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 03:04:01] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j2_daytime), skip
+[2026-03-15 03:04:01] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 05:04:01] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 05:04:01] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 05:04:01] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 05:04:01] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 05:04:02] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 05:04:02] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 7.9h
+[2026-03-15 05:04:02] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 31.9h
+[2026-03-15 05:04:02] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 55.9h
+[2026-03-15 05:04:02] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 05:04:02] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 05:04:02] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 05:04:02] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 05:04:02] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 05:04:02] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 05:04:02] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j2_daytime), skip
+[2026-03-15 05:04:02] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 07:04:02] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 07:04:02] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 07:04:02] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 07:04:02] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 07:04:02] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 07:04:02] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 5.9h
+[2026-03-15 07:04:03] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 29.9h
+[2026-03-15 07:04:03] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 53.9h
+[2026-03-15 07:04:03] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 07:04:03] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 07:04:03] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 07:04:03] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 07:04:03] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 07:04:03] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 07:04:03] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-15 07:04:03] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-15 07:04:03] INFO [logger] Température Open-Meteo seule (fallback): 11.2°C
+[2026-03-15 07:04:03] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-15 07:04:03] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-15 07:04:03] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=14.7°C | min=13.7°C | max=16.4°C | spread=2.7°C
+[2026-03-15 07:04:03] INFO [logger] 📊 Distribution top-5: 15:54% | 14:36% | 16:10% | 9:0% | 17:0%
+[2026-03-15 07:04:03] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (54% des membres → tranche 15)
+[2026-03-15 07:04:03] INFO [logger] Ensemble: 50 membres, moyenne=13.7°C, spread=2.7°C
+[2026-03-15 07:04:03] INFO [logger] [London] Distribution (ensemble): {'9': 0.0, '15': 0.54, '17': 0.0, '18+': 0.0, '8-': 0.0, '11': 0.0, '12': 0.0, '16': 0.1, '10': 0.0, '13': 0.0, '14': 0.36}
+[2026-03-15 07:04:03] DEBUG [logger] DEBUG get_price token 1242862599451473... — raw_bid={'price': '0.012'} raw_ask={'price': '0.013'}
+[2026-03-15 07:04:04] DEBUG [logger] DEBUG get_price token 1632768416784171... — raw_bid={'price': '0.15'} raw_ask={'price': '0.16'}
+[2026-03-15 07:04:04] DEBUG [logger] DEBUG get_price token 1091075108261885... — raw_bid={'price': '0.023'} raw_ask={'price': '0.03'}
+[2026-03-15 07:04:04] DEBUG [logger] DEBUG get_price token 7293154049110565... — raw_bid={'price': '0.013'} raw_ask={'price': '0.019'}
+[2026-03-15 07:04:04] DEBUG [logger] DEBUG get_price token 6323262393456846... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-03-15 07:04:05] DEBUG [logger] DEBUG get_price token 6383822594214777... — raw_bid={'price': '0.05'} raw_ask={'price': '0.06'}
+[2026-03-15 07:04:05] DEBUG [logger] DEBUG get_price token 6454211300460976... — raw_bid={'price': '0.12'} raw_ask={'price': '0.14'}
+[2026-03-15 07:04:05] DEBUG [logger] DEBUG get_price token 6834166628303976... — raw_bid={'price': '0.05'} raw_ask={'price': '0.06'}
+[2026-03-15 07:04:05] DEBUG [logger] DEBUG get_price token 2844936035666113... — raw_bid={'price': '0.033'} raw_ask={'price': '0.036'}
+[2026-03-15 07:04:05] DEBUG [logger] DEBUG get_price token 6279053613117957... — raw_bid={'price': '0.25'} raw_ask={'price': '0.26'}
+[2026-03-15 07:04:06] DEBUG [logger] DEBUG get_price token 4461452852904662... — raw_bid={'price': '0.29'} raw_ask={'price': '0.3'}
+[2026-03-15 07:04:06] INFO [logger] [London] Prix marché: {'9': 0.0125, '15': 0.155, '17': 0.0265, '18+': 0.016, '8-': 0.004, '11': 0.055, '12': 0.13, '16': 0.055, '10': 0.0345, '13': 0.255, '14': 0.295}
+[2026-03-15 07:04:06] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 9: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ✅ Tranche 15: proba=54%, prix=0.16, edge=238% → candidat
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 17: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 18+: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 8-: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 11: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 12: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 16: proba 10% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 10: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ❌ Tranche 13: proba 0% < seuil 25% → skip
+[2026-03-15 07:04:06] INFO [logger]   ✅ Tranche 14: proba=36%, prix=0.30, edge=20% → candidat
+[2026-03-15 07:04:06] INFO [logger] ✅ Meilleur pari retenu: tranche 15 — edge 238%, score 0.693, notre proba 54% vs marché 0.16
+[2026-03-15 07:04:06] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-15 07:04:06] INFO [logger] 💵 [London] Kelly sizing: 5.65$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-15 07:04:06] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 5.65$ sur 15°C @ 0.16 (edge: 238%) [ensemble, J+2]
+[2026-03-15 07:04:06] INFO [logger] Pari enregistré pour London 2026-03-17: tranche 15 (simulated)
+[2026-03-15 07:04:06] INFO [logger] Telegram: message envoyé
+[2026-03-15 07:04:06] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-15 07:04:06] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 44.35$
+[2026-03-15 09:04:06] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 09:04:06] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 09:04:06] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 09:04:06] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 09:04:06] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 09:04:06] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 3.9h
+[2026-03-15 09:04:06] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 27.9h
+[2026-03-15 09:04:07] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 51.9h
+[2026-03-15 09:04:07] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 09:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 09:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 09:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 09:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 09:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 09:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 09:04:07] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 11:04:07] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 11:04:07] INFO [logger] Telegram: message envoyé
+[2026-03-15 11:04:07] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 11:04:07] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 11:04:07] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 11:04:07] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 11:04:07] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans 1.9h
+[2026-03-15 11:04:07] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 25.9h
+[2026-03-15 11:04:07] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 49.9h
+[2026-03-15 11:04:07] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 11:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 11:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-15 (J+0) — tranche 12, edge 78%, proba 32%, prix payé 0.18
+[2026-03-15 11:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 11:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 11:04:07] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 11:04:07] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 11:04:07] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 13:04:08] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 13:04:08] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 13:04:08] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 13:04:08] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 13:04:08] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 13:04:08] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -0.1h
+[2026-03-15 13:04:08] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 23.9h
+[2026-03-15 13:04:08] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 47.9h
+[2026-03-15 13:04:08] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 13:04:08] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 13:04:08] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 13:04:08] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 13:04:08] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 13:04:08] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 13:04:08] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 13:04:08] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 15:04:08] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 15:04:08] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 15:04:08] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 15:04:08] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 15:04:08] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 15:04:09] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -2.1h
+[2026-03-15 15:04:09] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 21.9h
+[2026-03-15 15:04:09] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 45.9h
+[2026-03-15 15:04:09] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 15:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 15:04:09] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 15:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 15:04:09] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 15:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 15:04:09] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 15:04:09] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 17:04:09] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 17:04:09] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 17:04:09] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 17:04:09] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 17:04:09] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 17:04:09] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -4.1h
+[2026-03-15 17:04:09] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 19.9h
+[2026-03-15 17:04:09] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 43.9h
+[2026-03-15 17:04:09] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 17:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 17:04:09] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 17:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 17:04:09] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 17:04:09] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 17:04:09] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 17:04:09] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 19:04:10] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 19:04:10] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 19:04:10] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 19:04:10] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 19:04:10] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 19:04:10] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -6.1h
+[2026-03-15 19:04:10] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 17.9h
+[2026-03-15 19:04:10] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 41.9h
+[2026-03-15 19:04:10] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 19:04:10] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 19:04:10] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 19:04:10] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 19:04:10] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 19:04:10] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 19:04:10] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 19:04:10] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 21:04:10] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 21:04:10] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 21:04:10] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 21:04:10] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 21:04:11] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 21:04:11] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -8.1h
+[2026-03-15 21:04:11] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 15.9h
+[2026-03-15 21:04:11] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 39.9h
+[2026-03-15 21:04:11] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 21:04:11] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 21:04:11] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 21:04:11] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 21:04:11] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 21:04:11] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 21:04:11] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+2) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-15 21:04:11] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-15 23:04:11] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-15 23:04:11] INFO [logger] Telegram: message envoyé
+[2026-03-15 23:04:11] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-15 23:04:11] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-15 23:04:11] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-15 23:04:11] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-15 23:04:12] INFO [logger] ⏱️ Marché 2026-03-15 ferme dans -10.1h
+[2026-03-15 23:04:12] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 13.9h
+[2026-03-15 23:04:12] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 37.9h
+[2026-03-15 23:04:12] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-15 23:04:12] INFO [logger] --- [London] Analyse du marché 2026-03-15 (Highest temperature in London on March 15?) ---
+[2026-03-15 23:04:12] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-15 (j0_morning_only), skip
+[2026-03-15 23:04:12] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-15 23:04:12] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+1) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-15 23:04:12] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-15 23:04:12] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j2_daytime), skip
+[2026-03-15 23:04:12] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 01:04:12] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 01:04:12] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 01:04:12] INFO [logger] 📐 Biais London (7j): +0.24°C (calibré ✅) sur 5 résultats
+[2026-03-16 01:04:12] INFO [logger] 📊 Vérification du résultat pour London 2026-03-15...
+[2026-03-16 01:04:15] WARNING [logger] Weather Underground: scraping échec pour 2026-03-15 (données JS non disponibles)
+[2026-03-16 01:04:16] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-03-15 = 11.6°C
+[2026-03-16 01:04:16] INFO [logger] 📐 Écart prévision/réalité [London]: -0.6°C (trop froid)
+[2026-03-16 01:04:16] INFO [logger] ✅ Résultat London — 2026-03-15 | Temp réelle: 12°C (11.6°C) | Prédiction bot: 12°C (proba: 32%) | Écart prévision/réalité: -0.6°C | Prix marché: 0.18 | Résultat: GAGNÉ ✅
+[2026-03-16 01:04:16] INFO [logger] Telegram: message envoyé
+[2026-03-16 01:04:16] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-03-16 01:04:16] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 01:04:16] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 11.9h
+[2026-03-16 01:04:16] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 35.9h
+[2026-03-16 01:04:16] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 59.9h
+[2026-03-16 01:04:16] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 01:04:16] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 01:04:16] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 01:04:16] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 01:04:16] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 01:04:16] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 01:04:16] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-18 (j2_daytime), skip
+[2026-03-16 01:04:16] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 03:04:16] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 03:04:16] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 03:04:16] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 03:04:16] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 03:04:17] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 03:04:17] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 9.9h
+[2026-03-16 03:04:17] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 33.9h
+[2026-03-16 03:04:17] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 57.9h
+[2026-03-16 03:04:17] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 03:04:17] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 03:04:17] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 03:04:17] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 03:04:17] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 03:04:17] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 03:04:17] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-18 (j2_daytime), skip
+[2026-03-16 03:04:17] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 05:04:17] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 05:04:17] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 05:04:17] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 05:04:17] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 05:04:17] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 05:04:18] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 7.9h
+[2026-03-16 05:04:18] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 31.9h
+[2026-03-16 05:04:18] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 55.9h
+[2026-03-16 05:04:18] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 05:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 05:04:18] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 05:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 05:04:18] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 05:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 05:04:18] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-18 (j2_daytime), skip
+[2026-03-16 05:04:18] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 07:04:18] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 07:04:18] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 07:04:18] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 07:04:18] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 07:04:18] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 07:04:18] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 5.9h
+[2026-03-16 07:04:18] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 29.9h
+[2026-03-16 07:04:18] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 53.9h
+[2026-03-16 07:04:18] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 07:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 07:04:18] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 07:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 07:04:18] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 07:04:18] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 07:04:19] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-16 07:04:19] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-16 07:04:19] INFO [logger] Température Open-Meteo seule (fallback): 16.4°C
+[2026-03-16 07:04:19] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-16 07:04:19] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-16 07:04:19] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=16.4°C | min=12.8°C | max=19.3°C | spread=6.5°C
+[2026-03-16 07:04:19] INFO [logger] 📊 Distribution top-5: 15:24% | 16:22% | 17:22% | 18:16% | 19:10%
+[2026-03-16 07:04:19] INFO [logger] 🎯 Confiance ensemble: 🔴 FAIBLE (24% des membres → tranche 15)
+[2026-03-16 07:04:19] INFO [logger] Ensemble: 50 membres, moyenne=15.4°C, spread=6.5°C
+[2026-03-16 07:04:19] INFO [logger] [London] Distribution (ensemble): {'12-': 0.0, '13': 0.02, '14': 0.04, '15': 0.24, '16': 0.22, '17': 0.22, '18': 0.16, '19': 0.1, '20': 0.0, '21': 0.0, '22+': 0.0}
+[2026-03-16 07:04:19] DEBUG [logger] DEBUG get_price token 6125045901196033... — raw_bid={'price': '0.005'} raw_ask={'price': '0.01'}
+[2026-03-16 07:04:19] DEBUG [logger] DEBUG get_price token 8242823258955582... — raw_bid={'price': '0.007'} raw_ask={'price': '0.017'}
+[2026-03-16 07:04:20] DEBUG [logger] DEBUG get_price token 1131845524699226... — raw_bid={'price': '0.021'} raw_ask={'price': '0.027'}
+[2026-03-16 07:04:20] DEBUG [logger] DEBUG get_price token 1724555770099529... — raw_bid={'price': '0.059'} raw_ask={'price': '0.109'}
+[2026-03-16 07:04:20] DEBUG [logger] DEBUG get_price token 6209847504651522... — raw_bid={'price': '0.08'} raw_ask={'price': '0.21'}
+[2026-03-16 07:04:20] DEBUG [logger] DEBUG get_price token 2479885051343158... — raw_bid={'price': '0.15'} raw_ask={'price': '0.22'}
+[2026-03-16 07:04:21] DEBUG [logger] DEBUG get_price token 3191065600466859... — raw_bid={'price': '0.27'} raw_ask={'price': '0.28'}
+[2026-03-16 07:04:21] DEBUG [logger] DEBUG get_price token 5431519610312014... — raw_bid={'price': '0.2'} raw_ask={'price': '0.21'}
+[2026-03-16 07:04:21] DEBUG [logger] DEBUG get_price token 4521649157470640... — raw_bid={'price': '0.05'} raw_ask={'price': '0.07'}
+[2026-03-16 07:04:21] DEBUG [logger] DEBUG get_price token 4684151791916959... — raw_bid={'price': '0.021'} raw_ask={'price': '0.033'}
+[2026-03-16 07:04:22] DEBUG [logger] DEBUG get_price token 4697638656336861... — raw_bid={'price': '0.02'} raw_ask={'price': '0.027'}
+[2026-03-16 07:04:22] INFO [logger] [London] Prix marché: {'12-': 0.0075, '13': 0.012, '14': 0.024, '15': 0.08399999999999999, '16': 0.145, '17': 0.185, '18': 0.275, '19': 0.20500000000000002, '20': 0.060000000000000005, '21': 0.027000000000000003, '22+': 0.0235}
+[2026-03-16 07:04:22] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-16 07:04:22] INFO [logger] ⚠️ Trop serré entre 15°C (24%) et 16°C (22%), skip
+[2026-03-16 07:04:22] INFO [logger] 🔍 Aucun edge trouvé pour London 2026-03-18
+[2026-03-16 07:04:22] INFO [logger] Telegram: message envoyé
+[2026-03-16 07:04:22] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 09:04:22] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 09:04:22] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 09:04:22] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 09:04:22] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 09:04:22] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 09:04:22] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 3.9h
+[2026-03-16 09:04:22] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 27.9h
+[2026-03-16 09:04:23] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 51.9h
+[2026-03-16 09:04:23] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 09:04:23] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 09:04:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 09:04:23] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 09:04:23] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 09:04:23] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 09:04:23] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-16 09:04:23] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-16 09:04:23] INFO [logger] Température Open-Meteo seule (fallback): 16.3°C
+[2026-03-16 09:04:23] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-16 09:04:23] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-16 09:04:23] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=16.4°C | min=12.8°C | max=19.3°C | spread=6.5°C
+[2026-03-16 09:04:23] INFO [logger] 📊 Distribution top-5: 15:24% | 16:22% | 17:22% | 18:16% | 19:10%
+[2026-03-16 09:04:23] INFO [logger] 🎯 Confiance ensemble: 🔴 FAIBLE (24% des membres → tranche 15)
+[2026-03-16 09:04:23] INFO [logger] Ensemble: 50 membres, moyenne=15.4°C, spread=6.5°C
+[2026-03-16 09:04:23] INFO [logger] [London] Distribution (ensemble): {'12-': 0.0, '13': 0.02, '14': 0.04, '15': 0.24, '16': 0.22, '17': 0.22, '18': 0.16, '19': 0.1, '20': 0.0, '21': 0.0, '22+': 0.0}
+[2026-03-16 09:04:23] DEBUG [logger] DEBUG get_price token 6125045901196033... — raw_bid={'price': '0.008'} raw_ask={'price': '0.014'}
+[2026-03-16 09:04:23] DEBUG [logger] DEBUG get_price token 8242823258955582... — raw_bid={'price': '0.007'} raw_ask={'price': '0.014'}
+[2026-03-16 09:04:24] DEBUG [logger] DEBUG get_price token 1131845524699226... — raw_bid={'price': '0.034'} raw_ask={'price': '0.057'}
+[2026-03-16 09:04:24] DEBUG [logger] DEBUG get_price token 1724555770099529... — raw_bid={'price': '0.041'} raw_ask={'price': '0.08'}
+[2026-03-16 09:04:24] DEBUG [logger] DEBUG get_price token 6209847504651522... — raw_bid={'price': '0.18'} raw_ask={'price': '0.21'}
+[2026-03-16 09:04:25] DEBUG [logger] DEBUG get_price token 2479885051343158... — raw_bid={'price': '0.32'} raw_ask={'price': '0.36'}
+[2026-03-16 09:04:25] DEBUG [logger] DEBUG get_price token 3191065600466859... — raw_bid={'price': '0.16'} raw_ask={'price': '0.2'}
+[2026-03-16 09:04:25] DEBUG [logger] DEBUG get_price token 5431519610312014... — raw_bid={'price': '0.15'} raw_ask={'price': '0.16'}
+[2026-03-16 09:04:25] DEBUG [logger] DEBUG get_price token 4521649157470640... — raw_bid={'price': '0.031'} raw_ask={'price': '0.055'}
+[2026-03-16 09:04:26] DEBUG [logger] DEBUG get_price token 4684151791916959... — raw_bid={'price': '0.02'} raw_ask={'price': '0.029'}
+[2026-03-16 09:04:26] DEBUG [logger] DEBUG get_price token 4697638656336861... — raw_bid={'price': '0.011'} raw_ask={'price': '0.028'}
+[2026-03-16 09:04:26] INFO [logger] [London] Prix marché: {'12-': 0.011, '13': 0.0105, '14': 0.0455, '15': 0.0605, '16': 0.195, '17': 0.33999999999999997, '18': 0.18, '19': 0.155, '20': 0.043, '21': 0.0245, '22+': 0.0195}
+[2026-03-16 09:04:26] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 12-: proba 0% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 13: proba 2% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 14: proba 4% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 15: proba 24% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 16: proba 22% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 17: proba 22% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 18: proba 16% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 19: proba 10% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 20: proba 0% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 21: proba 0% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger]   ❌ Tranche 22+: proba 0% < seuil 25% → skip
+[2026-03-16 09:04:26] INFO [logger] 🔍 Aucun pari avec edge suffisant — toutes les tranches rejetées
+[2026-03-16 09:04:26] INFO [logger] 🔍 Aucun edge trouvé pour London 2026-03-18
+[2026-03-16 09:04:26] INFO [logger] Telegram: message envoyé
+[2026-03-16 09:04:26] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 11:04:26] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 11:04:26] INFO [logger] Telegram: message envoyé
+[2026-03-16 11:04:26] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 11:04:26] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 11:04:26] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 11:04:27] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 11:04:27] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans 1.9h
+[2026-03-16 11:04:27] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 25.9h
+[2026-03-16 11:04:27] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 49.9h
+[2026-03-16 11:04:27] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 11:04:27] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 11:04:27] INFO [logger] ⏭️ Déjà parié sur London 2026-03-16 (J+0) — tranche 12, edge 220%, proba 64%, prix payé 0.20
+[2026-03-16 11:04:27] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 11:04:27] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 11:04:27] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 11:04:27] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-16 11:04:27] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-16 11:04:27] INFO [logger] Température Open-Meteo seule (fallback): 16.3°C
+[2026-03-16 11:04:27] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-16 11:04:27] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-16 11:04:27] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=16.4°C | min=12.8°C | max=19.3°C | spread=6.5°C
+[2026-03-16 11:04:27] INFO [logger] 📊 Distribution top-5: 15:24% | 16:22% | 17:22% | 18:16% | 19:10%
+[2026-03-16 11:04:27] INFO [logger] 🎯 Confiance ensemble: 🔴 FAIBLE (24% des membres → tranche 15)
+[2026-03-16 11:04:27] INFO [logger] Ensemble: 50 membres, moyenne=15.4°C, spread=6.5°C
+[2026-03-16 11:04:27] INFO [logger] [London] Distribution (ensemble): {'12-': 0.0, '13': 0.02, '14': 0.04, '15': 0.24, '16': 0.22, '17': 0.22, '18': 0.16, '19': 0.1, '20': 0.0, '21': 0.0, '22+': 0.0}
+[2026-03-16 11:04:28] DEBUG [logger] DEBUG get_price token 6125045901196033... — raw_bid={'price': '0.004'} raw_ask={'price': '0.015'}
+[2026-03-16 11:04:28] DEBUG [logger] DEBUG get_price token 8242823258955582... — raw_bid={'price': '0.011'} raw_ask={'price': '0.018'}
+[2026-03-16 11:04:28] DEBUG [logger] DEBUG get_price token 1131845524699226... — raw_bid={'price': '0.039'} raw_ask={'price': '0.049'}
+[2026-03-16 11:04:29] DEBUG [logger] DEBUG get_price token 1724555770099529... — raw_bid={'price': '0.06'} raw_ask={'price': '0.108'}
+[2026-03-16 11:04:29] DEBUG [logger] DEBUG get_price token 6209847504651522... — raw_bid={'price': '0.2'} raw_ask={'price': '0.21'}
+[2026-03-16 11:04:29] DEBUG [logger] DEBUG get_price token 2479885051343158... — raw_bid={'price': '0.24'} raw_ask={'price': '0.36'}
+[2026-03-16 11:04:29] DEBUG [logger] DEBUG get_price token 3191065600466859... — raw_bid={'price': '0.15'} raw_ask={'price': '0.18'}
+[2026-03-16 11:04:30] DEBUG [logger] DEBUG get_price token 5431519610312014... — raw_bid={'price': '0.03'} raw_ask={'price': '0.11'}
+[2026-03-16 11:04:30] DEBUG [logger] DEBUG get_price token 4521649157470640... — raw_bid={'price': '0.03'} raw_ask={'price': '0.039'}
+[2026-03-16 11:04:30] DEBUG [logger] DEBUG get_price token 4684151791916959... — raw_bid={'price': '0.02'} raw_ask={'price': '0.026'}
+[2026-03-16 11:04:31] DEBUG [logger] DEBUG get_price token 4697638656336861... — raw_bid={'price': '0.009'} raw_ask={'price': '0.026'}
+[2026-03-16 11:04:31] INFO [logger] [London] Prix marché: {'12-': 0.0095, '13': 0.014499999999999999, '14': 0.044, '15': 0.08399999999999999, '16': 0.20500000000000002, '17': 0.3, '18': 0.16499999999999998, '19': 0.07, '20': 0.0345, '21': 0.023, '22+': 0.017499999999999998}
+[2026-03-16 11:04:31] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 12-: proba 0% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 13: proba 2% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 14: proba 4% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 15: proba 24% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 16: proba 22% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 17: proba 22% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 18: proba 16% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 19: proba 10% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 20: proba 0% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 21: proba 0% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger]   ❌ Tranche 22+: proba 0% < seuil 25% → skip
+[2026-03-16 11:04:31] INFO [logger] 🔍 Aucun pari avec edge suffisant — toutes les tranches rejetées
+[2026-03-16 11:04:31] INFO [logger] 🔍 Aucun edge trouvé pour London 2026-03-18
+[2026-03-16 11:04:31] INFO [logger] Telegram: message envoyé
+[2026-03-16 11:04:31] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 13:04:31] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 13:04:31] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 13:04:31] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 13:04:31] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 13:04:31] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 13:04:31] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -0.1h
+[2026-03-16 13:04:31] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 23.9h
+[2026-03-16 13:04:32] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 47.9h
+[2026-03-16 13:04:32] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 13:04:32] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 13:04:32] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 13:04:32] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 13:04:32] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 13:04:32] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 13:04:32] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-16 13:04:32] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-16 13:04:32] INFO [logger] Température Open-Meteo seule (fallback): 16.3°C
+[2026-03-16 13:04:32] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-16 13:04:32] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-16 13:04:32] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=17.2°C | min=14.9°C | max=19.1°C | spread=4.2°C
+[2026-03-16 13:04:32] INFO [logger] 📊 Distribution top-5: 17:36% | 18:34% | 19:12% | 16:10% | 15:8%
+[2026-03-16 13:04:32] INFO [logger] 🎯 Confiance ensemble: 🟡 MODÉRÉE (36% des membres → tranche 17)
+[2026-03-16 13:04:32] INFO [logger] Ensemble: 50 membres, moyenne=16.2°C, spread=4.2°C
+[2026-03-16 13:04:32] INFO [logger] [London] Distribution (ensemble): {'12-': 0.0, '13': 0.0, '14': 0.0, '15': 0.08, '16': 0.1, '17': 0.36, '18': 0.34, '19': 0.12, '20': 0.0, '21': 0.0, '22+': 0.0}
+[2026-03-16 13:04:32] DEBUG [logger] DEBUG get_price token 6125045901196033... — raw_bid={'price': '0.005'} raw_ask={'price': '0.019'}
+[2026-03-16 13:04:32] DEBUG [logger] DEBUG get_price token 8242823258955582... — raw_bid={'price': '0.01'} raw_ask={'price': '0.012'}
+[2026-03-16 13:04:33] DEBUG [logger] DEBUG get_price token 1131845524699226... — raw_bid={'price': '0.038'} raw_ask={'price': '0.043'}
+[2026-03-16 13:04:33] DEBUG [logger] DEBUG get_price token 1724555770099529... — raw_bid={'price': '0.06'} raw_ask={'price': '0.09'}
+[2026-03-16 13:04:33] DEBUG [logger] DEBUG get_price token 6209847504651522... — raw_bid={'price': '0.24'} raw_ask={'price': '0.25'}
+[2026-03-16 13:04:34] DEBUG [logger] DEBUG get_price token 2479885051343158... — raw_bid={'price': '0.34'} raw_ask={'price': '0.35'}
+[2026-03-16 13:04:34] DEBUG [logger] DEBUG get_price token 3191065600466859... — raw_bid={'price': '0.19'} raw_ask={'price': '0.21'}
+[2026-03-16 13:04:34] DEBUG [logger] DEBUG get_price token 5431519610312014... — raw_bid={'price': '0.04'} raw_ask={'price': '0.05'}
+[2026-03-16 13:04:34] DEBUG [logger] DEBUG get_price token 4521649157470640... — raw_bid={'price': '0.03'} raw_ask={'price': '0.033'}
+[2026-03-16 13:04:35] DEBUG [logger] DEBUG get_price token 4684151791916959... — raw_bid={'price': '0.021'} raw_ask={'price': '0.024'}
+[2026-03-16 13:04:35] DEBUG [logger] DEBUG get_price token 4697638656336861... — raw_bid={'price': '0.008'} raw_ask={'price': '0.025'}
+[2026-03-16 13:04:35] INFO [logger] [London] Prix marché: {'12-': 0.012, '13': 0.011, '14': 0.040499999999999994, '15': 0.075, '16': 0.245, '17': 0.345, '18': 0.2, '19': 0.045, '20': 0.0315, '21': 0.0225, '22+': 0.0165}
+[2026-03-16 13:04:35] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 12-: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 13: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 14: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 15: proba 8% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 16: proba 10% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 17: edge 3% < minimum 20% → skip
+[2026-03-16 13:04:35] INFO [logger]   ✅ Tranche 18: proba=34%, prix=0.21, edge=62% → candidat
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 19: proba 12% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 20: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 21: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger]   ❌ Tranche 22+: proba 0% < seuil 25% → skip
+[2026-03-16 13:04:35] INFO [logger] ✅ Meilleur pari retenu: tranche 18 — edge 62%, score 0.072, notre proba 34% vs marché 0.21
+[2026-03-16 13:04:35] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-16 13:04:35] INFO [logger] 💵 [London] Kelly sizing: 2.06$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-16 13:04:35] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 2.06$ sur 18°C @ 0.21 (edge: 62%) [ensemble, J+2]
+[2026-03-16 13:04:35] INFO [logger] Pari enregistré pour London 2026-03-18: tranche 18 (simulated)
+[2026-03-16 13:04:35] INFO [logger] Telegram: message envoyé
+[2026-03-16 13:04:35] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-16 13:04:35] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 47.94$
+[2026-03-16 15:04:35] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 15:04:35] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 15:04:35] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 15:04:35] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 15:04:36] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 15:04:36] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -2.1h
+[2026-03-16 15:04:36] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 21.9h
+[2026-03-16 15:04:36] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 45.9h
+[2026-03-16 15:04:36] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 15:04:36] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 15:04:36] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 15:04:36] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 15:04:36] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 15:04:36] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 15:04:36] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+2) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-16 15:04:36] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 17:04:36] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 17:04:36] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 17:04:36] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 17:04:36] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 17:04:36] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 17:04:37] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -4.1h
+[2026-03-16 17:04:37] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 19.9h
+[2026-03-16 17:04:37] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 43.9h
+[2026-03-16 17:04:37] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 17:04:37] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 17:04:37] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 17:04:37] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 17:04:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 17:04:37] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 17:04:37] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+2) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-16 17:04:37] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 19:04:37] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 19:04:37] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 19:04:37] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 19:04:37] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 19:04:37] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 19:04:37] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -6.1h
+[2026-03-16 19:04:37] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 17.9h
+[2026-03-16 19:04:38] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 41.9h
+[2026-03-16 19:04:38] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 19:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 19:04:38] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 19:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 19:04:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 19:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 19:04:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+2) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-16 19:04:38] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 21:04:38] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 21:04:38] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 21:04:38] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 21:04:38] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 21:04:38] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 21:04:38] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -8.1h
+[2026-03-16 21:04:38] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 15.9h
+[2026-03-16 21:04:38] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 39.9h
+[2026-03-16 21:04:38] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 21:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 21:04:38] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 21:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 21:04:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 21:04:38] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 21:04:38] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+2) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-16 21:04:38] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-16 23:04:38] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-16 23:04:38] INFO [logger] Telegram: message envoyé
+[2026-03-16 23:04:38] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-16 23:04:38] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-16 23:04:38] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-16 23:04:39] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-16 23:04:39] INFO [logger] ⏱️ Marché 2026-03-16 ferme dans -10.1h
+[2026-03-16 23:04:39] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 13.9h
+[2026-03-16 23:04:39] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 37.9h
+[2026-03-16 23:04:39] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-16 23:04:39] INFO [logger] --- [London] Analyse du marché 2026-03-16 (Highest temperature in London on March 16?) ---
+[2026-03-16 23:04:39] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-16 (j0_morning_only), skip
+[2026-03-16 23:04:39] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-16 23:04:39] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+1) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-16 23:04:39] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-16 23:04:39] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-18 (j2_daytime), skip
+[2026-03-16 23:04:39] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 01:04:39] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 01:04:39] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 01:04:39] INFO [logger] 📐 Biais London (7j): +0.10°C (calibré ✅) sur 6 résultats
+[2026-03-17 01:04:39] INFO [logger] 📊 Vérification du résultat pour London 2026-03-16...
+[2026-03-17 01:04:40] WARNING [logger] Weather Underground: scraping échec pour 2026-03-16 (données JS non disponibles)
+[2026-03-17 01:04:40] INFO [logger] Open-Meteo archive [London]: temp max réelle pour 2026-03-16 = 11.9°C
+[2026-03-17 01:04:40] INFO [logger] 📐 Écart prévision/réalité [London]: -2.1°C (trop froid)
+[2026-03-17 01:04:40] INFO [logger] ✅ Résultat London — 2026-03-16 | Temp réelle: 12°C (11.9°C) | Prédiction bot: 12°C (proba: 64%) | Écart prévision/réalité: -2.1°C | Prix marché: 0.20 | Résultat: GAGNÉ ✅
+[2026-03-17 01:04:41] INFO [logger] Telegram: message envoyé
+[2026-03-17 01:04:41] INFO [logger] 📊 1 résultat(s) vérifié(s)
+[2026-03-17 01:04:41] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 01:04:41] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 11.9h
+[2026-03-17 01:04:41] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 35.9h
+[2026-03-17 01:04:41] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 59.9h
+[2026-03-17 01:04:41] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 01:04:41] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 01:04:41] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 01:04:41] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 01:04:41] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 01:04:41] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 01:04:41] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-19 (j2_daytime), skip
+[2026-03-17 01:04:41] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 03:04:41] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 03:04:41] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 03:04:42] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 03:04:42] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 03:04:42] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 03:04:42] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 9.9h
+[2026-03-17 03:04:42] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 33.9h
+[2026-03-17 03:04:42] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 57.9h
+[2026-03-17 03:04:42] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 03:04:42] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 03:04:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 03:04:42] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 03:04:42] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 03:04:42] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 03:04:42] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-19 (j2_daytime), skip
+[2026-03-17 03:04:42] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 05:04:42] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 05:04:42] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 05:04:42] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 05:04:42] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 05:04:43] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 05:04:43] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 7.9h
+[2026-03-17 05:04:43] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 31.9h
+[2026-03-17 05:04:43] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 55.9h
+[2026-03-17 05:04:43] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 05:04:43] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 05:04:43] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 05:04:43] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 05:04:43] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 05:04:43] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 05:04:43] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-19 (j2_daytime), skip
+[2026-03-17 05:04:43] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 07:04:43] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 07:04:43] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 07:04:43] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 07:04:43] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 07:04:43] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 07:04:44] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 5.9h
+[2026-03-17 07:04:44] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 29.9h
+[2026-03-17 07:04:44] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 53.9h
+[2026-03-17 07:04:44] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 07:04:44] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 07:04:44] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 07:04:44] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 07:04:44] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 07:04:44] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 07:04:44] INFO [logger] Open-Meteo: prévisions récupérées pour 3 jours
+[2026-03-17 07:04:44] WARNING [logger] Weather Underground: WU_API_KEY non configurée dans .env — skip
+[2026-03-17 07:04:44] INFO [logger] Température Open-Meteo seule (fallback): 15.1°C
+[2026-03-17 07:04:44] INFO [logger] Ensemble API: 3 jours, 50 membres par jour
+[2026-03-17 07:04:44] INFO [logger] Bias correction London: +1°C appliquée sur ensemble
+[2026-03-17 07:04:44] INFO [logger] 🌡️ Ensemble membres: 50 | moyenne=15.9°C | min=15.3°C | max=16.8°C | spread=1.5°C
+[2026-03-17 07:04:44] INFO [logger] 📊 Distribution top-5: 16:90% | 15:6% | 17:4% | 22+:0% | 12-:0%
+[2026-03-17 07:04:44] INFO [logger] 🎯 Confiance ensemble: 🟢 FORTE (90% des membres → tranche 16)
+[2026-03-17 07:04:44] INFO [logger] Ensemble: 50 membres, moyenne=14.9°C, spread=1.5°C
+[2026-03-17 07:04:44] INFO [logger] [London] Distribution (ensemble): {'22+': 0.0, '12-': 0.0, '13': 0.0, '14': 0.0, '15': 0.06, '16': 0.9, '17': 0.04, '18': 0.0, '19': 0.0, '20': 0.0, '21': 0.0}
+[2026-03-17 07:04:44] DEBUG [logger] DEBUG get_price token 2206202960615735... — raw_bid={'price': '0.002'} raw_ask={'price': '0.006'}
+[2026-03-17 07:04:45] DEBUG [logger] DEBUG get_price token 7752194432880132... — raw_bid={'price': '0.022'} raw_ask={'price': '0.029'}
+[2026-03-17 07:04:45] DEBUG [logger] DEBUG get_price token 1599039614490797... — raw_bid={'price': '0.058'} raw_ask={'price': '0.064'}
+[2026-03-17 07:04:45] DEBUG [logger] DEBUG get_price token 1112857861872327... — raw_bid={'price': '0.12'} raw_ask={'price': '0.14'}
+[2026-03-17 07:04:46] DEBUG [logger] DEBUG get_price token 9314339693996990... — raw_bid={'price': '0.14'} raw_ask={'price': '0.15'}
+[2026-03-17 07:04:46] DEBUG [logger] DEBUG get_price token 9575372017423164... — raw_bid={'price': '0.31'} raw_ask={'price': '0.35'}
+[2026-03-17 07:04:46] DEBUG [logger] DEBUG get_price token 4635832224684224... — raw_bid={'price': '0.16'} raw_ask={'price': '0.17'}
+[2026-03-17 07:04:46] DEBUG [logger] DEBUG get_price token 1087722307868973... — raw_bid={'price': '0.083'} raw_ask={'price': '0.123'}
+[2026-03-17 07:04:47] DEBUG [logger] DEBUG get_price token 3349879699546976... — raw_bid={'price': '0.011'} raw_ask={'price': '0.029'}
+[2026-03-17 07:04:47] DEBUG [logger] DEBUG get_price token 5268600818978714... — raw_bid={'price': '0.012'} raw_ask={'price': '0.019'}
+[2026-03-17 07:04:47] DEBUG [logger] DEBUG get_price token 1327472921661442... — raw_bid={'price': '0.011'} raw_ask={'price': '0.019'}
+[2026-03-17 07:04:47] INFO [logger] [London] Prix marché: {'22+': 0.004, '12-': 0.025500000000000002, '13': 0.061, '14': 0.13, '15': 0.14500000000000002, '16': 0.32999999999999996, '17': 0.165, '18': 0.10300000000000001, '19': 0.02, '20': 0.0155, '21': 0.015}
+[2026-03-17 07:04:47] INFO [logger] Edge minimum dynamique pour J+2: 20%
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 22+: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 12-: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 13: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 14: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 15: proba 6% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ✅ Tranche 16: proba=90%, prix=0.35, edge=157% → candidat
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 17: proba 4% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 18: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 19: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 20: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger]   ❌ Tranche 21: proba 0% < seuil 25% → skip
+[2026-03-17 07:04:47] INFO [logger] ✅ Meilleur pari retenu: tranche 16 — edge 157%, score 1.273, notre proba 90% vs marché 0.35
+[2026-03-17 07:04:47] INFO [logger] 📋 1 pari(s) candidat(s) collecté(s), triés par score
+[2026-03-17 07:04:47] INFO [logger] 💵 [London] Kelly sizing: 10.00$ (bankroll restant=50.00$, fraction=0.25, max=10.0$)
+[2026-03-17 07:04:47] INFO [logger] 🧪 DRY RUN — [London] Pari simulé: 10.00$ sur 16°C @ 0.35 (edge: 157%) [ensemble, J+2]
+[2026-03-17 07:04:47] INFO [logger] Pari enregistré pour London 2026-03-19: tranche 16 (simulated)
+[2026-03-17 07:04:47] INFO [logger] Telegram: message envoyé
+[2026-03-17 07:04:47] INFO [logger] 📋 Résumé cycle: 3 marchés analysés | 1 pari(s) placé(s) | 2 skip(s)
+[2026-03-17 07:04:47] INFO [logger] ✅ Scan terminé — bankroll restant estimé: 40.00$
+[2026-03-17 09:04:47] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 09:04:47] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 09:04:47] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 09:04:47] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 09:04:48] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 09:04:48] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 3.9h
+[2026-03-17 09:04:48] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 27.9h
+[2026-03-17 09:04:48] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 51.9h
+[2026-03-17 09:04:48] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 09:04:48] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 09:04:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 09:04:48] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 09:04:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 09:04:48] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 09:04:48] INFO [logger] ⏭️ Déjà parié sur London 2026-03-19 (J+2) — tranche 16, edge 157%, proba 90%, prix payé 0.35
+[2026-03-17 09:04:48] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 11:04:48] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 11:04:49] INFO [logger] Telegram: message envoyé
+[2026-03-17 11:04:49] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 11:04:49] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 11:04:49] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 11:04:49] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 11:04:49] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans 1.9h
+[2026-03-17 11:04:49] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 25.9h
+[2026-03-17 11:04:49] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 49.9h
+[2026-03-17 11:04:49] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 11:04:49] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 11:04:49] INFO [logger] ⏭️ Déjà parié sur London 2026-03-17 (J+0) — tranche 15, edge 238%, proba 54%, prix payé 0.16
+[2026-03-17 11:04:49] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 11:04:49] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 11:04:49] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 11:04:49] INFO [logger] ⏭️ Déjà parié sur London 2026-03-19 (J+2) — tranche 16, edge 157%, proba 90%, prix payé 0.35
+[2026-03-17 11:04:49] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 13:04:49] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 13:04:49] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 13:04:49] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 13:04:49] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 13:04:50] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 13:04:50] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans -0.1h
+[2026-03-17 13:04:50] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 23.9h
+[2026-03-17 13:04:50] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 47.9h
+[2026-03-17 13:04:50] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 13:04:50] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 13:04:50] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j0_morning_only), skip
+[2026-03-17 13:04:50] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 13:04:50] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 13:04:50] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 13:04:50] INFO [logger] ⏭️ Déjà parié sur London 2026-03-19 (J+2) — tranche 16, edge 157%, proba 90%, prix payé 0.35
+[2026-03-17 13:04:50] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 15:04:50] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 15:04:50] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 15:04:51] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 15:04:51] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 15:04:51] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 15:04:51] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans -2.1h
+[2026-03-17 15:04:51] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 21.9h
+[2026-03-17 15:04:51] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 45.9h
+[2026-03-17 15:04:51] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 15:04:51] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 15:04:51] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j0_morning_only), skip
+[2026-03-17 15:04:51] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 15:04:51] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 15:04:51] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 15:04:51] INFO [logger] ⏭️ Déjà parié sur London 2026-03-19 (J+2) — tranche 16, edge 157%, proba 90%, prix payé 0.35
+[2026-03-17 15:04:51] INFO [logger] ✅ Scan terminé — aucun pari candidat
+[2026-03-17 17:04:51] INFO [logger] 🔄 Heartbeat — bot actif, prochain scan dans 0min
+[2026-03-17 17:04:51] INFO [logger] 🔄 Démarrage du scan...
+[2026-03-17 17:04:51] INFO [logger] 📐 Biais London (7j): -0.21°C (calibré ✅) sur 7 résultats
+[2026-03-17 17:04:51] INFO [logger] 📊 Aucun nouveau résultat à vérifier
+[2026-03-17 17:04:52] INFO [logger] Polymarket: client initialisé et authentifié
+[2026-03-17 17:04:52] INFO [logger] ⏱️ Marché 2026-03-17 ferme dans -4.1h
+[2026-03-17 17:04:52] INFO [logger] ⏱️ Marché 2026-03-18 ferme dans 19.9h
+[2026-03-17 17:04:52] INFO [logger] ⏱️ Marché 2026-03-19 ferme dans 43.9h
+[2026-03-17 17:04:52] INFO [logger] Gamma API: 3 marché(s) température London trouvé(s)
+[2026-03-17 17:04:52] INFO [logger] --- [London] Analyse du marché 2026-03-17 (Highest temperature in London on March 17?) ---
+[2026-03-17 17:04:52] INFO [logger] ⏰ Pas le bon moment pour parier sur 2026-03-17 (j0_morning_only), skip
+[2026-03-17 17:04:52] INFO [logger] --- [London] Analyse du marché 2026-03-18 (Highest temperature in London on March 18?) ---
+[2026-03-17 17:04:52] INFO [logger] ⏭️ Déjà parié sur London 2026-03-18 (J+1) — tranche 18, edge 62%, proba 34%, prix payé 0.21
+[2026-03-17 17:04:52] INFO [logger] --- [London] Analyse du marché 2026-03-19 (Highest temperature in London on March 19?) ---
+[2026-03-17 17:04:52] INFO [logger] ⏭️ Déjà parié sur London 2026-03-19 (J+2) — tranche 16, edge 157%, proba 90%, prix payé 0.35
+[2026-03-17 17:04:52] INFO [logger] ✅ Scan terminé — aucun pari candidat
